@@ -1,0 +1,2 @@
+#!/bin/sh
+pear -c "/Users/xc/Dev/ezp45_flow/pear.conf" -d ezp="/Users/xc/Dev/ezp45_flow" -d ezpext="/Users/xc/Dev/ezp45_flow/extension" -D cache="/Users/xc/Dev/ezp45_flow/var/cache/pear" $*
