@@ -252,7 +252,7 @@ class eZContentObjectRegression extends ezpDatabaseTestCase
     }
 
     /**
-     * Test scenario for issue #15985 : Debug notices when translating an 
+     * Test scenario for issue #15985 : Debug notices when translating an
      * object to a new language
      *
      * @group issue_15985

@@ -27,7 +27,7 @@
         <option value="2" {if eq( $type, 2 )}selected="selected"{/if}>{'Only existing objects'|i18n( 'design/standard/class/datatype' )}</option>
         </select>
     {else}
-        <input type="hidden" name="ContentClass_ezobjectrelationlist_type_{$class_attribute.id}" value="2" />    
+        <input type="hidden" name="ContentClass_ezobjectrelationlist_type_{$class_attribute.id}" value="2" />
     {/if}
 </div>
 

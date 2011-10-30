@@ -12,7 +12,7 @@
        <h4><a class="showhide" href={'/user/preferences/set/admin_clearcache_menu/0'|ezurl} title="{'Hide clear cache menu.'|i18n( 'design/admin/pagelayout' )}"><span class="bracket">[</span>-<span class="bracket">]</span></a> {'Clear cache'|i18n( 'design/admin/pagelayout' )}</h4>
      {/if}
     {/if}
-    
+
 </div></div></div></div>{if $first}</div></div>{/if}
 
 {if $last}
@@ -35,7 +35,7 @@
       <h4><a class="showhide" href={'/user/preferences/set/admin_clearcache_menu/1'|ezurl} title="{'Show clear cache menu.'|i18n( 'design/admin/pagelayout' )}"><span class="bracket">[</span>+<span class="bracket">]</span></a> {'Clear cache'|i18n( 'design/admin/pagelayout' )}</h4>
      {/if}
     {/if}
-    
+
 </div></div></div></div>{if $first}</div></div>{/if}
 
 {if $last}

@@ -164,7 +164,7 @@ a text editor like Notepad.
 Add the line::
 
   127.0.0.1 computername
-  
+
 in the **hosts** file, where **computername** is the name of your computer
 (right-click on My Computer on the desktop and in Properties... you can see
 the name of your computer).

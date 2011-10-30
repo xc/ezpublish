@@ -7,8 +7,8 @@
 
 The "extended_attribute_filter" parameter has been added to list_count and tree_count fetch functions.
 
-The parameter can be used to do advanced attribute filtering. 
-It is for expert/experienced users. This mechanism makes it possible to introduce additional SQL conditions within the fetch. 
+The parameter can be used to do advanced attribute filtering.
+It is for expert/experienced users. This mechanism makes it possible to introduce additional SQL conditions within the fetch.
 It allows filtering based on values in custom tables and/or special filtering within the "ezcontentobject_attribute" table.
 
 (see more details http://ez.no/doc/ez_publish/technical_manual/3_8/reference/modules/content/fetch_functions/list)

@@ -36,7 +36,7 @@ h3
 }
 
 h4, h5, h6
-{ 
+{
     font-size: 1em;
 }
 
@@ -87,7 +87,7 @@ pre
 /* TABLES */
 
 table
-{ 
+{
     font-size: 1em; /* Fix for size "loss" in tables in IE; redundant for most others, but does no harm */
     margin: 0;
     padding: 0;
@@ -297,7 +297,7 @@ div.message-error
 
 div.pagenavigator
 {
-    text-align: center;    
+    text-align: center;
 }
 
 div.pagenavigator span.previous

@@ -25,7 +25,7 @@ eZ soap :
 - Fixed correct content length in the HTTP header
 - Fixed correct content type in HTTP header
 
-eZ xml : 
+eZ xml :
 - Added registration of #text nodes by name in DOM docuemnt.
 - Added support for numeric characters in namespace prefix.
 - Fixed crash when returning textContent of empty DOM node.
@@ -48,11 +48,11 @@ eZ ini :
 - Made sure the cache files uses as little memory as possible.
 - Cache write code moved to separate function and changed a bit in how it writes it's data.
 - Gives error messages when group/variables are accessed but do not exist.
-- Changed functions readVariable(), readVariableArray() and readGroup() to variable(), 
+- Changed functions readVariable(), readVariableArray() and readGroup() to variable(),
   variableArray() and group().
 - Finished save() function, it stores the file in the correct format according to
   the current OS.
-- Handling newlines for Unix, Windows and Mac files is fixed. 
+- Handling newlines for Unix, Windows and Mac files is fixed.
 - All ini values are now converted to the internal charset (and stored in the cache).
 - Made static functions setting whether debugging is used(default false), textcodecs are
   used(default true) and whether caching is used(default true).
@@ -134,7 +134,7 @@ eZ template :
   the result of the function are either true or false, if true the current iteration
   is performed, if not it is skipped.
 - /delimiter/ for /section/ function can now specify a modulo value which means that the delimiter
-  content will only be included each n times, the parameter name is /modulo/. It's also possible to 
+  content will only be included each n times, the parameter name is /modulo/. It's also possible to
   specify the parameter /match/ which will be fetched and evaluated each time the delimiter is to
   be used, if the value is true the delimiter is used.
 - Added support for template objects, that's object which has a function called /templateData/

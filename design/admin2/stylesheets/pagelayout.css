@@ -230,7 +230,7 @@ div.tabs-content.disabled div.tab-content
 }
 
 #rightmenu
-{ 
+{
     float: right;
     width: 181px;
     overflow-x: hidden;
@@ -344,7 +344,7 @@ div#contentstructure
 
 div#contentstructure ul#content_tree_menu
 {
-    margin-top: 0;    
+    margin-top: 0;
     margin-left: 0.25em;
     padding-left: 0.5em;
 }
@@ -599,7 +599,7 @@ div.popupmenu hr
     padding: 0 0.5em 0 0.5em;
 }
 
-.box-content div.block 
+.box-content div.block
 {
     padding-bottom: 1em;
 }
@@ -718,7 +718,7 @@ div.context-block h1.context-title img, div.context-block h2.context-title img
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 .menu-block li a
@@ -743,7 +743,7 @@ div.context-block h1.context-title img, div.context-block h2.context-title img
 
 /* BUTTONS */
 
-p.versions 
+p.versions
 {
     margin: 0 0 0.6em;
     padding: 4px 10px;

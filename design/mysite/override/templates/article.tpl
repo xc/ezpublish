@@ -20,9 +20,9 @@
 {case match=1}
     {let message_list=fetch( content, list, hash(
                                                 parent_node_id, $node.object.main_node_id,
-                                                limit, $page_limit, 
+                                                limit, $page_limit,
                                                 offset, 0,
-                                                class_filter_type, include, 
+                                                class_filter_type, include,
                                                 class_filter_array,array( 13 ) ) )}
 
     {section show=$message_list}

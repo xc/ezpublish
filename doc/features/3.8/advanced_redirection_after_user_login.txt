@@ -2,11 +2,11 @@
 
 *Incentive:
 
-Currently, the redirect after login is set to the site root (or 
-hardcoded from the login template). This is not very useful for sites 
-with advanced permissions where some users can access parts of the site 
-and others can access only other parts of the site. What we need is a 
-system that allows the administrators to set up where users are 
+Currently, the redirect after login is set to the site root (or
+hardcoded from the login template). This is not very useful for sites
+with advanced permissions where some users can access parts of the site
+and others can access only other parts of the site. What we need is a
+system that allows the administrators to set up where users are
 redirected after login.
 
 *Documentation:

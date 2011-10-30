@@ -65,8 +65,8 @@
                  {else}
                      </span>
                  {/if}
-		
-                 </span>		
+
+                 </span>
 	    {/if}
             {* Create alphabetical navigator *}
             {foreach $alphabet as $letter}
@@ -87,12 +87,12 @@
 		      {/if}
 		      </span>
                  {/if}
-		
+
 	         {set $c=inc($:c)}
 	         {if $:c|gt(25)}
 	            {set $c=0}
 	            <br>
-                 {/if}		
+                 {/if}
             {/foreach}
        </span>
        {/let}

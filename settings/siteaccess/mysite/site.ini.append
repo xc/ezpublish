@@ -20,6 +20,6 @@ RequireUserLogin=false
 SiteDesign=mysite
 # AdditionalSiteDesignArray contains an array
 # of sitedesigns. These sitedesigns will be used
-# if the design was not found in the main 
+# if the design was not found in the main
 # sitedesign. StandardDesign is the fallback design.
 AdditionalSiteDesignList[]=

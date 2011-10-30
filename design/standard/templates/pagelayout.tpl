@@ -57,7 +57,7 @@
 {include uri="design:page_toptoolbar.tpl"}
 
 {* Toolbar END *}
-    
+
     </td>
 </tr>
 <tr>

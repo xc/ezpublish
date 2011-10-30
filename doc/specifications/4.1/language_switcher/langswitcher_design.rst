@@ -79,7 +79,7 @@ Approach 2
         {/if}
         <a class="{$lang}" href=lang_url( $module_result.node_id, {$lang.sa}, {$lang.locale} ) )|ezurl>{$lang.text}</a>
     {/foreach}
-    
+
 
 Approach 3
 ~~~~~~~~~~
@@ -111,7 +111,7 @@ Updated methods:
   For this method the already existing parameter *$maskLanguages* have been
   reused. For boolean values the old logic will be triggered, for string
   values entries will be filtered with the locale's language mask.
-  
+
   *$onlyprioritized* will not have any effect, when a locale is specified in
   *$maskLanguages*.
 
@@ -172,7 +172,7 @@ Tasks
   - eZURLAliasML
   - eZURLAliasQuery
   - eZPathElement
-  
+
 Tweaks
 ------
 
@@ -180,7 +180,7 @@ It's possible to do some optimisations. One is to *node id* where available
 from templates directly, this will save a lookup of the path/ request uri.
 
 (Update: this is now done)
-         
+
 Limitations
 -----------
 

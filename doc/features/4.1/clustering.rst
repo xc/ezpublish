@@ -32,7 +32,7 @@ From 3.10.*, 4.0.1 versions
 Updating the configuration file
 +++++++++++++++++++++++++++++++
 
-The configuration file has slightly changed. Before 4.1 ``settings/file.ini`` looked like this : 
+The configuration file has slightly changed. Before 4.1 ``settings/file.ini`` looked like this :
 
 ::
 
@@ -76,7 +76,7 @@ For MySQL :
 ::
 
     ALTER TABLE ezdbfile ADD name_trunk TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER name ;
-    ALTER TABLE ezdbfile ADD INDEX ezdbfile_name_trunk ( name_trunk ( 250 ) ) 
+    ALTER TABLE ezdbfile ADD INDEX ezdbfile_name_trunk ( name_trunk ( 250 ) )
 
 
 From 4.0.2 version
@@ -85,7 +85,7 @@ From 4.0.2 version
 Updating the configuration file
 +++++++++++++++++++++++++++++++
 
-The configuration file has slightly changed. Before 4.1 ``settings/file.ini`` looked like this : 
+The configuration file has slightly changed. Before 4.1 ``settings/file.ini`` looked like this :
 
 ::
 
@@ -129,7 +129,7 @@ Updating the configuration file
 In order to use eZFS2 all you have to do is to update your ``file.ini.append.php`` file.
 This can even be a hot change while your site is running on production.
 
-Before 4.1 you had the following configuration : 
+Before 4.1 you had the following configuration :
 
 ::
 
@@ -148,7 +148,7 @@ Change the configuration to this one :
 Extra configuration for eZFS2 and eZDB
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-eZFS2FileHandler and eZDBFileHandlerMysqlBackend come with a few configuration directives. 
+eZFS2FileHandler and eZDBFileHandlerMysqlBackend come with a few configuration directives.
 It is safe to use the default values.
 In case you want something more specific to your project you can update the following configuration directives;
 
@@ -164,7 +164,7 @@ Two possible values :
 - generate: let the requesting process generate its own data without storing the result
 
 The key of this array defined the type of cache impacted by the setting.
-Three cache types are allowed here : 
+Three cache types are allowed here :
 
 - viewcache
 - cacheblock

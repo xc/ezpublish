@@ -151,8 +151,8 @@ Scripts:
   viewcache for a given node or subtree.
 
 *Datatype:
-- Added default function canRemovable( $contentClassAttribute ) in ezdatatype.php. This 
-  function is used to check whether or not a datatype can be removed from a class. Function 
+- Added default function canRemovable( $contentClassAttribute ) in ezdatatype.php. This
+  function is used to check whether or not a datatype can be removed from a class. Function
   returns true in default.
 - Added/reimplemented function isClassAttributeRemovable() in datatype ezuser,
   disallowed deletion of this  datatype if it belongs to the class of login user.
@@ -194,7 +194,7 @@ eztc.php:
 - Added a new datatype called eZMultiOption which works like
   eZOption but handles multiple options in one attribute.
 - Added support for not using strict rule to parse header for datatype ezxmltext.
-  This can be configurable by setting 'UseStrictHeaderRule' to false in block [header] 
+  This can be configurable by setting 'UseStrictHeaderRule' to false in block [header]
   of content.ini.
 
 *eZPHPCreator
@@ -208,7 +208,7 @@ eztc.php:
 
 *LDAP
 - Could support LDAP version 2 or 3 by defining 'LDAPVersion' variable in ldap.ini.
-- Changed variable 'LDAPUserGroup' in ldap.ini to an array which means a ldap user 
+- Changed variable 'LDAPUserGroup' in ldap.ini to an array which means a ldap user
   can be saved in multiple groups in eZ publish.
 - An user who is in multiple groups in LDAP server can be assigned to multiple
   groups in eZ publish automatically.
@@ -261,11 +261,11 @@ eztc.php:
 - Fixed bug for Workflow, After clicking on "New Wrokflow Group" and then cancel it do not create new wrok flow group now.
   http://ez.no/community/bug_reports/cancel_in_create_new_workflow_group_does_not_work
 - Fixed bug for shop/discountgroup, after clicking New Discount Group and then Cancel button it does not create new discount group now.
-  http://ez.no/community/bug_reports/cancel_in_create_new_discount_group_shop_does_not_work  
+  http://ez.no/community/bug_reports/cancel_in_create_new_discount_group_shop_does_not_work
 - Removed some commented code.
 - Fixed bug: Sort order ASC/Desc is swapped in admin view template.
   http://ez.no/community/bug_reports/3_5alpha1_sort_order_ascending_and_descending_is_swapped
-- Fixed bug: when trying to remove several locations when viewing a node 
+- Fixed bug: when trying to remove several locations when viewing a node
   always only the first location is removed.
 - Fixed bug: cancel in "New workflow" went back to list of groups.
   http://ez.no/community/bug_reports/cancel_in_new_workflow_goes_back_to_list_of_groups
@@ -283,7 +283,7 @@ eztc.php:
 - Fixed bug: ActionAddToBasket crash.
   http://ez.no/community/bug_reports/actionaddtobasket_crash
   http://ez.no/community/bug_reports/actionaddtobasket_crash
-- Fixed bug: Contentstructure javascript reports error when MaxDepth is limited and 
+- Fixed bug: Contentstructure javascript reports error when MaxDepth is limited and
   viewed node depth is greater.
   http://ez.no/community/bug_reports/contentstructure_javascript
 - Fixed bug: Previous/Next Links in Gallery are wrong.
@@ -367,7 +367,7 @@ eztc.php:
   whole section.
   (Manually merged from stable/3.3 rev. 9785, also in stable/3.4 rev.9786)
   http://ez.no/community/bug_reports/deleting_the_meta_data_array_makes_site_unreachable_default_siteaccess_is_undefined
-- Fixed bug of fatal error caused by undeleted workflow processes when 
+- Fixed bug of fatal error caused by undeleted workflow processes when
   associated workflow event is deleted.
   http://ez.no/community/bug_reports/fatal_error_in_cronjob_after_editing_workflow
   (Merged from stable/3.4 (3.4.5) rev. 9789)

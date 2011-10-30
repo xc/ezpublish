@@ -81,7 +81,7 @@ Shop:
   (replacing 'id' attributes with 'url_id').
 - Added subtree copy script to copy part of node tree from one parent node to another.
   (files: bin/php/ezsubtreecopy.php, doc/features/3.6/subtree_copy_script.txt)
-- Added ezconvertmysqldbtype.php script to convert from MyISAM tables to InnoDB tables or 
+- Added ezconvertmysqldbtype.php script to convert from MyISAM tables to InnoDB tables or
   from InnoDB to MyISAM tables.
 - Added: updaterelatedobjectslinks.php script to add related objects links made with
   attributes of 'ezobjectrelation' and 'ezobjectrelationlist' types to
@@ -108,7 +108,7 @@ eZInformationCollection:
 - Fixed bug #6101: Wrong "day of the week" in countries with MondayFirst=yes.
   Duplicate of #5834: MondayFirst and wrong DayName.
 - Fixed bug #4719: Enhancement RSS Feed Configuration
-- Fixed bug #6011: Recursive object inclusion. Added limitation on the 
+- Fixed bug #6011: Recursive object inclusion. Added limitation on the
   level of template nesting.
 - Fixed bug #6148: Enhancement RSS: enable/disable caching
 - Fixed bug #6121: Enhancement RSS: option that link in RSS should go to main node
@@ -125,7 +125,7 @@ eZInformationCollection:
 - Fixed bug: Content cache pregeneration: The DesignSetting of the selected
   siteaccess were not used.
   (Submitted by: Bruce Morrison)
-- Fixed bug: Content cache pregeneration: The cache was generated for the 
+- Fixed bug: Content cache pregeneration: The cache was generated for the
   currently logged in user instead of the anonymous user or another specific
   user.
   (Submitted by: Bruce Morrison)
@@ -135,7 +135,7 @@ eZInformationCollection:
 - Fixed bug: Notification digest handler raised fatal error.
 - Fixed bug #5583: ezimage.tpl produces bare href and target - bad XHTML.
 - Fixed bug #6514: ezobjectrelationlist does not archive old versions
-  (Merged from release/3.4.6(3.4.6) rev. 11485, also in 
+  (Merged from release/3.4.6(3.4.6) rev. 11485, also in
   relase/3.5.2(3.5.2) rev.11486)
 - Fixed Bug #6517: Bug Template operator: pdf(set_font, ...) ColorRGB.
   ( Merged from stable/3.4 rev. 11501, stable/3.5 rev. 11502 )
@@ -146,10 +146,10 @@ eZInformationCollection:
 - Fixed bug #6518: Bug Template operator: pdf(set_margin, ...) line_space is broken.
   ( Merged from stable/3.4 rev. 11511 )
 - Fixed bug #6525: ezmatrix doesn't support attribute( show ).
-  (Merged from stable/3.4 (3.4.7) rev. 11515) 
+  (Merged from stable/3.4 (3.4.7) rev. 11515)
 - Fixed bug #6523: Template operator: pdf(text_box, ...) alignment and size doesn't work.
   ( Merged from stable/3.4 rev. 11514, stable/3.5 rev. 11520 )
-- Fixed bug #6493: Template operator: pdf(filled_circle, ...) gets into a recursive 
+- Fixed bug #6493: Template operator: pdf(filled_circle, ...) gets into a recursive
   loop if the "y" parameter is wrong.
   ( Merged from stable/3.4 rev. 11525 )
 - Fixed bug #6503: Bug Template operator: pdf(footer, ...) line thickness doesn't work.
@@ -166,7 +166,7 @@ eZInformationCollection:
 - Fixed wrong handling of the option set name in ezmultioption datatype.
   (Merged from stable/3.5 (3.5.3) rev. 11594)
 - Fixed bug #6478: 'choose' operator returns wrong value.
-- Fixed bug #6547: Event / Payment Gateway shows type "all" even when there 
+- Fixed bug #6547: Event / Payment Gateway shows type "all" even when there
   are no extensions installed.
 - Fixed bug #6484: "Continue shopping" returns to wrong place.
 
@@ -206,7 +206,7 @@ eZURI:
   design/admin/override/templates/thumbnail/image_browse.tpl
   design/admin/templates/content/browse_mode_list.tpl
   design/admin/templates/content/browse_mode_thumbnail.tpl
-- Added "Override Template" popup menu when clicking on the big icon during viewing a node 
+- Added "Override Template" popup menu when clicking on the big icon during viewing a node
 - Added "Remove bookmark" menu item in popup menu when clicking on the icon of
   bookmark in the "Bookmarks" list in admin interface.
 - Added "Result page" after adding notification.

@@ -18,7 +18,7 @@ setting up the autoload arrays.
    - This file might alter the include_path
 
    - a method might be pushed on the PHP autoload method stack
-   
+
 #. spl_autoload_register is called with the eZ Publish standard autoload
    method
 
@@ -152,7 +152,7 @@ setOutputCallback
      * @return void
      */
     public function setOutputCallback( $callback )
-    
+
 This method can be used when the eZAutoloadGenerator is used in CLI-scripts
 and the like to get immediate output. Internally eZAutoloadGenerator will
 forward messages and warnings to the callback, if it is defined.

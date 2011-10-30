@@ -23,7 +23,7 @@ Changes from 3.3-5 to 3.4.0
 - Added support for sending the class identifier as a string to the content/class fetch function.
 - Added content/pdf for on the fly generation of PDF based on current node. Utilizes normal content caching.
 - Added setting for adjusting default value of ezdatetime datatype based on current date
-- Added ezcontentobject_tree.modified_subnode to eZContentObjectTreeNode to make fetches of last 
+- Added ezcontentobject_tree.modified_subnode to eZContentObjectTreeNode to make fetches of last
   modified subtree faster.
 - Added MD5 check of distribution files. Both scripts and GUI for checking files added.
 - Added function to view/edit ini settings in admin interface.
@@ -43,7 +43,7 @@ Changes from 3.3-5 to 3.4.0
 - Added menu config admin page which can edit the settings for which menu to use.
   This will only work with pagelayouts which uses this setup.
 - Added toolbar config admin page which could edit the settings of toolbar in page layuout.
-- Added support for or (|) logic in object name pattern, you can now specify <firstname|lastname> 
+- Added support for or (|) logic in object name pattern, you can now specify <firstname|lastname>
   this will then set the object name to the value of lastname attribute if firstname is empty.
 - Optimized eZPersistentObject::fill it now uses much less function calls it reduces approx 600+ function calls on a simple view page.
 - Made eZExpiryHandler not use eZPHPCreator a bit faster and we may be able to remove the eZPHPCreator include.
@@ -54,7 +54,7 @@ Changes from 3.3-5 to 3.4.0
 - Added the possibility to set attributes in eZWorkflowType. (Merged from stable/3.3 rev. 5534)
 - Create new script sqldiff.php which can be used to figure out differences between two databases (even database type).
   It uses the eZDBSchema library to compute the differences.
-- Added 'Delayed Indexing' of published objects; when activated a lost of not 
+- Added 'Delayed Indexing' of published objects; when activated a lost of not
   indexed objects are kept, and being processed by a cronjob.
 - Added missing definition of class_identifier in eZContentObject which made hasAttribute() always return false.
   This made it impossible to have class identifier overrides of node children.
@@ -99,7 +99,7 @@ Changes from 3.3-5 to 3.4.0
 - Added object count in class list and class view
 - Merged the ezuser_session_link table into the ezsession table.
 - New setting for sessions ActivityTimeout which controls how long it
-  takes before a session is considered inactive (or logged out). The  
+  takes before a session is considered inactive (or logged out). The
   default is 3600 seconds (1 hour)
 - Changed the default sorting of node assignments to be published objects first.
 - Fixed bug with mime type in ezbinaryhandler (was allways set to application/octet-stream)
@@ -120,7 +120,7 @@ Changes from 3.3-5 to 3.4.0
 - Made sure the design override cache is unique per siteaccess not just designs.
 - Fixed problem where cache was not removed when a class was created. The new content cache ignored the expiry time.
 - New script ezexec.php which can be used to include/execute other PHP
-  scripts. When the scripts are called the necessary eZ publish  
+  scripts. When the scripts are called the necessary eZ publish
   initialization is already done.
 - Changed the date format of the serialized content objects to use the rfc 1123 date,
   this ensures dates are properly exported across timezones.
@@ -326,8 +326,8 @@ eZ PHP creator:
   before each line in the generated text.
 - Added default value of 0 to the second parameter ($column) of variableText().
 - Added new static function prependSpacing() which is used to prepend the
-  proper spacing to a text block. 
-- Added new function fetch() which renders all elements to a string and 
+  proper spacing to a text block.
+- Added new function fetch() which renders all elements to a string and
   returns it.
 - Created new private function writeElements() which writes all elements
   to the text array, this function is now used in both store() and fetch().

@@ -22,7 +22,7 @@
         <option value="{$HasClassAttributes:item.id}">{$HasClassAttributes:item.id}-{$HasClassAttributes:item.name}</option>
     {/section}
     </select>
-    {/let} 
+    {/let}
     <br /><br />
     <input class="button" type="submit" name="CustomActionButton[{$event.id}_new_classelement]" value="{'Add entry'|i18n('design/standard/workflow/eventtype/edit')}" />
 </div>
@@ -40,7 +40,7 @@
 {section name=Entries loop=$event.content.entry_list sequence=array(bglight,bgdark)}
 <tr>
 <td class="{$Entries:sequence}">
-{$Entries:item.class_name}({$Entries:item.contentclass_id}) 
+{$Entries:item.class_name}({$Entries:item.contentclass_id})
 </td>
 <td class="{$Entries:sequence}">
 {$Entries:item.classattribute_name}({$Entries:item.contentclass_attribute_id})

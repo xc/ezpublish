@@ -20,7 +20,7 @@ This has caused several changes in the kernel, things to look out for:
  - Debian based Linux distros(incl Ubuntu): These Linux distributions tend to use
    their own session gc approach with a cronjob. maxliftime (/usr/lib/php5/maxlifetime)
    only reads session.gc_maxlifetime using /etc/php5/*/php.ini. Meaning you'll need to place
-   this setting in for instance /etc/php5/apache2/php.ini or /etc/php5/conf.d/php.ini to 
+   this setting in for instance /etc/php5/apache2/php.ini or /etc/php5/conf.d/php.ini to
    something way higher then the default 1440 (24 minutes). For instance 259200 (72 hours)
    which is the default value of site.ini\[Session]\SessionTimeout as used by DB session handler.
 

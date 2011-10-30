@@ -178,7 +178,7 @@ MatchFile=datatype/ezbinaryfile.tpl
 Subdir=templates
 
 # Link templates
-	
+
 [full_link]
 Source=node/view/full.tpl
 MatchFile=full/link.tpl

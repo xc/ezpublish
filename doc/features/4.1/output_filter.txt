@@ -1,10 +1,10 @@
 *Title: Adding a output filter over all rendered HTML.
 
 *Documentation:
-The new functionality can be used to modify HTML before it send to the client/browser. 
+The new functionality can be used to modify HTML before it send to the client/browser.
 Cases where you might want ot use it are for example for content acceleration.
-With certain filters you point static files to get served from different servers in order 
-to speed up the devlivery of a global website. For example you can point the user to 
+With certain filters you point static files to get served from different servers in order
+to speed up the devlivery of a global website. For example you can point the user to
 static files that are close to his location. Using this technique can imensivly increase
  the user experience. In a test case sencario we have improved the load time of the website by over 80%.
 
@@ -19,7 +19,7 @@ OutputFilterName=myFilter
 
 <?php
 class myFilter
-{     
+{
 	static function filter( $output )
 	{
         $patterns = array();

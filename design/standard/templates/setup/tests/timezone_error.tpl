@@ -11,7 +11,7 @@
 <p>{'Alternatively, if you do not have access to modify <strong>php.ini</strong>, you can change the time zone in <strong>config.php</strong>. Time zone set in <strong>config.php</strong> will override the <strong>php.ini</strong> time zone setting.'|i18n("design/standard/setup/tests")}
 
 <p>{"Example <strong>config.php</strong> configuration:"|i18n("design/standard/setup/tests")}</p>
-<pre class="example">&lt;?php <br />date_default_timezone_set( "Europe/Oslo" ); <br />?&gt;</pre>        
+<pre class="example">&lt;?php <br />date_default_timezone_set( "Europe/Oslo" ); <br />?&gt;</pre>
 
 <p>{'If you want to keep UTC as your time zone, check <strong>Ignore this test</strong> below to proceed.'|i18n("design/standard/setup/tests")}</p>
 

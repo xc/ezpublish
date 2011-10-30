@@ -17,13 +17,13 @@ Changes from 3.4.0 to 3.4.1
   in top and left menues.
 
 *Bugfixes:
-- Fixed assign limited on subtree bug. 
+- Fixed assign limited on subtree bug.
   http://ez.no/community/bug_reports/role_assignment_with_limitation_not_working
 - Fixed bug in contentobject, can_create_class_list.
 - Fixed information collector for email datatype.
 - Fixed missing class attribute in li tag in eZXML datatype.
-- Fixed bug in template path.tpl in design base. Only 'url_alias' was showing. 
-- Fixed bug related to missing attributes "rowCount" and "columnCount" of 
+- Fixed bug in template path.tpl in design base. Only 'url_alias' was showing.
+- Fixed bug related to missing attributes "rowCount" and "columnCount" of
   eZMatrix.
   http://ez.no/community/bug_reports/missed_attributes_in_ezmatrix
 - Fixed bug with non-required ContentObjectID for adding notifications (Merged from 3.5, rev. 6573)
@@ -37,7 +37,7 @@ Changes from 3.4.0 to 3.4.1
 - Fixed bug with unused EmailSender ini setting in eZSMTPTransport (merged from 3.3 rev. 6765).
   http://ez.no/community/bug_reports/email_sender
 - Fixed all the places where limitations returned by eZUser::hasAccessTo()
-  were treated as objects to handle limitations as hashes  
+  were treated as objects to handle limitations as hashes
   (since hasAccessTo() now returnes hashes instead of objects).
   By the way the following bug fixed:
   http://ez.no/community/bug_reports/not_able_to_fetch_keyword_list
@@ -62,10 +62,10 @@ Changes from 3.4.0 to 3.4.1
   http://ez.no/community/bug_reports/can_t_download_if_spaces_in_binary_file_names
 - Fixed typo in eZContentObject::checkAccess (merged from 3.3 rev. 6808).
   http://ez.no/community/bug_reports/typo_in_ezcontentobject_php
-- Fixed missing attribute_parameters in attribute in 
+- Fixed missing attribute_parameters in attribute in
   design/standard/templates/content/datatype/view/ezxmltags/object.tpl.
 - Workaround for bug in object relation list datatype: when user adds
-  objects using content/browse and then reloads page in browser then        
+  objects using content/browse and then reloads page in browser then
   previously selected objects are added again. We now just prevent objects
   from being added to the list more than once doing appropriate check.
   Merged from 3.3 rev. 6813.
@@ -81,7 +81,7 @@ Changes from 3.4.0 to 3.4.1
   http://ez.no/community/bug_reports/user_activate_template_typo
 - Fixed bug in SQL fetching user list for subtree notification handler
   resulting in very large query execution times.
-  Manually merged from 3.3 rev. 6836. 
+  Manually merged from 3.3 rev. 6836.
 - Fixed inability of PostgreSQL-based installation using the setup wizard.
   http://ez.no/community/bug_reports/database_connection_fails_with_installation_wizard
 - Fixed bug in indent template operator, only the first line was indented.
@@ -121,7 +121,7 @@ Changes from 3.4.0 to 3.4.1
 - Fixed bug in sessionmanagement in admin. Showed negative session date and idletime values if clock on server was
   changed backwards
   http://ez.no/community/bug_reports/session_admin_date_issues_users_idle_in_the_future
-- Fixed bug on  lib/eztemplate/classes/eztemplatenodetool.php file for the functions isInternalCodePiece() 
+- Fixed bug on  lib/eztemplate/classes/eztemplatenodetool.php file for the functions isInternalCodePiece()
   and isVariableElement().
   http://ez.no/community/bug_reports/php_warning_lib_eztemplate_classes_eztemplatenodetool_php
 - Fixed bug in eZContentObject which set incorect status for objects when do unserializing it.
@@ -158,7 +158,7 @@ Changes from 3.4.0 to 3.4.1
 - Fixed bug of users always being moved to trash after removal.
   http://ez.no/community/bug_reports/deleting_user_s_role
 - Removed vardumps from cronjobs/unpublish.php.
-  Merged from stable/3.3 rev. 6990. 
+  Merged from stable/3.3 rev. 6990.
   http://ez.no/community/bug_reports/unpublish_event_displays_debug_info
 - Fixed bug unabling to send draft for publishing after denial.
   http://ez.no/community/bug_reports/problems_with_denied_objects_in_approval_and_drafts
@@ -172,8 +172,8 @@ Changes from 3.4.0 to 3.4.1
   http://ez.no/community/bug_reports/can_t_display_multiple_flash_obects_on_a_single_page
 - Fixed bug with class filter in treemenu operator.
   http://ez.no/community/bug_reports/menu_management_contact_us_missing_from_some_menu_types
-- Fixed so that displaying images with center alignment now works properly.   
-  Merged from stable/3.4 rev. 7079.   
+- Fixed so that displaying images with center alignment now works properly.
+  Merged from stable/3.4 rev. 7079.
   http://ez.no/community/bug_reports/ez_no_image_display_overlap_on_new_browsers
 
 *Database:

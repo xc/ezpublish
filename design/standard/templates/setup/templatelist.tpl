@@ -14,7 +14,7 @@
 </tr>
 {section name=Template loop=$most_used_template_array sequence=array(bglight,bgdark)}
 <tr class="{$:sequence}">
-   <td> 
+   <td>
    <a href={concat('/setup/templateview',$Template:item.template)|ezurl}>{$Template:item.template}</a>
    </td>
    <td>
@@ -37,7 +37,7 @@
 </tr>
 {section max=20 offset=$view_parameters.offset name=Template loop=$template_array sequence=array(bglight,bgdark)}
 <tr class="{$:sequence}">
-   <td> 
+   <td>
    <a href={concat('/setup/templateview',$Template:item.template)|ezurl}>{$Template:item.template}</a>
    </td>
    <td>
@@ -53,4 +53,3 @@
          item_count=$template_count
          view_parameters=$view_parameters
          item_limit=20}
- 

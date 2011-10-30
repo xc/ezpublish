@@ -12,13 +12,13 @@ require 'autoload.php';
 set_time_limit( 0 );
 
 $cli = eZCLI::instance();
-$script = eZScript::instance( 
-    array( 
+$script = eZScript::instance(
+    array(
         'debug-message' => '',
         'use-session' => true,
         'use-modules' => true,
-        'use-extensions' => true 
-    ) 
+        'use-extensions' => true
+    )
 );
 
 $script->startup();
@@ -29,7 +29,7 @@ function help()
 {
     $argv = $_SERVER['argv'];
     $cli = eZCLI::instance();
-    $cli->output( 
+    $cli->output(
         "Usage: " . $argv[0] . " [OPTION]...\n" .
         "eZ Publish content object name update.\n" .
         "Goes trough all objects and updates all content object names\n" .
@@ -48,7 +48,7 @@ function help()
         "  --sql              display sql queries\n" .
         "  --logfiles         create log files\n" .
         "  --no-logfiles      do not create log files (default)\n" .
-        "  --no-colors        do not use ANSI coloring (default)\n" 
+        "  --no-colors        do not use ANSI coloring (default)\n"
     );
 }
 
@@ -284,22 +284,22 @@ if ( $dbHost || $dbName || $dbUser || $dbImpl )
 $db->setIsSQLOutputEnabled( $showSQL );
 
 // Get top nodes
-$topNodeArray = eZPersistentObject::fetchObjectList( 
+$topNodeArray = eZPersistentObject::fetchObjectList(
     eZContentObjectTreeNode::definition(),
     null,
-    array( 
+    array(
         'parent_node_id' => 1,
-        'depth' => 1 
-    ) 
+        'depth' => 1
+    )
 );
 
 $subTreeCount = 0;
 foreach ( $topNodeArray as $node )
 {
-    $subTreeCount += $node->subTreeCount( 
-        array( 
-            'Limitation' => array() 
-        ) 
+    $subTreeCount += $node->subTreeCount(
+        array(
+            'Limitation' => array()
+        )
     );
 }
 
@@ -313,12 +313,12 @@ $limit = 50;
 foreach ( $topNodeArray as $node )
 {
     $offset = 0;
-    $subTree = $node->subTree( 
-        array( 
-            'Offset' => $offset, 
+    $subTree = $node->subTree(
+        array(
+            'Offset' => $offset,
             'Limit' => $limit,
-            'Limitation' => array() 
-        ) 
+            'Limitation' => array()
+        )
     );
 
     while ( $subTree != null )
@@ -345,12 +345,12 @@ foreach ( $topNodeArray as $node )
         }
         $offset += $limit;
         unset( $subTree );
-        $subTree = $node->subTree( 
-            array( 
-                'Offset' => $offset, 
+        $subTree = $node->subTree(
+            array(
+                'Offset' => $offset,
                 'Limit' => $limit,
-                'Limitation' => array() 
-            ) 
+                'Limitation' => array()
+            )
         );
     }
 }

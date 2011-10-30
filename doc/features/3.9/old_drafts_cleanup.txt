@@ -31,12 +31,12 @@ See section [VersionManagement] in the 'settings/content.ini' file:
 # 90 days by default
 DraftsDuration[]
 DraftsDuration[days]=90
-DraftsDuration[hours]=0                              
-DraftsDuration[minutes]=0                            
-DraftsDuration[seconds]=0                            
+DraftsDuration[hours]=0
+DraftsDuration[minutes]=0
+DraftsDuration[seconds]=0
 # Clean-up limit per one run of the 'old_drafts_cleanup.php' cronjob script
-DraftsCleanUpLimit=100                               
-                                                   
+DraftsCleanUpLimit=100
+
 # Number of days, hours, minutes and seconds before an internal draft is considered old and can be removed
 # 1 day by default
 InternalDraftsDuration[]

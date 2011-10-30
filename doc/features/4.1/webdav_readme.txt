@@ -28,7 +28,7 @@ directly (without using the Trash), this setting must be changed in content.ini
 
   [RemoveSettings]
   # delete or trash
-  DefaultRemoveAction=delete 
+  DefaultRemoveAction=delete
 
 
 Copy

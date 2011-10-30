@@ -16,7 +16,7 @@ Changes from 2.9-2 to 2.9-3
 - Added new datatype Email
 - Added new datatype ISBN
 - Added check for existing related objects when adding new object relations, duplicated objects will not be added
-- Fixed some bugs for user settings, such as wrong redirection, uncrectly user information retriving. 
+- Fixed some bugs for user settings, such as wrong redirection, uncrectly user information retriving.
 - Fixed bug for unable to show stored information of issearchable and isrequired when editing class attribute
 - Fixed bug for finding related object
 _ Fixed bug for finding node
@@ -44,7 +44,7 @@ _ Fixed bug for finding node
 - Fixed bug for duplicated related object assignment.
 - Fixed bug for duplicated node assignment.
 - Fixed bug of images or binaryfiles are not uploaded if some attributes does not validate.
-- Datetype Date, DateTime and Time are initialized to current time. 
+- Datetype Date, DateTime and Time are initialized to current time.
 - Improved the validation for ISBN number using checksum rule, only correct number are accepted.
 
 

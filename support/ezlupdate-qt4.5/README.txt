@@ -41,7 +41,7 @@ similar way. If you don't have such a licence, you can get binaries from
 eZ Systems.
 
 First, make sure that you have the Qt library installed. If you use a package
-system such as RPM, make sure that you also have the qt-devel package. You 
+system such as RPM, make sure that you also have the qt-devel package. You
 need version 4.5 of the Qt library.
 
 If you build ezlupdate against the Qt/X11 library, it will require X11 to run,

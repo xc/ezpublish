@@ -120,7 +120,7 @@ The new alias system follows the same behaviour as the multi-lingual
 support added to eZ Publish 3.8.
 
 Aliases are now created per translation on the object and not just for
-the main translation. 
+the main translation.
 
 For instance if the following structure is present::
 
@@ -389,7 +389,7 @@ Custom transformation commands
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The transformation also received an upgrade with the possibility to
-create your own commands for doing transformation. 
+create your own commands for doing transformation.
 The commands can be created in extensions and added to the system with
 INI configuration which can be found in the *transform.ini* file under
 the group *Extensions* and variable *Commands*.
@@ -443,11 +443,11 @@ Step 4.
 To test that the command is working try this code snippet::
 
   include_once( 'lib/ezi18n/classes/ezchartransform.php' );
-  
+
   $textList = array( 'Hello there', 'What_the?' );
-  
+
   $transform = eZCharTransform::instance();
-  
+
   foreach ( $textList as $text )
   {
       $trText = $transform->transformByGroup( $text, 'urlalias' );
@@ -458,7 +458,7 @@ To test that the command is working try this code snippet::
 store it in *trans.php* and run it with *bin/php/ezexec.php*, e.g.::
 
   ./bin/php/ezexec.php trans.php
- 
+
 Developer changes
 =================
 

@@ -10,7 +10,7 @@
     {$discountgroup.name} <a href={concat("/shop/discountgroupedit/",$discountgroup.id,"/")|ezurl}><img class="button" src={"edit.gif"|ezimage} width="16" height="16" alt="{'Edit'|i18n('design/standard/shop')}" /></a><br/>
 </div>
 
-<h2>{"Defined rules"|i18n("design/standard/shop")}</h2> 
+<h2>{"Defined rules"|i18n("design/standard/shop")}</h2>
 
 <table class="list" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr>

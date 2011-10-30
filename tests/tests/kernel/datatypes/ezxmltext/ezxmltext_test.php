@@ -36,7 +36,7 @@ class eZXMLTextTest extends ezpTestCase
         $document = $parser->process( '<header level="-1">Fatal error test</header>' );
         $this->assertTrue( $document instanceof DOMDocument, 'Parser error: ' . $parser->getMessages() );
 
-        $root = $document->documentElement;        
+        $root = $document->documentElement;
         $this->assertTrue( $root->hasChildNodes(), 'Content missing, xml document is empty' );
 
         $xmlString = eZXMLTextType::domString( $document );

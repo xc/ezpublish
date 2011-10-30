@@ -4,15 +4,15 @@
 {if is_set( $module_result.left_menu )}
     {include uri=$module_result.left_menu}
 {else}
-    {* 
+    {*
         Get navigationpart identifier variable depends if the call is an contenobject
-        or a custom module 
+        or a custom module
     *}
     {def $navigation_part_name = $navigation_part.identifier}
     {if $navigation_part_name|eq('')}
         {set $navigation_part_name = $module_result.navigation_part}
     {/if}
-    {* 
+    {*
         Include automatically the menu template for the $navigation_part_name
         ez $part_name navigationpart =>  parts/$part_name/menu.tpl
     *}

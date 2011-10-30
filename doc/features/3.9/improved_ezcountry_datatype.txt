@@ -28,7 +28,7 @@ Translations of the english countries name can be done using locale files:
   Countries[AF]=Translated_Afghanistan
   ...
   Add this group and vars to local files (e.g. rus-RU.ini)
-  
+
 Function
 =========
 The function country_list provides a mechanism for templates to fetch information about countries.
@@ -44,8 +44,8 @@ fetch( 'content', 'country_list',
  filter             string       no
  value              string       no
 
- NOTE: 'filter' is a variable of groups in country.ini 
-        e.g. 
+ NOTE: 'filter' is a variable of groups in country.ini
+        e.g.
 	--------
 	[NO]
         Name=Norway
@@ -54,7 +54,7 @@ fetch( 'content', 'country_list',
         IDC=47
         --------
 	The 'filter' can be 'Name' or 'Alpha2' or 'Alpha3' or 'IDC'
-	
+
 *Example:
 1.
   {def $all_country_list=fetch( 'content', 'country_list' )}

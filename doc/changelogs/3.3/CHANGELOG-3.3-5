@@ -63,5 +63,5 @@ eZ Debug:
 *Translations:
 
 *Templates:
-- Added attribute "target" in standard image template which control where to 
+- Added attribute "target" in standard image template which control where to
   open a new link if the image has a link.

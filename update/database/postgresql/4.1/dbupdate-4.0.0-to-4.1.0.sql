@@ -116,7 +116,7 @@ CREATE SEQUENCE ezurlalias_ml_incr_s
     MAXVALUE 9223372036854775807
     MINVALUE 1
     CACHE 1;
-    
+
 CREATE TABLE ezurlalias_ml_incr (
     id integer DEFAULT nextval('ezurlalias_ml_incr_s'::text) NOT NULL
 );

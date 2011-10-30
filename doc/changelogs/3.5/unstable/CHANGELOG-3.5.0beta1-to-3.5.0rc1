@@ -54,7 +54,7 @@ Datatype:
 - Fixed bug: ActionAddToBasket crash.
   http://ez.no/community/bug_reports/actionaddtobasket_crash
   http://ez.no/community/bug_reports/actionaddtobasket_crash
-- Fixed bug: Contentstructure javascript reports error when MaxDepth is limited and 
+- Fixed bug: Contentstructure javascript reports error when MaxDepth is limited and
   viewed node depth is greater.
   http://ez.no/community/bug_reports/contentstructure_javascript
 - Fixed bug: RSS exportlist will not have link if it is not active.
@@ -88,7 +88,7 @@ Datatype:
   http://ez.no/community/bug_reports/setup_look_feel_appearance_dissappeared
   These three are the same bug. Symptoms: When editing "Look and feel" in
   admin, you get a "fatal error" in
-  kernel/classes/datatypes/ezpackage/ezpackagetype.php on line 165, or the 
+  kernel/classes/datatypes/ezpackage/ezpackagetype.php on line 165, or the
   "Appearance" thumbnails and radiobuttons disappears from the page. The bug
   also causes a database corruption. To fix it, edit the "Template look" class
   and store it without changing anything.
@@ -174,7 +174,7 @@ Datatype:
   whole section.
   (Manually merged from stable/3.3 rev. 9785, also in stable/3.4 rev.9786)
   http://ez.no/community/bug_reports/deleting_the_meta_data_array_makes_site_unreachable_default_siteaccess_is_undefined
-- Fixed bug of fatal error caused by undeleted workflow processes when 
+- Fixed bug of fatal error caused by undeleted workflow processes when
   associated workflow event is deleted.
   http://ez.no/community/bug_reports/fatal_error_in_cronjob_after_editing_workflow
   (Merged from stable/3.4 (3.4.5) rev. 9789)

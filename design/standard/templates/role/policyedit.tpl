@@ -18,7 +18,7 @@
         <p class="box">{$current_function}</p>
     </div>
 </div>
-   
+
 <br/>
 
 <div class="objectheader">
@@ -42,13 +42,13 @@
                                                                            {case/}
                                                                            {/switch}>
                 {$Limitations:LimitationValues:item.Name}</option>
-            {/section}   
+            {/section}
         </select>
     </div>
     {/section}
 
     {section name=Limitations loop=$function_limitations}
-    {switch match=$Limitations:item.name} 
+    {switch match=$Limitations:item.name}
       {case match="Node"}
        <div class="element">
         <label>{'Node'|i18n('design/standard/role')}</label><div class="labelbreak"></div>

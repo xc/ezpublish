@@ -79,7 +79,7 @@ Example:
 Returns all relations grouped in arrays by attribute ID, and then sorted by
 class name and by object's name in ascending order.
 
-                                                                  
+
 Fetching related objects count:
 
 fetch( 'content', 'related_objects_count',
@@ -102,4 +102,4 @@ fetch( 'content', 'reverse_related_objects',
 fetch( 'content', 'reverse_related_objects_count',
        hash( 'object_id',            object_id,
            [ 'attribute_identifier', attribute_identifier,  ]
-           [ 'all_relations',        boolean,               ] ) ) 
+           [ 'all_relations',        boolean,               ] ) )

@@ -25,9 +25,9 @@ Changes from 3.9.0rc1 to 3.9.0rc2
 - Fixed bug #9243: "Compare versions" and "Reverse related for subtree"
   functionalities don't works correctly.
   (Merged from stable/3.8 (3.8.7) rev. 17544)
-- Fixed bug #9092: Policy limitations cannot recieve values from extension.  
+- Fixed bug #9092: Policy limitations cannot recieve values from extension.
   (Merged from stable/3.8 (3.8.7) rev. 17548)
-- Fixed bug #9300: Memory issue with the updatecontentobjectname.php script 
+- Fixed bug #9300: Memory issue with the updatecontentobjectname.php script
   due to caching.
 - Fixed bug #8844: don't show language selection page when only one language
   available
@@ -53,7 +53,7 @@ Changes from 3.9.0rc1 to 3.9.0rc2
 - Fixed bug #9257: Path is not set in user/success.
 - Fixed bug #9532: Auto-numbered headers generate wrong links.
 - Fixed bug #9635: Change text of link to content/history in popup-menu
-- Fixed bug #9638: "Remove selected" button not disabled when no relations 
+- Fixed bug #9638: "Remove selected" button not disabled when no relations
   can be removed
 - Fixed bug #9611: Paging in Resultset with Subtree limitation doesn't work.
 - Fixed bug #9644: Setup wizard behaviour when only one package is available
@@ -63,8 +63,8 @@ Changes from 3.9.0rc1 to 3.9.0rc2
 - Fixed bug #9743: Path is not set in kernel/content/versionview.php
 - Fixed bug #9529: Shop - missing content in demo product.
   (Merged from stable/3.8 (3.8.7) rev. 17696)
-- Fixed bug #9467: ezwebin installation script is unable 
+- Fixed bug #9467: ezwebin installation script is unable
   to accesss setup wizard varibles when using kickstart.ini.
-- Fixed bug #9537: The image field in the "Site settings" edit interface 
+- Fixed bug #9537: The image field in the "Site settings" edit interface
   is not confined to the page width.
 - Fixed bug #9639: eZ publish generates same cache block simultaneously.

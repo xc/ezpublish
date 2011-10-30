@@ -81,5 +81,5 @@ objects of a specific type.
 Both examples return array of objects "linked" to the object $my_object.
 
 {def $linked = fetch( 'content', 'related_objects', hash( 'object_id', $my_object.id, 'all_relations', array( 'xml_link' ) ) )}
-                                                        
+
 {def $linked = $my_object.linked_contentobject_array}

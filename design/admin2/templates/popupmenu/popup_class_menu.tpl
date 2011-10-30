@@ -48,7 +48,7 @@ menuArray['ClassMenu']['elements']['url-alias'] = {ldelim} 'url': {"content/urla
     <hr />
     <a id="class-history" href="#" onmouseover="ezpopmenu_mouseOver( 'ClassMenu' )">{'Manage versions'|i18n( 'design/admin/popupmenu' )}</a>
     <a id="url-alias" href="#" onmouseover="ezpopmenu_mouseOver( 'ClassMenu' )">{'Manage URL aliases'|i18n( 'design/admin/popupmenu' )}</a>
-    
+
     {* Include additional class menu items  based on .ini settings *}
     {foreach ezini( 'AdditionalMenuSettings', 'ClassMenuTemplateArray', 'admininterface.ini' ) as $template}
         {include uri=concat('design:', $template )}

@@ -4,22 +4,22 @@
 
 The eZXML library can deliver XSLT and DTD definitions when building a XML document.
 Several applications read various XML documents. They try to determine the type of the documents
-by reading the DTD. Further more they use the XSLT definitions to render the information stored 
-in the XML document.  
+by reading the DTD. Further more they use the XSLT definitions to render the information stored
+in the XML document.
 
 *Documentation:
 
 2 new functions where added to eZDOMNode.
 
-Function: 
+Function:
 setDocTypeDefinition( $url = false, $alias = false, $explict = false )
 
 Parameters:
-$url A vaild URL 
+$url A vaild URL
 $alias An alias representing the document, for example "-//My Company//DTD XMLEXPORT V 1.0//EN"
 $explict Declare if DTD must be used.
 
-Function: 
+Function:
 function setStylesheet( $url )
 
 Parameters:
@@ -30,7 +30,7 @@ The following script will output the xml document below.
 
 <?php
 include_once( 'lib/ezxml/classes/ezxml.php' );
-$rootname = 'TEST';       
+$rootname = 'TEST';
 $doc = new eZDOMDocument();
 $base = 'http://www.example.com';
 $doc->setStylesheet( $base . '/test.xslt' );

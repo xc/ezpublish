@@ -2,7 +2,7 @@
 
 <div class="block">
     <label><input type="checkbox" name="ReceiveDigest_{$handler.id_string}" {$settings.receive_digest|choose( '', checked)} /> {'Receive all messages combined in one digest'|i18n( 'design/admin/notification/handler/ezgeneraldigest/settings/edit' )}</label>
-    
+
 </div>
 
 <div class="block">

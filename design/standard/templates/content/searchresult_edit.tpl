@@ -2,9 +2,9 @@
 {* Lists search results with edit controls *}
 {section name=Child show=$search_result}
 
-    {let name=Child can_remove=false() 
-            can_edit=false() 
-            can_create=false() 
+    {let name=Child can_remove=false()
+            can_edit=false()
+            can_create=false()
             can_copy=false()}
 
     {section loop=$search_result}

@@ -244,10 +244,10 @@
     <div class="halfelement">
         <label>{"Destination:"|i18n( 'design/admin/content/urlalias' )}</label>
         <input disabled="disabled" class="box" type="text" name="DestinationText" value="{$node.name|shorten(40)|wash}" title="{'Destination.'|i18n( 'design/admin/content/urlalias' )}" />
-    </div>    
+    </div>
 </div>
 
-{* Language dropdown. *}    
+{* Language dropdown. *}
 <div class="block">
     <label>{"Language:"|i18n( 'design/admin/content/urlalias' )}</label>
     {if $node.can_edit}
@@ -286,7 +286,7 @@
         <p>{"<em>Un-check</em> to create the new alias under %link. Leave it checked and the new alias will be created on <em><a href='/'>%siteroot</a></em>."|i18n( 'design/admin/content/urlalias', '', hash( '%link', concat( '<em><a href=', $node.parent.url_alias|ezurl, '>', $node.parent.name|wash, '</a></em>' ),
                                                                                                                                                                                                                 '%siteroot', 'the site root' ) )}</p>
     {/if}
-    
+
 </div>
 
 

@@ -9,12 +9,12 @@ INI setting changes
   As a first step towards removing the shop functionality from the kernel and
   move it into an extension, we have now disabled this tab by default.
   You can re-enable it by adding Tabs[]=shop to menu.ini[TopAdminMenu]
-  
+
 - Design tab hidden by default
 
   Additionally Menu management left menu item has been moved to Setup tab.
   To re-enable design tab add Tabs[]=design to menu.ini[TopAdminMenu]
-  
+
 - roles & policy link disabled in setup tab
 
   Since this link also present on User accounts tab, and belongs there. This link
@@ -38,7 +38,7 @@ INI setting changes
 - site.ini [ContentSettings]CachedViewPreferences[full]
 
   admin2 design does not use any of the admin_navigation_* preferences anymore
-  expect admin_navigation_content, this setting should additionally now default 
+  expect admin_navigation_content, this setting should additionally now default
   to 1 instead of 0 so new users gets access to preview tab straight away.
   Additinally many preferences on this setting was not really used within content/view
   and therefore was not needed here and just further decreased cache efficiency.
@@ -59,7 +59,7 @@ INI setting changes
   the setup wizard might throw notices if using a debugger at the same time.
 
 
-Change of behavior 
+Change of behavior
 -------------------
 
 - Look & Feel url hardcoded in ini
@@ -122,7 +122,7 @@ Deprecated functionality
   to require_once the i18n.php file. These two function will be removed in a future
   version.
 
-- kernel/common/ezincludefunctions.php 
+- kernel/common/ezincludefunctions.php
   All functions in this file has been deprecated, functions not already deprecated:
   kernel_include(), kernel_common(), datatype_class(), extension_path(),
   ext_include(), ext_activate(), ext_class(), lib_include(), lib_class() and kernel_class()
@@ -153,11 +153,11 @@ Removed methods
 
 - All internal i18n.php functions have been removed, as in:
   ezcurrentLanguage(), ezinsertarguments() and eZTranslateText()
-  
+
 - eZArchiveHandler
   This class and related sub-class eZTARArchiveHandler has been removed
   They have been deprecated since 4.1.
-  
+
 - eZModuleManager
   eZModuleManager class has been deprecated since 4.1, in favor of the setting
   [ModuleSettings] ModuleList in module.ini

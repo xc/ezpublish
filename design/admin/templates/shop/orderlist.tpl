@@ -79,7 +79,7 @@
 	    <a href={concat( '/shop/customerorderview/', $Orders.item.user_id, '/', $Orders.item.account_email )|ezurl}>{$Orders.item.account_name}</a>
 	{/if}
 	</td>
-	
+
 
     {* NOTE: These two attribute calls are slow, they cause the system to generate lots of SQLs.
              The reason is that their values are not cached in the order tables *}

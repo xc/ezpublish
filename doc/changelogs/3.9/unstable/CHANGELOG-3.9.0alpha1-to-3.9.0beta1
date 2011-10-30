@@ -3,7 +3,7 @@ Changes from 3.9.0alpha1 to 3.9.0beta1
 *Kernel:
 
 *Design:
-- Implemented enhancement #009270: modify setup wizard to read defaultaccess 
+- Implemented enhancement #009270: modify setup wizard to read defaultaccess
   from site.ini (for url access-type)
 
 *Bugfixes:
@@ -19,7 +19,7 @@ Changes from 3.9.0alpha1 to 3.9.0beta1
   (Manually merged from stable/3.8 (3.8.5) rev. 17258)
 - Fixed bug #9117: Content class editing is not inside DB transaction.
   (Manually merged from stable/3.8 (3.8.5) rev. 17260)
-- Fixed #8644: bug appears when writing INI files 
+- Fixed #8644: bug appears when writing INI files
   while the siteaccess resides in an extension.
 - Fixed bug #9260: Include file path contains two slashes in eznotificationeventfilter.php
 - Fixed bug #009082: Packages imports fails with objects in multiple locations.

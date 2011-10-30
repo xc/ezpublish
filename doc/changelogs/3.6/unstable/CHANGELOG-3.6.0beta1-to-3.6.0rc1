@@ -24,7 +24,7 @@ Attributes:
 - Fixed bug #6593: Typo in site.ini
 - Fixed bug: Wrong check for MySQL version in setup wizard causing InnoDB to
   always be used.
-- Fixed bug #6506: Shopping permissions for a guest user don't work 
+- Fixed bug #6506: Shopping permissions for a guest user don't work
   properly.
 - Fixed bug: Paymentgatewayevent does not find all gateway extensions.
 - Fixed bug #6571: Object relations list crash.

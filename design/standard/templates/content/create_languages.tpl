@@ -15,7 +15,7 @@
 {/foreach}
 
 {if or($class|not,$class.can_instantiate_languages|not)}
-    
+
     <p>{'You do not have permissions to create an object of the requested class in any language.'}</p>
 
 {else}

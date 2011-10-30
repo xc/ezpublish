@@ -24,7 +24,7 @@
             </ul>
         </div>
     {/if}
-    
+
     <div class="block"><fieldset>
     <legend>{'Field data'|i18n( 'design/admin/rss/edit_export' )}</legend>
     <div class="block">
@@ -115,9 +115,9 @@
 
     <input type="hidden" name="RSSExport_ID" value={$rss_export.id} />
     <input type="hidden" name="Item_Count" value={count($rss_export.item_list)} />
-    </fieldset></div>   
-    
-    
+    </fieldset></div>
+
+
     {section name=Source loop=$rss_export.item_list}
     <div class="block"><fieldset>
        <legend>{'Source'|i18n( 'design/admin/rss/edit_export' )} {sum($Source:index, 1)}</legend>
@@ -130,12 +130,12 @@
        <input type="text" readonly="readonly" size="45" id="rssExporSource_{$Source:index}" value="{$Source:item.source_path|wash}" />
        <input class="button" type="submit" name="{concat( 'SourceBrowse_', $Source:index )}" value="{'Browse'|i18n( 'design/admin/rss/edit_export' )}" title="{'Click this button to select the source node for the RSS export source. Objects of the type selected in the drop-down below published as sub items of the selected node will be included in the RSS export.'|i18n('design/admin/rss/edit_export')}" />
        </div>
-       
+
         <div class="block">
         <label class="inline" for="rssExporSubNodes_{$Source:index}">{'Subnodes'|i18n( 'design/admin/rss/edit_export' )}:</label>
         <input type="checkbox" id="rssExporSubNodes_{$Source:index}" name="Item_Subnodes_{$Source:index}" {if $Source:item.subnodes|wash|eq( 1 )}checked="checked"{/if} title="{'Activate this checkbox if objects from the subnodes of the source should also be fed.'|i18n('design/admin/rss/edit_export')}" onchange="document.getElementById('Ignore_Values_On_Browse_{$Source:index}').value=0;" />
         </div>
-    
+
        <div class="block">
        <label class="inline" for="rssExporClass_{$Source:index}">{'Class'|i18n( 'design/admin/rss/edit_export' )}:</label>
        <select id="rssExporClass_{$Source:index}" name="Item_Class_{$Source:index}" title="{'Use this drop-down to select the type of object that triggers the export. Click the "Set" button to load the correct attribute types for the remaining fields.'|i18n('design/admin/rss/edit_export')|wash}" onchange="document.getElementById('Ignore_Values_On_Browse_{$Source:index}').value=0;">
@@ -217,7 +217,7 @@
     <div class="block">
         <input class="defaultbutton" type="submit" name="StoreButton" value="{'OK'|i18n( 'design/admin/rss/edit_export' )}" title="{'Apply the changes and return to the RSS overview.'|i18n('design/admin/rss/edit_export')}" />
         <input class="button" type="submit" name="RemoveButton" value="{'Cancel'|i18n( 'design/admin/rss/edit_export' )}" title="{'Cancel the changes and return to the RSS overview.'|i18n('design/admin/rss/edit_export')}" />
-        <input class="button" type="submit" name="AddSourceButton" value="{'Add source'|i18n( 'design/admin/rss/edit_export' )}" title="{'Click to add a new source to the RSS export.'|i18n('design/admin/rss/edit_export')}" />        
+        <input class="button" type="submit" name="AddSourceButton" value="{'Add source'|i18n( 'design/admin/rss/edit_export' )}" title="{'Click to add a new source to the RSS export.'|i18n('design/admin/rss/edit_export')}" />
     </div>
 {* DESIGN: Control bar END *}
     </div>

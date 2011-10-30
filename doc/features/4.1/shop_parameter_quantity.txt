@@ -1,7 +1,7 @@
 *Title: Adding a product to the basket with new parameter 'Quantity'.
 
 *Documentation:
-The new paramter 'Quantity' can be used when adding a product to a basket. 
+The new paramter 'Quantity' can be used when adding a product to a basket.
 In earlier versions of eZ publish the shop did only add one product at a time.
 With this feature you can add as many products of the same kind at once to the basket.
 

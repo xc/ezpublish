@@ -9,7 +9,7 @@ the administrator and customer when any product is confirmed in the shop.
 Modifications are done in ezshopoperationcollection.php where you have
 the function sendOrderEmails()
 
-Instead of sending the email directly in this function, it's made a eZConfirmOrderHandler 
+Instead of sending the email directly in this function, it's made a eZConfirmOrderHandler
 which can be customised in a extension.
 
 The handler need to implement a execute function which should receive a parameter.

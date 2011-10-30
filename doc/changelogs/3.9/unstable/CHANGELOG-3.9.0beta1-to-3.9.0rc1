@@ -10,7 +10,7 @@ Changes from 3.9.0beta1 to 3.9.0rc1
 *INI settings:
 - Added site.ini:[SiteSettings].AdditionalLoginFormActionURL
   Used to specify additional url for user/login form action.
-- Changed default value of ApplyButton setting in content.ini ClassSettings 
+- Changed default value of ApplyButton setting in content.ini ClassSettings
   group from disabled to enabled.
 *Design:
 
@@ -20,7 +20,7 @@ Changes from 3.9.0beta1 to 3.9.0rc1
 - Fixed bug 009314: Using xml block attribute and providing incorrect input
   may lead to fatal error in some cases.
   (Merged from stable/3.8 (3.8.7) rev. 17353)
-- Fixed bug #009325: Wrong values in placement boxes while moving class 
+- Fixed bug #009325: Wrong values in placement boxes while moving class
   attributes in class attributes edit.
 - Fixed bug #009320: findNode(): copy-paste code (remoteID ignored)
 - Fixed bug #009317: fatal error at importing package
@@ -48,7 +48,7 @@ Changes from 3.9.0beta1 to 3.9.0rc1
 - Fixed bug #009266: Binary files not deleted
   (Merged from stable/3.8 (3.8.7)) rev. 17464).
 - Fixed bug #009386: Content truncated in simplified xml input.
-- Fixed bug #009418: "Translate from"-box in edit interface is rendered 
+- Fixed bug #009418: "Translate from"-box in edit interface is rendered
   incorrectly
 
 *Library:

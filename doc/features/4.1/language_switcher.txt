@@ -15,7 +15,7 @@ The URLs used with the language switcher will have the following form
 ::
 
     /switchlanguage/to/<destinationTranslationSiteaccess>/<nodeID|URLalias>
-                                                                           
+
 This feature will most often be used via the bundled module switchlanguage.
 This is an optimised way, since no work, translating node IDs and URL aliases
 into the destination language, is done before someone clicks on a language
@@ -28,7 +28,7 @@ When a user clicks on a language switcher URL, the user is redirected to a
 URL, representing the destination siteaccess and the destination content. More
 often than not the destination content is the translated content originally
 being viewed, but there are some exceptions to how this works. Here is how:
-                                                 
+
 ======================================= =============== =======================================
 Origin                                  Destination     Destination URL
 ======================================= =============== =======================================

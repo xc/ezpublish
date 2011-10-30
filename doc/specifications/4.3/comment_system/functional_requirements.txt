@@ -33,7 +33,7 @@ Should: Use custom table with fields for id, text, name, webpage, email,
 Should: Support posting by logged in and not logged in users
 Should: Automatically fill in name, email and webpage if logged in
 Should: Store name / email / web address in cookie for later use if
-        user is not logged in and she checks a 'Remember me' checkbox 
+        user is not logged in and she checks a 'Remember me' checkbox
 Should: Tie in to objects with datatype (so add attribute if you want comments)
 Should: Support read and write permissions (use ezp roles to control access)
 Should: Be able to enable/disable and hide/show comments
@@ -69,7 +69,7 @@ Could: Support automatic un publishing content when reported n times if
 #3 Notification support for comments
 ------------------------------------
 Terms: subscriber = A logged in or anonymous user with mail
-       subscription = A relation between subscriber and the content she subscribes to 
+       subscription = A relation between subscriber and the content she subscribes to
 Should: Allow commenter to subscribe on notifications pr object in comment form
 Should: Trigger notification system on comment publish
 Should: Have a interface for changing subscription

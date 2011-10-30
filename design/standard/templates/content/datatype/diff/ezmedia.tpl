@@ -45,7 +45,7 @@
             </tr>
             </table>
         </div>
-        
+
         {/case}
 
         {case match=quick_time}

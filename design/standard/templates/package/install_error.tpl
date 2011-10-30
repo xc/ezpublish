@@ -11,7 +11,7 @@
     <h3>{$error.description}</h3>
     {if is_set($error.actions)}
         <p>{'Please choose action:'|i18n('design/standard/package')|break}</p>
-        
+
         <div class="optionslist">
         <ul>
         {def $i=0}

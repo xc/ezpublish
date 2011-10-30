@@ -70,7 +70,7 @@
      <h4><a class="showhide" href={'/user/preferences/set/admin_bookmark_menu/1'|ezurl} title="{'Show bookmarks.'|i18n( 'design/admin/pagelayout' )}"><span class="bracket">[</span>+<span class="bracket">]</span></a> {'Bookmarks'|i18n( 'design/admin/pagelayout' )}</h4>
     {/if}
     {/if}
-    
+
 </div></div></div></div>{if $first}</div></div>{/if}
 
 {if $last}
@@ -78,5 +78,5 @@
 </div></div></div></div></div></div>
 {/if}
 
-{/section}                       
+{/section}
 </div>

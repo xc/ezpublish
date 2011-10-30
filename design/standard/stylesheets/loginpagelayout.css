@@ -1,4 +1,4 @@
-html, body 
+html, body
 {
     margin: 0;
     padding: 0;
@@ -42,12 +42,12 @@ div#footer
     margin: 0 auto;
 }
 
-div#footer a 
+div#footer a
 {
     color: #990000;
 }
 
-h1 
+h1
 {
     margin-top: 0;
     background-image: url(../images/header-line.png);
@@ -58,7 +58,7 @@ h1
     padding-bottom: 8px;
 }
 
-div.attribute-header 
+div.attribute-header
 {
     padding-top: 10px;
     background-image: url(../images/ez-logo.png);

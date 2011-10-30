@@ -3,7 +3,7 @@ Changes from 3.3-3 to 3.3-4
 *Kernel:
 - Security fix: Added check when editing tempaltes if the file is actually a template. ( merged from stable/3.2 r5181 )
 - Changed rendering of literal inside XML text to block to ensure correct XHTML validation
-- Added boolean parameter 'main_node_only' in fetch function list, list_count, 
+- Added boolean parameter 'main_node_only' in fetch function list, list_count,
   tree and tree_count. The default is set to false to keep backwards compatibility.
 - Fixed missing include to ezinformationcollection in ezcontentfunctioncollection.php
 - Fixed wrong matchfile settings for shop templates.
@@ -36,7 +36,7 @@ Changes from 3.3-3 to 3.3-4
 *Bugs:
 - Fixed broken datatype range option.
   http://ez.no/community/bug_reports/ezrange_option_dataype_broken
-- Fixed bug of obtaining duplicate objects if fetching trees or lists with 
+- Fixed bug of obtaining duplicate objects if fetching trees or lists with
   objects assigned to multiple locations.
   http://ez.no/community/bug_reports/duplicates_when_fetching_trees_and_lists_with_objects_assigned_to_multiple_locations
 - Fixed checking of input ID to content/download, previously it was
@@ -48,7 +48,7 @@ Changes from 3.3-3 to 3.3-4
 - Fixed bug, typo with section_id http://ez.no/community/bug_reports/typos_ezcontentobject_section_instead_of_ezcontentobject_section_id ( merged from stable/3.2 r5102 )
 - Fixed bug with broken setHour(), setMinute(), setSecond() and setHMS() in eZDateTime class
   http://ez.no/community/bug_reports/bug_in_ezdatetime_class
-- Fixed bug with selection index id 
+- Fixed bug with selection index id
   http://ez.no/community/bug_reports/ezselection_options_id_jumping_0_to_2_skipping_1
 - Fixed bug with selection metadata, wrong index lookups
   http://ez.no/community/bug_reports/fetch_search_searches_in_backend_coded_ezselections_and_not_actual_values

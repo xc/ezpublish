@@ -1,10 +1,10 @@
 {* Ordering windows. *}
 <form name="ordering" method="post" action={'content/action'|ezurl}>
 <input type="hidden" name="ContentNodeID" value="{$node.node_id}" />
-<div class="block">    
+<div class="block">
     <fieldset>
         <legend>{'Published order'|i18n( 'design/admin/node/view/full' )}</legend>
-    
+
         {def $sort_fields=hash( 6, 'Class identifier'|i18n( 'design/admin/node/view/full' ),
                                 7, 'Class name'|i18n( 'design/admin/node/view/full' ),
                                 5, 'Depth'|i18n( 'design/admin/node/view/full' ),
@@ -16,27 +16,27 @@
                                 4, 'Section'|i18n( 'design/admin/node/view/full' ) )
             $title='You cannot set the sorting method for the current location because you do not have permission to edit the current item.'|i18n( 'design/admin/node/view/full' )
             $disabled=' disabled="disabled"' }
-    
+
         {if $node.can_edit}
             {set title='Use these controls to set the sorting method for the sub items of the current location.'|i18n( 'design/admin/node/view/full' )}
             {set disabled=''}
             <input type="hidden" name="ContentObjectID" value="{$node.contentobject_id}" />
         {/if}
-        
+
         <div class="block">{$title}</div>
         <select id="ezasi-sort-field" name="SortingField" title="{$title}"{$disabled}>
         {foreach $sort_fields as $key => $field}
             <option value="{$key}" {if eq( $key, $node.sort_field )}selected="selected"{/if}>{$field}</option>
         {/foreach}
         </select>
-    
+
         <select id="ezasi-sort-order" name="SortingOrder" title="{$title}"{$disabled}>
             <option value="0"{if eq($node.sort_order, 0)} selected="selected"{/if}>{'Descending'|i18n( 'design/admin/node/view/full' )}</option>
             <option value="1"{if eq($node.sort_order, 1)} selected="selected"{/if}>{'Ascending'|i18n( 'design/admin/node/view/full' )}</option>
         </select>
-    
+
         <input  id="ezasi-sort-set" {if $disabled}class="button-disabled"{else}class="button"{/if} type="submit" name="SetSorting" value="{'Set'|i18n( 'design/admin/node/view/full' )}" title="{$title}" {$disabled} />
-    
+
         {undef}
     </fieldset>
 </div>

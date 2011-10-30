@@ -28,7 +28,7 @@ This template defines two styles:
 
 *  .limitdisplay-user-<UserID>
   This class will show items that match the currently logged in user ID
-  
+
 This template is part of standard, and is included from standard, webin and flow
 pagelayout.tpl.
 
@@ -39,7 +39,7 @@ When a link/button should only be shown to its "owner" (the edit/owner(self))
 example above, just apply two classes to it::
 
     class="limitdisplay-user limitdisplay-user-{$current_user.contentobject_id}"
-    
+
 The first class will hide these for everybody, while the second one will
 make the item visible for its owner.
 

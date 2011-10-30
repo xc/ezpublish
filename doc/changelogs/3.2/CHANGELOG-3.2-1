@@ -53,15 +53,15 @@ Changes from 3.2.0-2 to 3.2-1
 - Added 'select all' function for site which has multiple checkboxes.
 - Added empty trash, empty draft function.
 - Added version management function. By editing content.ini, it is possible to define maximum versions can be kept for a particular
-  class. If existing version numbers equals to the defined maximum versions, oldest archived version will be removed automatically 
-  when a new version is created 
+  class. If existing version numbers equals to the defined maximum versions, oldest archived version will be removed automatically
+  when a new version is created
 - Added version remove function.
-- Added url management function. All links can be edited and will be checked by cronjob. Dead link will be moved to invalid list. 
+- Added url management function. All links can be edited and will be checked by cronjob. Dead link will be moved to invalid list.
   A link has a list of all objects ( verions ) which use this link.
 - Added settings for DefaultPreviewDesign in content.ini.
 - Added function to define customized image size by editing image.ini. Extended image sizes from small, medium, large, reference
   and original to no-limits.
-- Fixed bug of unable to convert tiff, gif image. 
+- Fixed bug of unable to convert tiff, gif image.
 - Improved general cronjob text output.
 - Improved workflow cronjob text output to include the number of process,
   the number handled and all current statuses on processes.
@@ -186,7 +186,7 @@ Changes from 3.2.0-2 to 3.2-1
 *Bugfixes:
 - Fixed bug for copy object function.
 - Fixed bug for role edit function which can't remove * if limitation changed from "allow all" to "allow limited".
-- Add i18n(translation) support when create a new content object. The default name of the object could be translated. 
+- Add i18n(translation) support when create a new content object. The default name of the object could be translated.
 - Role list does now not show temporary roles.
 - Fixed bug when assigning a node to it self.
 - Fixed malfunctioning string/array operators

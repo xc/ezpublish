@@ -24,7 +24,7 @@
         </td>  *}
 	<td class="{$Translation:sequence}" align="right" >
            <input type="checkbox" name="DeleteIDArray[]" value="{$Translation:item.id}" />
-        </td>  
+        </td>
 </tr>
 {/section}
 <tr>

@@ -103,7 +103,7 @@ feature works.
 1. Go to your eZ Publish directory.
 2. Create directory "extension/ezvoidshipping" and go there.
 3. Create directories "settings" and "shippinghandlers".
-4. Under "shippinghandlers" directory, create file "ezvoidshippinghandler.php" 
+4. Under "shippinghandlers" directory, create file "ezvoidshippinghandler.php"
    having the following contents:
 
 ==============================================================
@@ -132,7 +132,7 @@ class eZVoidShippingHandler
 ?>
 ==============================================================
 
-5. Under "settings" directory, create file "shop.ini.append" 
+5. Under "settings" directory, create file "shop.ini.append"
    having the following contents:
 
 ========================================================

@@ -6,7 +6,7 @@ body
 }
 
 a
-{ 
+{
     color: #369;
 
 }
@@ -36,7 +36,7 @@ div#header h1
 }
 
 div#toolbar-top
-{ 
+{
     padding: 13px 0 8px 8px;
     text-align: right;
 }
@@ -86,7 +86,7 @@ div#toolbar-top input.searchinput
 }
 
 div#toolbar-top li.toolbar-item a
-{ 
+{
     color: #339999;
     text-decoration: none;
 }
@@ -150,7 +150,7 @@ div#toolbar-bottom input.searchinput
 }
 
 div#toolbar-bottom li.toolbar-item a
-{ 
+{
     color: #003399;
 }
 
@@ -166,7 +166,7 @@ div#toolbar-bottom li.last
 }
 
 div#sep
-{ 
+{
    clear: both;
 }
 
@@ -354,7 +354,7 @@ div#leftmenu-design ul
 }
 
 div#leftmenu-design li.menu-level-0
-{ 
+{
     width: 140px;
     text-decoration: none;
     border-top: 1px solid #99ccff;
@@ -363,7 +363,7 @@ div#leftmenu-design li.menu-level-0
 }
 
 div#leftmenu-design li.menu-level-0 a
-{ 
+{
     color: #339999;
     text-align: center;
     font-size: 9px;
@@ -382,7 +382,7 @@ div#leftmenu-design li.menu-level-0 a.selected
 }
 
 div#leftmenu-design li.menu-level-1
-{ 
+{
     text-decoration: none;
     width: 140px;
     margin-top: 5px;
@@ -392,7 +392,7 @@ div#leftmenu-design li.menu-level-1
 }
 
 div#leftmenu-design li.menu-level-1 a
-{ 
+{
     color: #66cccc;
     text-align: center;
     font-size: 9px;
@@ -410,7 +410,7 @@ div#leftmenu-design li.menu-level-1 a.selected
     color: #003399;
 }
 
-div#rightmenu 
+div#rightmenu
 {
     float: right;
 }
@@ -465,20 +465,20 @@ div.content-navigator div.content-navigator-arrow
 
 /* Toolbox design */
 div.toolbox
-{ 
+{
     width: 100%;
     margin-bottom: 8px;
     margin-top: 8px;
 }
 
 div.toolbox-design
-{ 
+{
     padding: 0px;
     background-color: #d9e5f2;
 }
 
 div.toolbox-design h2
-{ 
+{
     padding-left: 10px;
     padding-top: 3px;
     margin-top: 0px;
@@ -489,7 +489,7 @@ div.toolbox-design h2
 }
 
 div.toolbox-design div.toolbox-content
-{ 
+{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 3px;
@@ -519,13 +519,13 @@ div.toolbox-design form
 }
 
 div.toolbox-design div.info-text p
-{ 
+{
     color: #000000;
     font-weight: normal;
 }
 
 div.toolbox-design div.attribute-link p
-{ 
+{
     padding-top: 0px;
     padding-left: 6px;
     font-weight: normal;
@@ -536,7 +536,7 @@ div.toolbox-design div.attribute-link p
 }
 
 div.toolbox-design div.attribute-link-disabled p
-{ 
+{
     color: #666;
     padding-top: 0px;
     padding-left: 6px;
@@ -547,21 +547,21 @@ div.toolbox-design div.attribute-link-disabled p
 
 /* Tool list design */
 div.toollist
-{ 
+{
     width: 100%;
     margin-bottom: 8px;
     margin-top: 8px;
 }
 
 div.toollist-design
-{ 
+{
     padding: 0px;
     background-color: #fff;
     border: 1px solid #369;
 }
 
 div.toollist-design h2
-{ 
+{
     padding-left: 10px;
     margin-top: 0px;
     padding-top: 2px;
@@ -572,7 +572,7 @@ div.toollist-design h2
 }
 
 div.toollist-design div.content-view-children
-{ 
+{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 3px;
@@ -580,27 +580,27 @@ div.toollist-design div.content-view-children
 }
 
 div.toollist-design h3
-{ 
+{
     text-decoration: underline;
     color: #336699;
     margin: 0;
 }
 
 div.toollist-design div.class-article div.attribute-short p
-{ 
+{
     margin: 0;
     color: #666666;
 }
 
 div.toollist-design div.class-article div.attribute-link p
-{ 
+{
     margin-top: 0;
     margin-bottom: 10px;
     color: #336699;
 }
 
 div.toollist-design div.class-article div.attribute-link-disabled p
-{ 
+{
     color: #666666;
     padding-top: 0;
     padding-left: 6px;
@@ -617,11 +617,11 @@ div#fix /* This style breaks the unwanted connection between the content of the 
 
 /* Footer */
 div#footer
-{ 
+{
     clear: both;
 }
 
-div#footer-design 
+div#footer-design
 {
     background-color: #ffffff;
     color: #003366;
@@ -658,7 +658,7 @@ div#maincontent-design
 }
 
 div#maincontent-design h1
-{ 
+{
     font: 18pt bold;
     font-weight: bold;
     color: #039;
@@ -667,7 +667,7 @@ div#maincontent-design h1
 }
 
 div#maincontent-design h2
-{ 
+{
     font: 12pt;
     font-weight: bold;
     color: #099;
@@ -676,7 +676,7 @@ div#maincontent-design h2
 }
 
 div#maincontent-design h3
-{ 
+{
     font: 10pt;
     font-weight: bold;
     color: #099;
@@ -685,7 +685,7 @@ div#maincontent-design h3
 }
 
 div#maincontent-design h4
-{ 
+{
     font: 9pt;
     font-weight: bold;
     color: #003366;
@@ -693,7 +693,7 @@ div#maincontent-design h4
 }
 
 div#maincontent-design h5
-{ 
+{
     font: 9pt;
     font-weight: bold;
     color: #003366;
@@ -702,14 +702,14 @@ div#maincontent-design h5
 
 /* folder */
 div#maincontent-design div.class-folder div.attribute-short p
-{ 
+{
     font-weight: bold;
     color: #003366;
 }
 
 /* article */
 div#maincontent-design div.class-article div.attribute-short p
-{ 
+{
     padding-top: 0;
     margin-top: 0;
     font-weight: bold;
@@ -717,7 +717,7 @@ div#maincontent-design div.class-article div.attribute-short p
 }
 
 div#maincontent-design div.class-folder div.class-article div.attribute-short p
-{ 
+{
     padding-top: 0;
     margin-top: 0;
     font-weight: normal;
@@ -726,7 +726,7 @@ div#maincontent-design div.class-folder div.class-article div.attribute-short p
 
 /* product */
 div#maincontent-design div.class-folder div.content-view-line div.class-product div.attribute-short p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 9pt;
@@ -735,7 +735,7 @@ div#maincontent-design div.class-folder div.content-view-line div.class-product 
 }
 
 div#maincontent-design div.content-view-full div.class-product div.attribute-short p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 9pt;
@@ -744,7 +744,7 @@ div#maincontent-design div.content-view-full div.class-product div.attribute-sho
 }
 
 div#maincontent-design div.class-product div.attribute-price p
-{ 
+{
     float: right;
     padding: 0px;
     margin: 0px;
@@ -755,7 +755,7 @@ div#maincontent-design div.class-product div.attribute-price p
 
 /* "Read more" text for all children objects */
 div#maincontent-design div.content-view-full div.content-view-line div.attribute-link p
-{ 
+{
     padding-top: 0px;
     padding-left: 8px;
     font-weight: normal;
@@ -765,7 +765,7 @@ div#maincontent-design div.content-view-full div.content-view-line div.attribute
 }
 
 div#maincontent-design div.content-view-full div.content-view-line div.attribute-link-disabled p
-{ 
+{
     color: #666;
     padding-top: 0px;
     padding-left: 8px;
@@ -778,7 +778,7 @@ div#maincontent-design div.content-view-full div.content-view-line div.attribute
 
 /* Content link for all main objects, e.g. " and "Thumbnail/slideshow view" */
 div#maincontent-design div.content-view-full div.attribute-link p, div#maincontent-design div.view-slideshow div.attribute-link p, div#maincontent-design div.content-view-full div.attribute-tipafriend p
-{ 
+{
     padding-top: 0px;
     padding-left: 8px;
     font-weight: normal;
@@ -789,7 +789,7 @@ div#maincontent-design div.content-view-full div.attribute-link p, div#mainconte
 
 div#maincontent-design div.content-view-full div.attribute-link-disabled p,
 div#maincontent-design div.view-slideshow div.attribute-link-disabled p
-{ 
+{
     color: #666;
     padding-top: 0px;
     padding-left: 6px;
@@ -801,14 +801,14 @@ div#maincontent-design div.view-slideshow div.attribute-link-disabled p
 
 /* Author and date for all full objects */
 div.content-view-full div.attribute-byline p.author
-{ 
+{
     margin-right: 0.2em;
     display: inline;
     color: #666;
 }
 
 div.content-view-full div.attribute-byline p.date
-{ 
+{
     margin-left: 0.2em;
     margin-right: 0.2em;
     display: inline;
@@ -816,7 +816,7 @@ div.content-view-full div.attribute-byline p.date
 }
 
 div.content-view-full div.attribute-byline p.placement
-{ 
+{
     margin-left: 0.2em;
     display: inline;
     color: #666;
@@ -825,19 +825,19 @@ div.content-view-full div.attribute-byline p.placement
 
 /* Author and date for all children objects */
 div.content-view-full div.content-view-line div.attribute-byline p.author
-{ 
+{
     display: inline;
     color: #666;
 }
 
 div.content-view-full div.content-view-line div.attribute-byline p.date
-{ 
+{
     display: inline;
     color: #666;
 }
 
 div.class-product div.content-view-line div.class-review div.attribute-message p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     color: #036;
@@ -845,7 +845,7 @@ div.class-product div.content-view-line div.class-review div.attribute-message p
 
 /* gallery */
 div#maincontent-design div.class-folder div.class-gallery div.attribute-short p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 9pt;
@@ -854,7 +854,7 @@ div#maincontent-design div.class-folder div.class-gallery div.attribute-short p
 }
 
 div#maincontent-design div.class-folder div.class-gallery div.attribute-link p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 9pt;
@@ -862,7 +862,7 @@ div#maincontent-design div.class-folder div.class-gallery div.attribute-link p
 }
 
 div#maincontent-design div.class-folder div.class-gallery div.attribute-link-disabled p
-{ 
+{
     color: #666;
     padding-top: 0px;
     padding-left: 6px;
@@ -873,7 +873,7 @@ div#maincontent-design div.class-folder div.class-gallery div.attribute-link-dis
 
 
 div#maincontent-design div.class-gallery div.attribute-short p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 9pt;
@@ -882,12 +882,12 @@ div#maincontent-design div.class-gallery div.attribute-short p
 }
 
 div#maincontent-design div.class-gallery div.content-view-children table
-{ 
+{
     width: 100%;
 }
 
 div#maincontent-design div.class-gallery div.content-view-children table td
-{ 
+{
     border: 1px solid #666;
     text-align: center;
     vertical-align: top;
@@ -897,7 +897,7 @@ div#maincontent-design div.class-gallery div.content-view-children table td
 }
 
 div#maincontent-design div.class-gallery div.content-view-children div.attribute-image p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     padding-bottom: 0px;
@@ -908,7 +908,7 @@ div#maincontent-design div.class-gallery div.content-view-children div.attribute
 }
 
 div#maincontent-design div.class-gallery div.content-view-children div.attribute-caption p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 8pt;
@@ -918,18 +918,18 @@ div#maincontent-design div.class-gallery div.content-view-children div.attribute
 
 
 div#maincontent-design div.attribute-long p
-{ 
+{
     color: #036;
 }
 
 div.attribute-file
-{ 
+{
 
 }
 
 /* Embedded tags in XML fields */
-div.factbox-design, div.content-view-embed 
-{ 
+div.factbox-design, div.content-view-embed
+{
     width: 178px;
     padding: 0px;
     background-color: #fff;
@@ -937,7 +937,7 @@ div.factbox-design, div.content-view-embed
 }
 
 div#maincontent-design div.factbox-design h2, div#maincontent-design div.content-view-embed h2
-{ 
+{
     padding-left: 10px;
     margin-top: 0px;
     padding-top: 2px;
@@ -948,7 +948,7 @@ div#maincontent-design div.factbox-design h2, div#maincontent-design div.content
 }
 
 div#maincontent-design div.content-view-embed div.content-view-children, div.factbox-content, div#maincontent-design div.content-view-embed div.content-body
-{ 
+{
     padding-left: 10px;
     padding-top: 3px;
     padding-right: 10px;
@@ -959,20 +959,20 @@ div#maincontent-design div.content-view-embed div.content-view-children, div.fac
 }
 
 div#maincontent-design div.content-view-embed h3
-{ 
+{
     font: 9pt underline;
     color: #369;
     margin: 0px;
 }
 
 div.quote
-{ 
+{
     width: 178px;
     padding: 0px;
 }
 
 div.quote-down
-{ 
+{
     float: right;
     width: 16px;
     height: 16px;
@@ -982,7 +982,7 @@ div.quote-down
 }
 
 div.quote-up
-{ 
+{
     margin: 3px;
     float: left;
     width: 16px;
@@ -993,7 +993,7 @@ div.quote-up
 }
 
 div#maincontent-design div.quote p
-{ 
+{
     display: inline;
     clear: none;
     font-size: 10pt;
@@ -1002,33 +1002,33 @@ div#maincontent-design div.quote p
 }
 
 div.object-right
-{ 
+{
     margin: 3px;
     float: right;
 }
 
 div.object-left
-{ 
+{
     margin: 3px;
     float: left;
 }
 
 div.object-center
-{ 
+{
     float: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 div.factbox h3
-{ 
+{
     font: 9pt;
     color: #369;
     margin: 0px;
 }
 
 div.factbox div.attribute-file p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 9pt;
@@ -1038,19 +1038,19 @@ div.factbox div.attribute-file p
 
 /* list item styles  */
 div.content-view-listitem h3
-{ 
+{
     margin-top: 6px;
 }
 
 /* list item image */
 div.content-view-listitem div.class-image div.attribute-image p
-{ 
+{
     padding: 0px;
     margin: 0px;
 }
 
 div.content-view-listitem div.class-image div.attribute-caption p
-{ 
+{
     font: 9pt;
     padding: 0px;
     margin: 0px;
@@ -1059,7 +1059,7 @@ div.content-view-listitem div.class-image div.attribute-caption p
 
 /* list item product */
 div.content-view-listitem div.class-product div.attribute-short p
-{ 
+{
     font: 9pt;
     padding: 0px;
     margin: 0px;
@@ -1067,7 +1067,7 @@ div.content-view-listitem div.class-product div.attribute-short p
 }
 
 div.content-view-listitem div.class-product div.attribute-price p
-{ 
+{
     font: 9pt;
     padding: 0px;
     margin: 0px;
@@ -1075,7 +1075,7 @@ div.content-view-listitem div.class-product div.attribute-price p
 }
 
 div.content-view-listitem div.class-product div.attribute-link a
-{ 
+{
     font: 9pt;
     padding: 0px;
     margin: 0px;
@@ -1083,7 +1083,7 @@ div.content-view-listitem div.class-product div.attribute-link a
 }
 
 div.content-view-listitem div.class-product div.attribute-link-disabled a
-{ 
+{
     color: #666;
     padding-top: 0px;
     padding-left: 6px;
@@ -1094,7 +1094,7 @@ div.content-view-listitem div.class-product div.attribute-link-disabled a
 
 /* File styles */
 div#maincontent-design div.class-folder div.class-file div.attribute-short p
-{ 
+{
     padding-top: 0px;
     margin-top: 0px;
     font: 9pt;
@@ -1106,12 +1106,12 @@ div#maincontent-design div.class-folder div.class-file div.attribute-short p
 
 /*! article style */
 div.class-article div.attribute-caption
-{ 
+{
 
 }
 
 div.class-article div.attribute-image div.imagecaption p
-{ 
+{
     font: 9pt;
     padding: 0px;
     margin: 0px;
@@ -1256,26 +1256,26 @@ div.calendar td a, div.calendar td a:visited, div.calendar td a:hover
 /*! Poll result style */
 
 div#poll-result
-{  
+{
 }
 
 div#poll-result td.empty-area
-{  
+{
     background-color: #eeeeee;
 }
 
 div#poll-result td.voted-area
-{  
+{
     background-color: #003366;
 }
 
 div#poll-result td.small
-{  
+{
     font-style: italic;
 }
 
 div#poll-result div.attribute-byline
-{  
+{
     font-weight: bold;
 }
 
@@ -1308,7 +1308,7 @@ input.searchbutton
 
 /* Table formatting */
 table th
-{ 
+{
     background-color: #d9e5f2;
 }
 
@@ -1350,7 +1350,7 @@ div.shop-basket table td.product-subtotal, div.shop-confirmorder table td.produc
 
 /* rendered table */
 table.renderedtable td
-{ 
+{
     margin: 0px;
     padding-top: 3px;
     padding-left: 3px;
@@ -1361,7 +1361,7 @@ table.renderedtable td
 }
 
 table.renderedtable
-{ 
+{
     border-right: 1px solid #369;
     border-bottom: 1px solid #369;
 }

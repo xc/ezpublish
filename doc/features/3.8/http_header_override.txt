@@ -1,7 +1,7 @@
 *Title : Custom HTTP header override
 
 *Documentation:
-This feature enables custom HTTP headers to be set at specified subtrees and 
+This feature enables custom HTTP headers to be set at specified subtrees and
 mondule/views. The custom HTTP headers must be specified in an override for the
 site.ini settings.
 

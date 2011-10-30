@@ -42,7 +42,7 @@ Example         : fetch( setup, version ) => '9305'
 
 Function name   : 'database_version'
 Parameters      : if 'with_release' parameter is set to 'false' then release number
-                  will not be added to database version string. 
+                  will not be added to database version string.
                   By default 'with_release' is 'true'
 Return value    : database version
 Example         : fetch( setup, database_version ) => '3.5.0rc1-3'

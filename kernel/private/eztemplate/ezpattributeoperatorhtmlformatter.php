@@ -7,7 +7,7 @@
  * @version //autogentag//
  * @package kernel
  */
- 
+
 class ezpAttributeOperatorHTMLFormatter extends ezpAttributeOperatorFormatter implements ezpAttributeOperatorFormatterInterface
 {
 

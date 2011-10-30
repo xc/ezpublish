@@ -12,7 +12,7 @@ anymore.
 __ http://php.net/downloads.php
 
 Some of the components require that certain PHP extensions are enabled in the
-build. While most of them are enabled by default, some of them have to 
+build. While most of them are enabled by default, some of them have to
 added explicitly. The table below lists all the components, and which
 extensions are required or optional.
 
@@ -117,9 +117,9 @@ Quick Reference on Enabling Extensions
 Extensions that are enabled by default in PHP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-============= ============================ 
+============= ============================
 Extension     Configure switch(es)
-============= ============================ 
+============= ============================
 _`ctype`      --enable-ctype
 _`dom`        --enable-dom --enable-libxml
 _`iconv`      --with-iconv
@@ -132,7 +132,7 @@ _`simplexml`  --enable-simplexml
 _`spl`        --enable-spl
 _`xml`        --enable-xml
 _`zlib`       --with-zlib
-============= ============================ 
+============= ============================
 
 Extensions that are bundled with PHP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

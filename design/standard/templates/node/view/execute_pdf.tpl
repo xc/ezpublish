@@ -5,8 +5,8 @@
 	                                       orientation, portrait))
 
    available sizes: 4A0, 2A0, A0-10, B0-10, C0-10, RA0-4, SRA0-4, LETTER, LEGAL, EXECUTIVE, FOLIO
-   orientation: portrait, landscape 
-   
+   orientation: portrait, landscape
+
 *}
 
 

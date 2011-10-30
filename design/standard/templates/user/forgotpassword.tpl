@@ -27,7 +27,7 @@
       <p>
       {"If you have forgotten your password we can generate a new one for you. All you need to do is to enter your email address and we will create a new password for you."|i18n('design/standard/user/forgotpassword')}
       </p>
-    
+
       <div class="block">
       <label for="email">{"Email"|i18n('design/standard/user/forgotpassword')}:</label>
       <div class="labelbreak"></div>

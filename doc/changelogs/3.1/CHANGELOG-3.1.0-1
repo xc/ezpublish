@@ -19,10 +19,10 @@ Changes from 3.0-2 to 3.1.0-1
 - Fixed bug in purge function which redundantly calls cleanup attribute function.
 - Fixed bug of image cleanup in image variation directory and file cleanup.
 - Fixed bug in purge function which redundantly calls cleanup attribute function.
-- Fixed bug of object published in multiple places where node assignment was not updated when 
+- Fixed bug of object published in multiple places where node assignment was not updated when
   one of its none main location is deleted.
-- Fixed bug in datatype object relation which causes can not move or add locations for object. 
-- Fixed bug in node deletion which does not remove children in noen main node locations when 
+- Fixed bug in datatype object relation which causes can not move or add locations for object.
+- Fixed bug in node deletion which does not remove children in noen main node locations when
   a main node is deleted.
 - Added cache admin page for cache status and manual clearing
 - Added system information page under setup

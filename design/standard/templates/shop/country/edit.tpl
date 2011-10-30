@@ -15,7 +15,7 @@
     <option {if eq( $current_val, false )}selected="selected"{/if} value="{$default_val}">{$default_desc}</option>
 {/if}
 {foreach $countries as $country}
-    <option 
+    <option
     {if $use_country_code}
         {if eq( $country['Name'], $current_val )}
             selected="selected"

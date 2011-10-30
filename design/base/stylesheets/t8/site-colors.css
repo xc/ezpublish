@@ -37,7 +37,7 @@ div#toolbar-top li.toolbar-item
 }
 
 div#toolbar-top li.toolbar-item a
-{ 
+{
     color: #fff;
 }
 
@@ -53,7 +53,7 @@ div#toolbar-bottom li.toolbar-item
 }
 
 div#toolbar-bottom li.toolbar-item a
-{ 
+{
     color: #fff;
 }
 
@@ -131,12 +131,12 @@ div#path p a
 /* MENUES */
 
 div#leftmenu-design li.menu-level-0
-{ 
+{
     border-color: #ff3000;
 }
 
 div#leftmenu-design li.menu-level-0 a
-{ 
+{
     color: #339999;
 }
 
@@ -151,7 +151,7 @@ div#leftmenu-design li.menu-level-0 a.selected
 }
 
 div#leftmenu-design li.menu-level-1 a
-{ 
+{
     color: #66cccc;
 }
 
@@ -187,12 +187,12 @@ div.content-navigator div.content-navigator-arrow
 /* TOOLBOXES */
 
 div.toolbox-design
-{ 
+{
     background-color: #ddd;
 }
 
 div.toolbox-design h2
-{ 
+{
     color: #ffffff;
     background-color: #cd0000;
 }
@@ -209,19 +209,19 @@ div.toolbox-design label
 }
 
 div.toolbox-design div.info-text p
-{ 
+{
     color: #000000;
 }
 
 div.toolbox-design div.attribute-link p
-{ 
+{
     background-image: url(../../images/t8/arrow.gif);
     background-position: center left;
     background-repeat: no-repeat;
 }
 
 div.toolbox-design div.attribute-link-disabled p
-{ 
+{
     color: #666666;
 }
 
@@ -229,41 +229,41 @@ div.toolbox-design div.attribute-link-disabled p
 /* TOOL LISTS */
 
 div.toollist-design
-{ 
+{
     background-color: #ffffff;
     border-color: #cd0000;
 }
 
 div.toollist-design h2
-{ 
+{
     color: #ffffff;
     background-color: #cd0000;
 }
 
 div.toollist-design h3
-{ 
+{
     color: #cd0000;
 }
 
 div.toollist-design div.class-article div.attribute-short p
-{ 
+{
     color: #666666;
 }
 
 div.toollist-design div.class-article div.attribute-link p
-{ 
+{
     color: #cd0000;
 }
 
 div.toollist-design div.class-article div.attribute-link-disabled p
-{ 
+{
     color: #666666;
 }
 
 
 /* FOOTER */
 
-div#footer-design 
+div#footer-design
 {
     color: #003366;
     background-color: #ffffff;
@@ -277,42 +277,42 @@ div#footer-design a:hover
 /* GENERAL ELEMENTS */
 
 a
-{ 
+{
     color: #cd0000;
 }
 
 li
-{ 
+{
     color: #444;
 }
 
 div#maincontent h1
-{ 
+{
     color: #cd0000;
 }
 
 div#maincontent h2
-{ 
+{
     color: #ff3000;
 }
 
 div#maincontent h2 a
-{ 
+{
     color: #ff3000;
 }
 
 div#maincontent h3
-{ 
+{
     color: #444;
 }
 
 div#maincontent h4
-{ 
+{
     color: #444;
 }
 
 div#maincontent-design h5
-{ 
+{
     color: #444;
 }
 

@@ -5,7 +5,7 @@
    Two input variables are expected as input:
    * ini_section : The ini section to read settings from
    * i18n_hash : (optional) Hash for i18n values
-   
+
    See parts/setup/menu.tpl for example!
 *}
 

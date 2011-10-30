@@ -58,10 +58,10 @@
     </td>
     <td>
     <select name="Match[section]">
-        <option value="-1">{"Any"|i18n("design/standard/setup")}</option>        
+        <option value="-1">{"Any"|i18n("design/standard/setup")}</option>
         {section name=Section loop=fetch( 'content', 'section_list' )}
-            <option value="{$:item.id}">{$:item.name}</option>        
-        {/section}        
+            <option value="{$:item.id}">{$:item.name}</option>
+        {/section}
     </select>
     </td>
 </tr>
@@ -123,8 +123,8 @@
     <select name="Match[section]">
         <option value="-1">{"Any"|i18n("design/standard/setup")}</option>
         {section name=Section loop=fetch( 'content', 'section_list' )}
-            <option value="{$:item.id}">{$:item.name}</option>        
-        {/section}        
+            <option value="{$:item.id}">{$:item.name}</option>
+        {/section}
     </select>
     </td>
 </tr>

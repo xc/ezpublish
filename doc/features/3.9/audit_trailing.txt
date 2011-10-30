@@ -4,7 +4,7 @@
 At big sites with many admins / users / editors you need a better logging.
 
 *Documentation:
-The possibility to audit some things like user name, time or IP address etc 
+The possibility to audit some things like user name, time or IP address etc
 when removing content, assigning sections etc.
 
 The new settings have been added:
@@ -29,7 +29,7 @@ AuditFileNames[user-failed-login]=failed_login.log
 ************
 Always clients IP address, time and user name will be logged.
 Things which can be logged:
-- failed login attempts 
+- failed login attempts
 - user IP address
 - who deletes which content (node id / object id / content name)
 - who moves content (node id / old parent / new parent / object name)
@@ -48,6 +48,6 @@ If you want to use another audit you should:
 3. Use php code like:
 
        include_once( "kernel/classes/ezaudit.php" );
-       eZAudit::writeAudit( 'user-login', array( 'User id' => <userID>, 
-                                                 'User login' => <userLogin>, 
+       eZAudit::writeAudit( 'user-login', array( 'User id' => <userID>,
+                                                 'User login' => <userLogin>,
                                                  'Name of something' => <valueOfSomething> ) );

@@ -37,7 +37,7 @@ h3
 }
 
 h4, h5, h6
-{ 
+{
     font-size: 1em;
 }
 
@@ -88,7 +88,7 @@ pre
 /* TABLES */
 
 table
-{ 
+{
     font-size: 1em; /* Fix for size "loss" in tables in IE; redundant for most others, but does no harm */
     margin: 0;
     padding: 0;
@@ -174,7 +174,7 @@ th.tight, td.tight
     width: 1%;
 }
 
-td.nowrap 
+td.nowrap
 {
     white-space: nowrap;
 }
@@ -631,7 +631,7 @@ fieldset.multioption label
 option.disabled
 {
     color: #a0a0a0;
-}    
+}
 
 div.attribute-multioption ul
 {

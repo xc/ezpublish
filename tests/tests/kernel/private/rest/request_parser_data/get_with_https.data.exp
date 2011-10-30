@@ -1,17 +1,17 @@
 ezpRestRequest::__set_state(array(
-   'get' => 
+   'get' =>
   array (
   ),
-   'post' => 
+   'post' =>
   array (
   ),
-   'contentVariables' => 
+   'contentVariables' =>
   array (
     'Translation' => NULL,
     'OutputFormat' => NULL,
   ),
    'isEncrypted' => true,
-   'date' => 
+   'date' =>
   DateTime::__set_state(array(
      'date' => '2011-02-06 18:13:40',
      'timezone_type' => 1,
@@ -22,46 +22,46 @@ ezpRestRequest::__set_state(array(
    'uri' => '/apitest/',
    'requestId' => 'trunk/apitest/',
    'referrer' => NULL,
-   'variables' => 
+   'variables' =>
   array (
-    'ResponseGroups' => 
+    'ResponseGroups' =>
     array (
     ),
   ),
    'body' => '',
    'files' => NULL,
-   'accept' => 
+   'accept' =>
   ezcMvcRequestAccept::__set_state(array(
-     'types' => 
+     'types' =>
     array (
       0 => 'text/html',
       1 => 'application/xhtml+xml',
       2 => 'application/xml',
       3 => '*/*',
     ),
-     'charsets' => 
+     'charsets' =>
     array (
       0 => 'UTF-8',
       1 => '*',
     ),
-     'languages' => 
+     'languages' =>
     array (
       0 => 'en-gb',
       1 => 'en',
       2 => 'en-us',
     ),
-     'encodings' => 
+     'encodings' =>
     array (
       0 => 'gzip',
       1 => ' deflate',
     ),
   )),
-   'agent' => 
+   'agent' =>
   ezcMvcRequestUserAgent::__set_state(array(
      'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0b10) Gecko/20100101 Firefox/4.0b10',
   )),
    'authentication' => NULL,
-   'raw' => 
+   'raw' =>
   array (
     'SCRIPT_URL' => '/apitest/',
     'SCRIPT_URI' => 'https://trunk/apitest/',
@@ -130,7 +130,7 @@ ezpRestRequest::__set_state(array(
     'PHP_SELF' => '/apitest/',
     'REQUEST_TIME' => 1297016020,
   ),
-   'cookies' => 
+   'cookies' =>
   array (
   ),
    'isFatal' => NULL,

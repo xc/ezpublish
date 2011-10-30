@@ -1,7 +1,7 @@
 *Title: Provide more permissions to role system
 
 Incentive:
-Make it easier to have more fine grained permissions in the system, 
+Make it easier to have more fine grained permissions in the system,
 
 *Documentation:
 

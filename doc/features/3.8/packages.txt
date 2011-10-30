@@ -135,12 +135,12 @@ user-interactive and display extra wizard steps.
       <item type="ezinstallscript"
           filename="myinstallscript"
           sub-directory="post-install" />
-          
+
   "type" attribute is a special item type used to implement custom script.
   "filename" is an item's xml file name. You can use any file name here.
   "sub-directory" is a custom name for a directory where your script and all
   related file will reside.
-  
+
 - Create a new directory "post-install" in the package's directory. Create file
   "myinstallscript.xml" in this directory. Add the following lines to this
   file:
@@ -173,8 +173,8 @@ user-interactive and display extra wizard steps.
 
     {include uri="design:package/navigator.tpl"}
     </form>
-  
-  
+
+
 - Create file "myinstallscript.php". Here is an example of this file:
 
 <?php

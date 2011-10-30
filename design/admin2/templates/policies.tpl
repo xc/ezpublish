@@ -22,7 +22,7 @@
     <td>
     {$AssignedRoles.item.name|wash}
     </td>
-    
+
     {* limitation (if any). *}
     <td>
     {if $AssignedRoles.item.limit_identifier}
