@@ -11,7 +11,7 @@
     {run-once}i: {/run-once}
         {$i}
     {delimiter}
-        /	
+        /
     {/delimiter}
     {/section}
 

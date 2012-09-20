@@ -55,7 +55,7 @@ eZINI:
   http://ez.no/community/bug_reports/ezsoap_registerfunction_is_useless_invalid_code
 - Fixed bug of not changing Object's Section assignment when object is moved to another section
   http://ez.no/community/bug_reports/change_object_s_section_assignment
-- Fixed bug related to errors in postgres when storing 'sort_key_string' 
+- Fixed bug related to errors in postgres when storing 'sort_key_string'
   attribute, which is longer then 50 characters.
   http://ez.no/community/bug_reports/postgresql_sort_key_string_raises_error_and_blocks_titles_longer_than_50_characters
 - Fixed bug: object disappears when moving it to itself. We now don't allow an object to be moved to itself
@@ -73,7 +73,7 @@ eZINI:
   http://ez.no/community/bug_reports/matching_by_parent_node_problem
 - Fixed Checkbox datatype bugs.
   http://ez.no/community/bug_reports/checkbox_doesn_t_remember_default_value
-- Fixed bug of sometimes "index.php" appearing in urls on virtual host setup 
+- Fixed bug of sometimes "index.php" appearing in urls on virtual host setup
   http://ez.no/community/bug_reports/virtual_host_setup_sometimes_index_php_appearing_in_urls
 - Fixed access to PDF files.
   http://ez.no/community/bug_reports/pdf_export_to_url_fails
@@ -88,13 +88,13 @@ eZINI:
   http://ez.no/community/bug_reports/ezxml_domtree_call_to_undefined_function_parseattributes
 - Fixed problem in eZDebug when running cronjobs. (Merged from 3.4, rev. 5858)
   http://ez.no/community/bug_reports/cronjob_debugger_broken
-- Fixed void "recompile options" field of "Missing database handlers" issue 
-  when setting up site without PostgreSQL support in PHP.  
+- Fixed void "recompile options" field of "Missing database handlers" issue
+  when setting up site without PostgreSQL support in PHP.
   http://ez.no/community/bug_reports/fine_tune_database_message
 - Fixed bug of datatype ezselection may generate wrong search index.
 - Fixed bug in ezurl when relating to root "/".
 - Fixed bug in wishlist of wrong culculation of VAT and discount.
-  http://ez.no/community/bug_reports/wishlist_is_buggy  
+  http://ez.no/community/bug_reports/wishlist_is_buggy
 - Fixed bug of showing media controler when there is no media file.
   http://ez.no/community/bug_reports/view_of_media_datatype
 - Fixed bug of still using deprecated name in forgotpassword form action.
@@ -110,7 +110,7 @@ eZINI:
 - Fixed bug with incorrect user identification in ezapprove workflow event when run it from cronjobs.
   http://ez.no/community/bug_reports/workflow_approve_and_author
 - Fixed bug: "Registration" setup step didn't notice that convert program
-  (included into Imagemagick) had been found in path entered by user. 
+  (included into Imagemagick) had been found in path entered by user.
   http://ez.no/community/bug_reports/setup_registration_email_problem
 - Fixed bug with unabling to upload image to a new translated object.
   http://ez.no/community/bug_reports/unable_to_upload_image_to_a_new_translated_object
@@ -128,7 +128,7 @@ eZINI:
 - Removed vardumps from cronjobs/unpublish.php.
   http://ez.no/community/bug_reports/unpublish_event_displays_debug_info
 - Fixed notification digest bug.
-- Fixed bug in {section show=$abc } where $abc is undefined. Bug only occured when template compilation was disabled. 
+- Fixed bug in {section show=$abc } where $abc is undefined. Bug only occured when template compilation was disabled.
   Merged from stable/3.4 rev. 7097.
 - Fixed bug with misquoted filenames in Content-disposition header.
   http://ez.no/community/bug_reports/content_disposition_in_kernel_classes_binaryhandlers_ezfilepasstrough

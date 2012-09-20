@@ -45,7 +45,7 @@
 {include name=navigator
          uri='design:navigator/google.tpl'
          page_uri='/visual/templatelist'
-         page_uri_suffix=concat('?filterString=',$filterString|urlencode )    
+         page_uri_suffix=concat('?filterString=',$filterString|urlencode )
          item_count=$template_count
          view_parameters=$view_parameters
          item_limit=20}

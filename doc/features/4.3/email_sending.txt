@@ -28,7 +28,7 @@ The eZMail class was used like this (with old smtp class which will be removed):
     $mail->setSender( $fromEmail, $yourName );
     $mail->setReceiver( $receiversEmail, $receiversName );
     $mail->setSubject( $subject );
- 
+
     $smtp = new smtp( $parameters );
     $smtpConnected = $smtp->connect();
     if ( $smtpConnected )
@@ -36,7 +36,7 @@ The eZMail class was used like this (with old smtp class which will be removed):
         $result = $smtp->send( $sendData );
     }
     ?>
-    
+
 Since the smtp class will be removed, ezcMailSmtpTransport from eZ Components can be used temporarily instead (the class eZSMTPTransport is using ezcMailSmtpTransport instead of smtp as well)::
 
     <?php
@@ -51,7 +51,7 @@ Instead of the code above, ezcMail will be used together with the SMTP transport
     $mail->from = new ezcMailAddress( $fromEmail, $yourName );
     $mail->addTo( new ezcMailAddress( $receiversEmail, $receiversName ) );
     $mail->subject = $subject;
-    
+
     $smtp = new ezcMailSmtpTransport( $host, $username, $password, $port );
     $smtp->send( $mail );
     ?>

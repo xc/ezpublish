@@ -11,7 +11,7 @@
 </select>
 <img src={"asc-transp.gif"|ezimage} alt="{'Ascending'|i18n('design/standard/shop')}" title="{'Sort ascending'|i18n('design/standard/shop')}" /><input type="radio" name="SortOrder" value="asc" {if eq($sort_order,"asc")}checked="checked"{/if} />
 <img src={"desc-transp.gif"|ezimage} alt="{'Descending'|i18n('design/standard/shop')}" title="{'Sort descending'|i18n('design/standard/shop')}" /><input type="radio" name="SortOrder" value="desc" {if eq($sort_order,"desc")}checked="checked"{/if} />
-{include uri="design:gui/button.tpl" name=Sort id_name=SortButton value="Sort"|i18n("design/standard/shop")}       
+{include uri="design:gui/button.tpl" name=Sort id_name=SortButton value="Sort"|i18n("design/standard/shop")}
 
 {section show=$archive_list}
 <table class="list" width="100%" cellspacing="0" cellpadding="0" border="0">

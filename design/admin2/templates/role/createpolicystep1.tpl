@@ -113,7 +113,7 @@ jQuery(function( $ )
         {
             return '<option value="' + item + '">' + item + '</option>';
         } ).join() ).attr( 'disabled', disable === true ).val( disable === true ? '*' : list[0] );
-    			    	
+
     }
 });
 {/literal}

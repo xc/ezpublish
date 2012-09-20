@@ -321,7 +321,7 @@
                 </select>
                 {if $new_object_initial_node_placement}
                     <input type="hidden" name="{$attribute_base}_object_initial_node_placement[{$attribute.id}]" value="{$new_object_initial_node_placement|wash}" />
-                {/if} 
+                {/if}
                 <input class="button" type="submit" name="CustomActionButton[{$attribute.id}_new_class]" value="{'Create new object'|i18n( 'design/standard/content/datatype' )}" />
                 </div>
             {/section}
@@ -329,7 +329,7 @@
     {* Simple interface. *}
     {else}
 
-        
+
         <table class="list{if $attribute.content.relation_list|not} hide{/if}" cellspacing="0">
         <thead>
         <tr>

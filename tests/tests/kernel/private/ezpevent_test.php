@@ -22,7 +22,7 @@ class ezpEventTest extends ezpTestCase
         ) );
         $this->event = ezpEvent::getInstance();
     }
-    
+
     public function tearDown()
     {
         ezpINIHelper::restoreINISettings();
@@ -46,11 +46,11 @@ class ezpEventTest extends ezpTestCase
         $this->assertTrue( is_numeric( $id2 ) );
         $this->assertTrue( $id < $id2  );
         $this->assertEquals( 3, $this->event->filter( 'test/attach', 1 ) );
-        
+
         // test detach on $id
         $this->assertTrue( $this->event->detach( 'test/attach', $id ) );
         $this->assertEquals( 2, $this->event->filter( 'test/attach', 1 ) );
-        
+
         // test detach on invalid id
         $this->assertFalse( $this->event->detach( 'test/attach', 404 ) );
 

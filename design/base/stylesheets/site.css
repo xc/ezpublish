@@ -39,13 +39,13 @@ div#header h1 a
 /* TOOLBARS */
 
 div#toolbar-top
-{ 
+{
     padding: 13px 0 0 8px;
     text-align: right;
 }
 
 div#toolbar-top
-{ 
+{
     text-align: right;
 }
 
@@ -55,7 +55,7 @@ div#toolbar-top ul
 }
 
 div#toolbar-bottom
-{ 
+{
     margin-top: 8px;
     text-align: center;
 }
@@ -100,7 +100,7 @@ div#toolbar-top div.search-line div.optionblock input,
 div#toolbar-top div.search-line div.optionblock label,
 div#toolbar-right div.search-full div.optionblock input,
 div#toolbar-right div.search-full div.optionblock label
-{ 
+{
     display: inline;
 }
 
@@ -111,7 +111,7 @@ div#toolbar-top input.searchinput, div#toolbar-bottom input.searchinput
 }
 
 div#toolbar-top li.toolbar-item a, div#toolbar-bottom li.toolbar-item a
-{ 
+{
     text-decoration: none;
 }
 
@@ -267,7 +267,7 @@ div#leftmenu
 }
 
 div#leftmenu-design li.menu-level-0
-{ 
+{
     text-decoration: none;
     border-top: 1px solid;
     padding: 4px 0 2px 10px;
@@ -275,14 +275,14 @@ div#leftmenu-design li.menu-level-0
 }
 
 div#leftmenu-design li.menu-level-0 a
-{ 
+{
     text-align: center;
     font-weight: bold;
     text-decoration: none;
 }
 
 div#leftmenu-design li.menu-level-1
-{ 
+{
     text-decoration: none;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -291,12 +291,12 @@ div#leftmenu-design li.menu-level-1
 }
 
 div#leftmenu-design li.menu-level-1 a
-{ 
+{
     text-align: center;
     text-decoration: none;
 }
 
-div#rightmenu 
+div#rightmenu
 {
     float: right;
     width: 15em;
@@ -312,28 +312,28 @@ div#maincontent
 }
 
 div.maincontent-bothmenus
-{ 
+{
     margin-left: 14em;
     margin-right: 16em;
     height: 100%; /* Needs to be set to 1% to avoid bug in IE 5.5 */
 }
 
 div.maincontent-noleftmenu
-{ 
+{
     margin-left: 10px;
     margin-right: 16em;
     height: 100%; /* Needs to be set to 1% to avoid bug in IE 5.5 */
 }
 
 div.maincontent-norightmenu
-{ 
+{
     margin-left: 14em;
     margin-right: 10px;
     height: 100%; /* Needs to be set to 1% to avoid bug in IE 5.5 */
 }
 
 div.maincontent-nomenus
-{ 
+{
     margin-left: 10px;
     margin-right: 10px;
     height: 100%; /* Needs to be set to 1% to avoid bug in IE 5.5 */
@@ -375,19 +375,19 @@ div.content-navigator div.content-navigator-arrow
 /* TOOLBOXES */
 
 div.toolbox
-{ 
+{
     width: 100%;
     margin-bottom: 8px;
     margin-top: 8px;
 }
 
 div.toolbox-design
-{ 
+{
     padding: 0px;
 }
 
 div.toolbox-design h2
-{ 
+{
     font-size: 1em;
     margin-top: 0px;
     padding-left: 10px;
@@ -396,7 +396,7 @@ div.toolbox-design h2
 }
 
 div.toolbox-design div.toolbox-content
-{ 
+{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 3px;
@@ -423,19 +423,19 @@ div.toolbox-design form
 }
 
 div.toolbox-design div.info-text p
-{ 
+{
     font-weight: normal;
 }
 
 div.toolbox-design div.attribute-link p
-{ 
+{
     font-weight: normal;
     padding: 0 0 0 6px;
     vertical-align: middle;
 }
 
 div.toolbox-design div.attribute-link-disabled p
-{ 
+{
     font-weight: normal;
     padding: 0 0 0 6px;
     vertical-align: middle;
@@ -445,47 +445,47 @@ div.toolbox-design div.attribute-link-disabled p
 /* TOOL LISTS */
 
 div.toollist
-{ 
+{
     width: 100%;
     margin: 8px 0 8px 0;
 }
 
 div.toollist-design
-{ 
+{
     padding: 0px;
     border: 1px solid;
 }
 
 div.toollist-design h2
-{ 
+{
     font-size: 1em;
     margin-top: 0px;
     padding: 2px 0 3px 10px;
 }
 
 div.toollist-design div.content-view-children
-{ 
+{
     padding: 3px 10px 10px 10px;
 }
 
 div.toollist-design h3
-{ 
+{
     margin: 0;
     text-decoration: underline;
 }
 
 div.toollist-design div.class-article div.attribute-short p
-{ 
+{
     margin: 0;
 }
 
 div.toollist-design div.class-article div.attribute-link p
-{ 
+{
     margin: 0 0 10px 0;
 }
 
 div.toollist-design div.class-article div.attribute-link-disabled p
-{ 
+{
     font-weight: normal;
     padding: 0 0 0 6px;
     vertical-align: middle;
@@ -495,11 +495,11 @@ div.toollist-design div.class-article div.attribute-link-disabled p
 /* FOOTER */
 
 div#footer
-{ 
+{
     clear: both;
 }
 
-div#footer-design 
+div#footer-design
 {
     padding: 10px 0 10px 0;
     text-align: center;
@@ -519,32 +519,32 @@ div#footer-design a
 /* GENERAL ELEMENTS */
 
 div#maincontent h1
-{ 
+{
     font-size: 1.8em;
     font-weight: bold;
     margin-top: 0.2em;
 }
 
 div#maincontent h2
-{ 
+{
     font-size: 1.4em;
     font-weight: bold;
 }
 
 div#maincontent h3
-{ 
+{
     font-size: 1.1em;
     font-weight: bold;
 }
 
 div#maincontent h4
-{ 
+{
     font-size: 1em;
     font-weight: bold;
 }
 
 div#maincontent-design h5
-{ 
+{
     font-size: 1em;
     font-weight: bold;
 }
@@ -553,7 +553,7 @@ div#maincontent-design h5
 /* GENERAL TABLE */
 
 table th
-{ 
+{
     background-color: #d9e5f2;
 }
 
@@ -690,7 +690,7 @@ div.previous del
     color: #000000;
     background-color: #ffff00;
     border-bottom: none;
-    text-decoration: none   
+    text-decoration: none
 }
 
 div.latest del

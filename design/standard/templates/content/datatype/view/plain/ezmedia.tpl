@@ -11,7 +11,7 @@ width="{$attribute.content.width}" height="{$attribute.content.height}">
  quality="{$attribute.content.quality}" pluginspage="{$attribute.content.pluginspage}"
  width="{$attribute.content.width}" height="{$attribute.content.height}" play="{if $attribute.content.is_autoplay}true{/if}"
  loop="{if $attribute.content.is_loop}true{/if}" >
-</embed> 
+</embed>
 </object>
 {/case}
 {case match=quick_time}
@@ -23,9 +23,9 @@ width="{$attribute.content.width}" height="{$attribute.content.height}">
 <param name="loop" value="{if $attribute.content.is_loop}true{/if}" />
 <embed src={concat("content/download/",$attribute.contentobject_id,"/",$attribute.content.contentobject_attribute_id,"/",$attribute.content.original_filename)|ezurl}
  pluginspage="{$attribute.content.pluginspage}"
- width="{$attribute.content.width}" height="{$attribute.content.height}" play="{if $attribute.content.is_autoplay}true{/if}" 
+ width="{$attribute.content.width}" height="{$attribute.content.height}" play="{if $attribute.content.is_autoplay}true{/if}"
  loop="{if $attribute.content.is_loop}true{/if}" controller="{if $attribute.content.has_controller}true{/if}" >
-</embed> 
+</embed>
 </object>
 {/case}
 {case match=windows_media_player}
@@ -36,20 +36,20 @@ width="{$attribute.content.width}" height="{$attribute.content.height}">
 <param name="showcontrols" value="{$attribute.content.has_controller}" />
 <embed src={concat("content/download/",$attribute.contentobject_id,"/",$attribute.content.contentobject_attribute_id,"/",$attribute.content.original_filename)|ezurl}
  type="application/x-mplayer2" pluginspage="{$attribute.content.pluginspage}"
- width="{$attribute.content.width}" height="{$attribute.content.height}" autostart="{$attribute.content.is_autoplay}" 
+ width="{$attribute.content.width}" height="{$attribute.content.height}" autostart="{$attribute.content.is_autoplay}"
  showcontrols="{$attribute.content.has_controller}" >
-</embed> 
+</embed>
 </object>
 {/case}
 {case match=real_player}
-<object classid="clsid:CFCDAA03-8BE4-11cf-B84B-0020AFBBCCFA" 
+<object classid="clsid:CFCDAA03-8BE4-11cf-B84B-0020AFBBCCFA"
 width="{$attribute.content.width}" height="{$attribute.content.height}">
 <param name="src" value={concat("content/download/",$attribute.contentobject_id,"/",$attribute.content.contentobject_attribute_id,"/",$attribute.content.original_filename)|ezurl} />
 <param name="controls" value="{$attribute.content.controls}" />
 <param name="autostart" value="{if $attribute.content.is_autoplay}true{/if}" />
 <embed src={concat("content/download/",$attribute.contentobject_id,"/",$attribute.content.contentobject_attribute_id,"/",$attribute.content.original_filename)|ezurl}
  pluginspage="{$attribute.content.pluginspage}"
- width="{$attribute.content.width}" height="{$attribute.content.height}" autostart="{if $attribute.content.is_autoplay}true{/if}" 
+ width="{$attribute.content.width}" height="{$attribute.content.height}" autostart="{if $attribute.content.is_autoplay}true{/if}"
  controls="{$attribute.content.controls}" >
 </embed> </object>
 {/case}

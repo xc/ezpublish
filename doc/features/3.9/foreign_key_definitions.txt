@@ -1,6 +1,6 @@
 *Title: Foreign key definitions
 
-*Incentive: 
+*Incentive:
 
 Make it possible to create automated data integrity checks,
 and automatic data migration. By knowing the foreign key relations,

@@ -160,7 +160,7 @@ Consider the following example::
   | 32 |       1 |                2 |        slk-SK |           8 |
   | 46 |       1 |                5 |        eng-GB |           2 |
   | 47 |       1 |                5 |        rus-RU |           4 |
-  +----+---------+------------------+---------------+-------------+   
+  +----+---------+------------------+---------------+-------------+
 
 To select content object attributes in prioritized languages, we might use a
 single SQL containing a condition using bit-fields, bitmap *and* operation and
@@ -184,8 +184,8 @@ To find out if the attribute is in one of the prioritized languages and that
 there is no translation of this attribute in more prioritized language, we
 select those which hold the following condition::
 
-  ( (     language_mask - language_id ) & 8 ) / 2 
-      + ( language_mask - language_id ) & 2 
+  ( (     language_mask - language_id ) & 8 ) / 2
+      + ( language_mask - language_id ) & 2
       + ( language_mask - language_id ) & 1
   < ( language_id & 8 ) / 2
     + language_id & 2
@@ -347,12 +347,12 @@ Permissions
 
 Being able to restrict access based on language is very useful since a
 translator might not be allowed to modify the original content but only
-create a new translation. 
+create a new translation.
 
 The following access functions have been given language support:
 
 - content/create : specify if user is allowed to create new object in specified
-  language. 
+  language.
 - content/edit : specify if user has got access to edit the specified
   language(s) and create new translation for specified language(s).
 

@@ -360,7 +360,7 @@ th.yui-dt-highlighted,th.yui-dt-highlighted a
     background-color: #D1DFE9;
 }
 
-tr.yui-dt-highlighted,tr.yui-dt-highlighted td.yui-dt-asc,tr.yui-dt-highlighted td.yui-dt-desc,tr.yui-dt-even td.yui-dt-highlighted,tr.yui-dt-odd td.yui-dt-highlighted 
+tr.yui-dt-highlighted,tr.yui-dt-highlighted td.yui-dt-asc,tr.yui-dt-highlighted td.yui-dt-desc,tr.yui-dt-even td.yui-dt-highlighted,tr.yui-dt-odd td.yui-dt-highlighted
 {
     cursor: pointer;
     background-color: #D1DFE9;

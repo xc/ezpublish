@@ -11,9 +11,9 @@ function checkAll()
 {/literal}
         document.trashaction.selectall.value = "{'Deselect all'|i18n('design/standard/content/trash')}";
 {literal}
-        with (document.trashaction) 
+        with (document.trashaction)
 	{
-            for (var i=0; i < elements.length; i++) 
+            for (var i=0; i < elements.length; i++)
 	    {
                 if (elements[i].type == 'checkbox' && elements[i].name == 'DeleteIDArray[]')
                      elements[i].checked = true;
@@ -25,9 +25,9 @@ function checkAll()
 {/literal}
          document.trashaction.selectall.value = "{'Select all'|i18n('design/standard/content/trash')}";
 {literal}
-         with (document.trashaction) 
+         with (document.trashaction)
 	 {
-            for (var i=0; i < elements.length; i++) 
+            for (var i=0; i < elements.length; i++)
 	    {
                 if (elements[i].type == 'checkbox' && elements[i].name == 'DeleteIDArray[]')
                      elements[i].checked = false;

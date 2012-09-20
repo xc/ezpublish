@@ -52,7 +52,7 @@
 
     <input class="radio" type="radio" Name="NodeAssignment" value="main" {if $options.node_assignment|eq("main")}checked="checked"{/if} />
         {"Main only"|i18n("design/standard/package/creators/ezcontentobject")}<br />
-	
+
 
     <label>{"Related objects"|i18n("design/standard/package/creators/ezcontentobject")}</label>
 

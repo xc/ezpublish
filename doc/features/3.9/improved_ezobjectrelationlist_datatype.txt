@@ -1,6 +1,6 @@
 *Title: Improved eZObjectRelationList datatype
 
-*Incentive: 
+*Incentive:
 The existing objectrelation datatype has several limitations:
 - that's always a single relation (no multiple choise)
 - the layout is not what we wanted (list with check boxes and list with
@@ -14,10 +14,10 @@ Features:
 Some new features have been created:
 - that is able to handle a one to one or one to many relationship (it allows multiple select),
 - that let you define the target objects list based on their parent node.
-- that provide two new interfaces two manage the relation: a list with radio button (single selection) 
+- that provide two new interfaces two manage the relation: a list with radio button (single selection)
   and a list with check boxes (multiple selection)
 - you can select the potential related objects as 1) the children of a node
-- 2) all the objects from a given class. 
+- 2) all the objects from a given class.
 - With the template based selection - modes, we have defined a new view (objectrelation.tpl) that you
   can override in case you'd like use
 
@@ -32,5 +32,5 @@ Selection methods:
  - Template based, multi
  - Template based, single
 
-If you choose 'Object Class' and 'Default location' 
+If you choose 'Object Class' and 'Default location'
 you can create new objects as childs of 'Default location' and as objects of class 'Object Class'.

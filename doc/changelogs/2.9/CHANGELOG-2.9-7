@@ -82,7 +82,7 @@ user-login-* without that user will not be able to login.
 - Added ezinfo page which displays copyright and about information.
 - Current URI and version info is now available in the pagelayout.
 - attribute_view_gui and attribute_edit_gui now uses the new view_template
-  and edit_template attributes of eZContentObjectAttribute which 
+  and edit_template attributes of eZContentObjectAttribute which
   will return the template name from the datatypes. This means
   datatypes has more control over the template to be used.
 - File download now supports filehandlers which controls how

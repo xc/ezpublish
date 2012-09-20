@@ -41,7 +41,7 @@
 
 </div>
 
-<form name="workflowlistform" method="post" action={concat( $module.functions.workflowlist.uri, '/', $group_id )|ezurl}> 
+<form name="workflowlistform" method="post" action={concat( $module.functions.workflowlist.uri, '/', $group_id )|ezurl}>
 
 <div class="context-block">
 

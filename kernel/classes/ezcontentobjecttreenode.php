@@ -2875,7 +2875,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
      *
      * @param int $objectID
      * @param boolean $asObject
-     * 
+     *
      * @return int|null
      */
     static function findMainNode( $objectID, $asObject = false )

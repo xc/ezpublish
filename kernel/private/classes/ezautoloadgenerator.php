@@ -426,7 +426,7 @@ class eZAutoloadGenerator
      * $excludeFilters on files. As soon as
      * https://issues.apache.org/jira/browse/ZETACOMP-85 is implemented, this
      * method could be removed.
-     * 
+     *
      * @param mixed $sourceDir
      * @param array $includeFilters
      * @param array $excludeFilters

@@ -25,7 +25,7 @@
 </div>
 
 <div id="footer">
-    
+
 {include uri="design:page_copyright.tpl"}
 
 </div>

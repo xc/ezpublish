@@ -1,5 +1,5 @@
-<!-- 
- ! 
+<!--
+ !
  ! Some notes to the DTD:
  !
  ! The location element is set as optional since it was introduced first in Qt 4.2.
@@ -8,7 +8,7 @@
  ! (Qt 4.6) to support S60 blank messages.
  !
   -->
-<!-- 
+<!--
  ! Macro used in order to escape byte entities not allowed in an xml document
  ! for instance, only #x9, #xA and #xD are allowed characters below #x20.
  -->
@@ -29,7 +29,7 @@
  !   extra-loc-blank
   -->
 <!ELEMENT extra-* %evilstring; >
-<!ELEMENT TS (defaultcodec?, extra-**, (context|message)+) > 
+<!ELEMENT TS (defaultcodec?, extra-**, (context|message)+) >
 <!ATTLIST TS
           version CDATA #IMPLIED
           sourcelanguage CDATA #IMPLIED
@@ -72,7 +72,7 @@
  ! For subsequent locations, it is the filename used for the previous location.
  ! A single .ts file has either all absolute or all relative locations.
   -->
-<!ATTLIST location 
+<!ATTLIST location
           filename CDATA #IMPLIED
           line CDATA #IMPLIED>
 <!ELEMENT source %evilstring;>
@@ -110,4 +110,4 @@
   -->
 <!ATTLIST lengthvariant
           priority (1|2|3|4|5|6|7|8|9) #IMPLIED>
-         
+

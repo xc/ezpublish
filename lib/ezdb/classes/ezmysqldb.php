@@ -336,7 +336,7 @@ class eZMySQLDB extends eZDBInterface
                             $columns[$col]['size'] = max( $columns[$col]['size'], strlen( $data ) );
                         }
                     }
-                    
+
                     $delimiterLine = array();
                     $colLine = array();
                     // Generate the column line and the vertical delimiter

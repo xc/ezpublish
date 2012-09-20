@@ -41,9 +41,9 @@ Making the interface more intuitive involves improving usability and removing / 
 / hiding features that users does not need during the operation they are performing.
 Identified tasks:
 * Hide right menu by default
-* Customize media tab to for better media asset managment 
+* Customize media tab to for better media asset managment
 * Reduce page space used by node boxes (preview, details,...) to easier browse
-  sub items and actions on sub items pane. 
+  sub items and actions on sub items pane.
 
 A overview of user task need a dashboard, where she can follow here own
 content, approval and other tasks she might do on a regular basis.
@@ -51,7 +51,7 @@ content, approval and other tasks she might do on a regular basis.
 
 Community preface
 -----------------
-Some members in our community has written some articles on what they would like to 
+Some members in our community has written some articles on what they would like to
 see changed in the Admin interface, here are some of them:
 http://www.stuffandcontent.com/2009/10/ez-publish-admin-interface-overhaul.html
 http://pwet.fr/blog/some_thougths_about_the_admin_interface_refresh_of_ez_publish
@@ -64,7 +64,7 @@ browsers. However, we all (developers and their managers) know how painfully it 
 be to support Internet Explorer 6(IE6). Therefore we will only choose to support
 IE6 on a functional level. Meaning all functions should work as expected in it, but
 we will not strive to remain pixel perfect at the esthetic level. In addition we
-might decide to degrade gracefully and not enable key JavaScript / Ajax 
+might decide to degrade gracefully and not enable key JavaScript / Ajax
 enhancements if it requires additional coding or workaround to support IE6.
 For CSS this will mean we'll take advantage of CSS 2 features that has been
 around for 11 years and have been implemented in all other A-Grade browsers.
@@ -89,7 +89,7 @@ Should: Add for attribute on all form labels so they work as intended (WAI)
 Could: Make admin style more accessible for modern mobile devices
 Could: Color code / style buttons depending on what they do: delete / get / store
 Could: Use CSS sprites for small image buttons, icons and logos to reduce download
-       amount and size for admin graphic 
+       amount and size for admin graphic
 
 #1.1 New possibility to hide the right menu, and hide it by default
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -185,7 +185,7 @@ Wishful:Add class inheritance to be able to extend other classes
 #8 [Not planned] Provide context sensitive help system
 ------------------------------------------------------
 Should: Have a visible help link in header at all times opening a new tab.
-Should: Send module + view as parameters to help view so specific help information 
+Should: Send module + view as parameters to help view so specific help information
         on for instance content/edit can be shown when clicked during editing.
 Should: Support extensions so they can provide context sensitive help as well.
 Could: Be organized so that you'll have general information on the module and
@@ -194,7 +194,7 @@ Could: Host the help content online, so it is always up to date, and centralized
        Thus modules (incl. extensions) only need to provide a url to help pags.
        If so, there should be guidelines on requirements for these help pages
        and project.ez.no could provide such a interface for projects.
-       Also there should be possible to disable external help by setting if 
+       Also there should be possible to disable external help by setting if
        it is hosted externally, maybe provide a white list of domains you allow
        to link to for help.
 

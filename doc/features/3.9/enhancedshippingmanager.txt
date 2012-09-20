@@ -59,7 +59,7 @@ The function updatePriceInfo() will load a custom basketInfoHandler where a defa
 
 kernel/classes/basketinfohandlers/ezdefaultbasketinfohandler.php
 
-and will be included as standard. 
+and will be included as standard.
 You'll be able to add a custom BasketInfoHandler in extensions, where you can specify the handler in shop.ini:
 
 [BasketInfoSettings]

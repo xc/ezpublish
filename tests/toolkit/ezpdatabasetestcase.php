@@ -31,7 +31,7 @@ class ezpDatabaseTestCase extends ezpTestCase
 
     /**
      * Hold shared fixtures
-     * 
+     *
      * @var mixed
      */
     protected $sharedFixture;

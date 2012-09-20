@@ -30,13 +30,13 @@
 {if and($has_own_drafts,$has_other_drafts)}
 <p>
    {"This object is already being edited by yourself or someone else.
-    You can either continue editing one of your drafts or you can create a new draft."|i18n('design/standard/content/edit')}    
+    You can either continue editing one of your drafts or you can create a new draft."|i18n('design/standard/content/edit')}
 </p>
 {else}
     {if $has_own_drafts}
     <p>
       {"This object is already being edited by you.
-        You can either continue editing one of your drafts or you can create a new draft."|i18n('design/standard/content/edit')}        
+        You can either continue editing one of your drafts or you can create a new draft."|i18n('design/standard/content/edit')}
     </p>
     {/if}
     {if $has_other_drafts}

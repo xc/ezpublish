@@ -68,9 +68,9 @@
     <img src={"1x1.gif"|ezimage} width="1" height="16" alt="" border="0" /><br />
     </td>
     <td class="rightcolumn" valign="top" rowspan="3" width="1%">
-    
+
     <table class="menu" width="100%" cellspacing="0" cellpadding="0" border="0">
-    {let page_list=fetch( content, list, hash( 
+    {let page_list=fetch( content, list, hash(
                           parent_node_id, 2,
                           sort_by,array( array( published, false() ) ),
 			  limit, 10 ) )}
@@ -80,12 +80,12 @@
         <td>
         <a class="menuitem" href={concat("/content/view/full/",$Page:item.node_id,"/")|ezurl}>{$Page:item.name|wash}</a>
         </td>
-    </tr>    
+    </tr>
     {/section}
 
     {/let}
-    </table>    
-    
+    </table>
+
     <img src={"1x1.gif"|ezimage} width="100" height="1" alt="" border="0" /><br />
     </td>
 </tr>

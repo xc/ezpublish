@@ -46,7 +46,7 @@
 
     {let from_language_object=$object.languages[$from_language]}
 
-    {'Translating content from %from_lang to %to_lang'|i18n( 'design/admin/content/edit',, hash( 
+    {'Translating content from %from_lang to %to_lang'|i18n( 'design/admin/content/edit',, hash(
         '%from_lang', concat( $from_language_object.name, '&nbsp;<img src="', $from_language_object.locale|flag_icon, '" style="vertical-align: middle;" alt="', $from_language_object.locale, '" />' ),
         '%to_lang', concat( $translation_list[$language_index].locale.intl_language_name, '&nbsp;<img src="', $translation_list[$language_index].language_code|flag_icon, '" style="vertical-align: middle;" alt="', $translation_list[$language_index].language_code, '" />' ) ) )}
 

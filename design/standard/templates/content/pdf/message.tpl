@@ -14,7 +14,7 @@
                        text, "Related objects"|i18n("design/standard/content/view")|wash(pdf),
 		       size, 18,
 		       align, center ) )}
-    
+
     {section name=Object loop=$related}
       {content_pdf_gui view=line content_object=$Object:item}
     {/section}

@@ -11,7 +11,7 @@ Release notes for 3.2-1
   as the automatically generated URLs from content objects. The system will also
   remember old urls so visitors of your site will always be up to date, this means
   no more broken bookmarks or links from search engines.
-- New system for binary file indexing, now all files added to the content tree will be 
+- New system for binary file indexing, now all files added to the content tree will be
   available in the search engine instantly.
 - The setup has been given an overhaul with new help texts, better user interface and
   new package system.

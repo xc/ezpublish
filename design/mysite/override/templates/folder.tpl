@@ -9,12 +9,12 @@
 </div>
 
 {section show=$with_children}
-    {section name=Child loop=fetch(content, list, hash( 
+    {section name=Child loop=fetch(content, list, hash(
                                                   parent_node_id, $node.node_id,
                                                   limit, $page_limit,
                                                   offset, $view_parameters.offset,
                                                   sort_by, $node.sort_array,
-                                                  class_filter_type, exclude, 
+                                                  class_filter_type, exclude,
                                                   class_filter_array, array( 1, 10 ) ) )}
         {node_view_gui view=line content_node=$Child:item}
     {/section}

@@ -5,7 +5,7 @@ Make it possible to override the builting navigation part
 identifiers of modules and views.
 If you are interested in moving a certain module or view
 to another top menu you can use this without modifying
-kernel code. 
+kernel code.
 
 *Documentation:
 A new entry has been added to module.ini called ModuleOverrides.

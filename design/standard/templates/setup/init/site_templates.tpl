@@ -10,13 +10,13 @@
   <p>
     {"Please choose one or more of the demo sites you would like to test or base your sites on. Use Plain if you want to start from scratch."|i18n("design/standard/setup/init")}
   </p>
-  
+
   <table border="0" cellspacing="2" cellpadding="0">
-    
+
     <tr>
 
     {section name=SiteTemplate loop=$site_templates}
-    
+
       <td class="setup_site_templates">
             {if $:item.image_file_name}
               <img src={$:item.image_file_name|ezroot} alt="{$:item.name|wash}" />
@@ -42,7 +42,7 @@
 	  </td>
       {/section}
       </tr>
-      <tr>   
+      <tr>
     {/delimiter}
     {/section}
     </tr>
@@ -71,8 +71,8 @@
     </tr>
     {/section}
 
-  </table>      
-  
+  </table>
+
   {include uri="design:setup/persistence.tpl"}
 
   {include uri='design:setup/init/navigation.tpl'}

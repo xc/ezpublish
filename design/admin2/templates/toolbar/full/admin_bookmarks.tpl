@@ -57,7 +57,7 @@
 	{/if}
     </div>
 
-{* DESIGN: Content END *}</div></div></div>                     
+{* DESIGN: Content END *}</div></div></div>
 </div>
 
 {/if}

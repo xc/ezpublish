@@ -13,8 +13,8 @@
 <h2>Methods</h2>
 
 <h2>execute(process: eZWorkflowProcess, event: eZWorkflowEven): EZ_WORKFLOW_TYPE_STATUS</h2>
-Creates necessary gateway and delegate execution to it. If there are multiple gateways in 
-eZPaymentGatewayType, shows template with a list of available gateways and asks user to 
+Creates necessary gateway and delegate execution to it. If there are multiple gateways in
+eZPaymentGatewayType, shows template with a list of available gateways and asks user to
 choose one.
 
 <h3>Parameters</h3>
@@ -22,7 +22,7 @@ choose one.
 <h3>Returns</h3>
 EZ_WORKFLOW_TYPE_STATUS_REJECTED              - payment is rejected by some reason.<br>
 EZ_WORKFLOW_TYPE_STATUS_ACCEPTED              - payment is accepted.<br>
-EZ_WORKFLOW_TYPE_STATUS_FETCH_TEMPLATE_REPEAT - fetches template specified in 
+EZ_WORKFLOW_TYPE_STATUS_FETCH_TEMPLATE_REPEAT - fetches template specified in
 <i>'Template'</i> member of the <i>process</i> and force to repeat call to 'execute'.<br>
 EZ_WORKFLOW_TYPE_STATUS_REDIRECT_REPEAT       - performs redirection to the URL specified in
 <i>RedirectUrl</i> member of the <i>process</i> and force to repeat call to 'execute'.
@@ -101,7 +101,7 @@ Current gateway type(identifier).
 <br>
 
 <h2>selectGateway(event: eZWorkflowEvent): bool</h2>
-Sets up current gateway. 
+Sets up current gateway.
 
 <h3>Parameters</h3>
 

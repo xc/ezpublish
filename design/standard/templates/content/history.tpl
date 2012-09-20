@@ -2,7 +2,7 @@
 <div id="maincontent-design">
 <!-- Maincontent START -->
 
-{switch match=$edit_warning} 
+{switch match=$edit_warning}
 {case match=1}
 <div class="message-warning">
 <h2><span class="time">[{currentdate()|l10n( shortdatetime )}]</span> {'Version is not a draft'|i18n( 'design/standard/content/history' )}</h2>
@@ -107,7 +107,7 @@
 		{set $can_edit_lang = 1}
 	    {/if}
 	{/foreach}
-    
+
         {if and( $can_edit, $can_edit_lang )}
 	        <input type="hidden" name="CopyVersionLanguage[{$version.version}]" value="{$initial_language.locale}" />
 			<input type="image" src={'copy.gif'|ezimage} name="HistoryCopyVersionButton[{$version.version}]" value="" title="{'Create a copy of version #%version_number.'|i18n( 'design/standard/content/history',, hash( '%version_number', $version.version ) )}" />
@@ -338,7 +338,7 @@
 		{set $can_edit_lang = 1}
 	    {/if}
 	{/foreach}
-    
+
         {if and( $can_edit, $can_edit_lang )}
 	        <input type="hidden" name="CopyVersionLanguage[{$draft_version.version}]" value="{$initial_language.locale}" />
 			<input type="image" src={'copy.gif'|ezimage} name="HistoryCopyVersionButton[{$draft_version.version}]" value="" title="{'Create a copy of version #%version_number.'|i18n( 'design/standard/content/history',, hash( '%version_number', $draft_version.version ) )}" />

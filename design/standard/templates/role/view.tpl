@@ -55,7 +55,7 @@
 <tr>
     <th width="79%">{"User"|i18n("design/standard/role")}</th>
     <th width="20%">{"Limitation"|i18n("design/standard/role")}</th>
-    <th width="1">&nbsp;</th>    
+    <th width="1">&nbsp;</th>
 </tr>
 {section name=User loop=$user_array sequence=array(bglight,bgdark)}
 <tr>

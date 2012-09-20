@@ -11,7 +11,7 @@ body, p, .p, ul, li, a, h3, .path, th, td, .check
 	color: #000000;
 }
 
-h1 
+h1
 {
 	font-weight: bold;
 	font-size: 22px;
@@ -26,7 +26,7 @@ h2, .listheadline, .listproducts
 	font-size: 17px;
 	color: #578ec5;
 	margin-top: 16px;
-	margin-bottom: 0px;	
+	margin-bottom: 0px;
 	text-decoration : none;
 }
 
@@ -36,12 +36,12 @@ h2, .listheadline
   text-decoration : none;
 }
 
-.listproducts 
+.listproducts
 {
 	text-decoration : underline;
 }
 
-.listheadline, .listproducts 
+.listheadline, .listproducts
 {
 	margin-top: 8px;
 }
@@ -61,7 +61,7 @@ a
   text-decoration: none;
 }
 
-a:hover 
+a:hover
 {
 	color: #578ec5;
 	text-decoration: underline;
@@ -87,18 +87,18 @@ a:hover
 	font-size: 11px;
 }
 
-.menu 
+.menu
 {
 	font-weight: normal;
 	text-decoration: none;
 }
 
-.menutext 
+.menutext
 {
 	margin-bottom: 4px;
 }
 
-.menubold 
+.menubold
 {
 	font-weight: bold;
 }
@@ -114,7 +114,7 @@ a:hover
 	padding-bottom: 8px;
 }
 
-.boxtext 
+.boxtext
 {
 	font-weight: bold;
 	margin-bottom: 4px;
@@ -125,12 +125,12 @@ a:hover
 	font-size: 10px;
 }
 
-.smallbold 
+.smallbold
 {
 	font-weight: bold;
 }
 
-.check 
+.check
 {
 	margin-bottom: 8px;
 }
@@ -148,7 +148,7 @@ a:hover
 	padding: 4px;
 }
 
-th 
+th
 {
 	font-weight: bold;
 	text-align: left;
@@ -192,13 +192,13 @@ th.right
 	color: #000000;
 }
 
-.bglight 
+.bglight
 {
 	background-color: #f4faff;
         border-top : 1px solid #e0e0e0;
 }
 
-.bgdark 
+.bgdark
 {
 	background-color: #ebf2f8;
         border-top : 1px solid #e0e0e0;
@@ -231,13 +231,13 @@ hr
 	height: 2px;
 }
 
-.stdbutton 
+.stdbutton
 {
 	font-size: 11px;
 	font-weight: bold;
 }
- 
-.okbutton 
+
+.okbutton
 {
 	font-size: 18px;
 	font-weight: bold;

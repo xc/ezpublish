@@ -18,7 +18,7 @@
 change your settings at:"|i18n('design/standard/notification')}
 http://{ezini("SiteSettings","SiteURL")}{concat("notification/settings/")|ezurl(no)}
 
--- 
+--
 {"%sitename notification system"
  |i18n('design/standard/notification',,
        hash('%sitename',ezini("SiteSettings","SiteURL")))}

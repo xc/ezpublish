@@ -14,20 +14,20 @@ Changes from 3.8.0alpha2 to 3.8.0beta1
 *Bugfixes:
 - Fixed bug #7956: Wishlist is called "basket".
   ( Merged from stable/3.5 rev. 15133 )
-- Fixed bug #7975: Assigning a role with limitation on section 
+- Fixed bug #7975: Assigning a role with limitation on section
   is not working correctly.
   ( Merged from stable/3.7 ( 3.7.5 ) rev. 15149 )
 - Fixed fatal error on editing an RSS export.
-- Fixed bug #7980: Installation wizard fails to accept correct hosts 
+- Fixed bug #7980: Installation wizard fails to accept correct hosts
   with host-based siteaccess.
   ( Merged from stable/3.7 ( 3.7.5 ) rev. 15158 )
 - Fixed bug #7993: Links disappear when unserialzing ezxml.
   ( Merged from stable/3.6 rev. 15179 )
 - Fixed bug #6642: Invalid xml key name in package.xml.
-- Fixed bug #7856: Setup assumes ImageMagick by default, 
+- Fixed bug #7856: Setup assumes ImageMagick by default,
   even if ImageGD is avaiable/installed.
   ( Merged from stable/3.7 ( 3.7.5 ) rev. 15189 )
-- Fixed bug #7967: Warning in debug output after running file 
+- Fixed bug #7967: Warning in debug output after running file
   consistency check.
   ( Merged from stable/3.7 ( 3.7.5 ) rev. 15207 )
 - Fixed bug #6056: Duplicate entries in collectedinfo output.

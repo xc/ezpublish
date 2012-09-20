@@ -1333,7 +1333,7 @@ fi
 if [ ! -e "$DEST_ROOT/ezcomponents-2009.1.2" ]; then
     # extract
     tar -vxjf $DEST_ROOT/ezcomponents-2009.1.2.tar.bz2 -C $DEST_ROOT
-    
+
     # remove design, docs and tests directories
     find $DEST_ROOT/ezcomponents-2009.1.2 -mindepth 2 -maxdepth 2 -type d \( -name  "design" -o -name "docs" -o -name "tests" \) -print -a -exec rm -R --force {} \;
 
@@ -1446,11 +1446,11 @@ if [ -n "$FINAL" ]; then
     cp "$DEST_ROOT/$COMPTGZFILE" "$VERSIONROOT/"
     (cd "$VERSIONROOT/"; md5sum -b "$COMPTGZFILE" >> filelist.md5)
     echo "Copied `$SETCOLOR_FILE`$COMPTGZFILE`$SETCOLOR_NORMAL`"
-    
+
     cp "$DEST_ROOT/$TGZFILE" "$VERSIONROOT/"
     (cd "$VERSIONROOT/"; md5sum -b "$TGZFILE" >> filelist.md5)
     echo "Copied `$SETCOLOR_FILE`$TGZFILE`$SETCOLOR_NORMAL`"
-    
+
     cp "$DEST_ROOT/$COMPTBZFILE" "$VERSIONROOT/"
     (cd "$VERSIONROOT/"; md5sum -b "$COMPTBZFILE" >> filelist.md5)
     echo "Copied `$SETCOLOR_FILE`$COMPTBZFILE`$SETCOLOR_NORMAL`"
@@ -1462,7 +1462,7 @@ if [ -n "$FINAL" ]; then
     cp "$DEST_ROOT/$COMPZIPFILE" "$VERSIONROOT/"
     (cd "$VERSIONROOT/"; md5sum -b "$COMPZIPFILE" >> filelist.md5)
     echo "Copied `$SETCOLOR_FILE`$COMPZIPFILE`$SETCOLOR_NORMAL`"
-    
+
     cp "$DEST_ROOT/$ZIPFILE" "$VERSIONROOT/"
     (cd "$VERSIONROOT/"; md5sum -b "$ZIPFILE" >> filelist.md5)
     echo "Copied `$SETCOLOR_FILE`$ZIPFILE`$SETCOLOR_NORMAL`"

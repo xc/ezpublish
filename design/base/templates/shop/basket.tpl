@@ -124,7 +124,7 @@
      {/section}
      {/section}
      <tr>
-         <td class="product-subtotal" colspan="4"><b>{"Subtotal inc. VAT"|i18n("design/base/shop")}:</b></td> 
+         <td class="product-subtotal" colspan="4"><b>{"Subtotal inc. VAT"|i18n("design/base/shop")}:</b></td>
          <td class="product-subtotal"><b>{$basket.total_inc_vat|l10n( 'currency', $locale, $symbol )}</b></td>
          <td class="product-subtotal">&nbsp;</td>
      </tr>

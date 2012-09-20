@@ -25,7 +25,7 @@ Changes from 3.3-3 to 3.4.0alpha1
 - Added support for sending the class identifier as a string to the content/class fetch function.
 - Added content/pdf for on the fly generation of PDF based on current node. Utilizes normal content caching.
 - Added setting for adjusting default value of ezdatetime datatype based on current date
-- Added ezcontentobject_tree.modified_subnode to eZContentObjectTreeNode to make fetches of last 
+- Added ezcontentobject_tree.modified_subnode to eZContentObjectTreeNode to make fetches of last
   modified subtree faster.
 - Added MD5 check of distribution files. Both scripts and GUI for checking files added.
 - Added function to view/edit ini settings in admin interface.
@@ -95,8 +95,8 @@ eZ PHP creator:
   before each line in the generated text.
 - Added default value of 0 to the second parameter ($column) of variableText().
 - Added new static function prependSpacing() which is used to prepend the
-  proper spacing to a text block. 
-- Added new function fetch() which renders all elements to a string and 
+  proper spacing to a text block.
+- Added new function fetch() which renders all elements to a string and
   returns it.
 - Created new private function writeElements() which writes all elements
   to the text array, this function is now used in both store() and fetch().

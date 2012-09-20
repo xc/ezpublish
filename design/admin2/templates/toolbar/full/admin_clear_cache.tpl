@@ -12,7 +12,7 @@
 	       <h4>{'Clear cache'|i18n( 'design/admin/pagelayout' )}</h4>
 	    {/if}
     {/if}
-    
+
 {* DESIGN: Header END *}</div></div>
 
 

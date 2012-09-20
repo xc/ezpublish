@@ -7,7 +7,7 @@ fill in multiple attributes.
 
 *Documentation:
 This extension enables you to write upload handlers for
-content objects in an extension. You can configure 
+content objects in an extension. You can configure
 different MIME-Types to execute different upload handlers.
 
 The upload handlers are useful for doing automatic import

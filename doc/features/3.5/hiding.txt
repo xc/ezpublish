@@ -80,7 +80,7 @@ content tree before:
         --> X    X
            / \
           H   X
-          | 
+          |
           X
 
 content tree after:
@@ -91,7 +91,7 @@ content tree after:
         --> H    X
            / \
           H   X
-          | 
+          |
           X
 3. unhiding a node having visible ancestor:
 content tree before:
@@ -102,7 +102,7 @@ content tree before:
              X       X
             / \
            H   X
-           | 
+           |
            X
 
 content tree after:
@@ -113,7 +113,7 @@ content tree after:
              N       X
             / \
            H   N
-           | 
+           |
            X
 
 4. unhiding a node having invisible ancestor:
@@ -125,7 +125,7 @@ content tree before:
              X   X
             / \
        --> H   X
-           | 
+           |
            X
 
 content tree after:
@@ -136,7 +136,7 @@ content tree after:
              X   X
             / \
        --> X   X
-           | 
+           |
            X
 
 Required privileges:

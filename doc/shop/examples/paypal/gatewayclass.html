@@ -9,7 +9,7 @@
 Before creating gateway you should read documentation about paypal protocol('Buy Now Buttons, 'IPN').
 Assumes you already did that.
 <p>
-Lets create a <i>eZPaypalGateway</i> class for our gateway. Since it should redirect a customer to 
+Lets create a <i>eZPaypalGateway</i> class for our gateway. Since it should redirect a customer to
 the paypal site, our class should be inherited from <i>eZRedirectGateway</i>. Add these lines to
 <i>'ezpaypalgateway.php'</i>.
 
@@ -17,9 +17,9 @@ the paypal site, our class should be inherited from <i>eZRedirectGateway</i>. Ad
 <code>
 <pre>
     include_once( 'kernel/shop/classes/ezredirectgateway.php' );
-    
+
     define( "EZ_PAYMENT_GATEWAY_TYPE_PAYPAL", "ezpaypal" );
-    
+
     class eZPaypalGateway extends eZRedirectGateway
     {
         function eZPaypalGateway()
@@ -40,28 +40,28 @@ Add these lines to <i>'ezpaypalgateway.php'</i> to <i>eZPaypalGateway</i> class.
     function &createRedirectionUrl( &$process )
     {
         $paypalINI      =& eZINI::instance( 'paypal.ini' );
-    
+
         $paypalServer   = $paypalINI->variable( 'ServerSettings', 'ServerName');
         $requestURI     = $paypalINI->variable( 'ServerSettings', 'RequestURI');
         $business       = urlencode( $paypalINI->variable( 'PaypalSettings', 'Business' ) );
-        
+
         $processParams  =& $process->attribute( 'parameter_list' );
         $orderID        = $processParams['order_id'];
 
         $indexDir       = eZSys::indexDir();
         $localHost      = eZSys::hostname();
         $localURI       = eZSys::serverVariable( 'REQUEST_URI' );
-        
+
         $order          =& eZOrder::fetch( $orderID );
         $amount         = urlencode( $order->attribute( 'total_inc_vat' ) );
-        
+
         include_once( 'lib/ezlocale/classes/ezlocale.php' );
         $locale         =& eZLocale::instance();
         $currency       = urlencode( $locale->currencyShortName() );
 
         $maxDescLen     = $paypalINI->variable( 'PaypalSettings', 'MaxDescriptionLength');
         $itemName       = urlencode( $this->createShortDescription( $order, $maxDescLen ) );
-                
+
         $accountInfo    = $order->attribute( 'account_information' );
         $first_name     = urlencode( $accountInfo['first_name'] );
         $last_name      = urlencode( $accountInfo['last_name'] );
@@ -99,7 +99,7 @@ Add these lines to <i>'ezpaypalgateway.php'</i> to <i>eZPaypalGateway</i> class.
                 "&notify_url=http://$localHost" . $indexDir . "/paypal/notify_url/".
                 "&return=http://$localHost"     . $indexDir . "/shop/checkout/" .
                 "&cancel_return=http://$localHost" . $indexDir. "/shop/basket/";
-                
+
         return $url;
     }
 
@@ -116,32 +116,32 @@ And these to <i>'paypal.ini'</i>
     #ServerName=https://www.paypal.com
     ServerName=https://www.sandbox.paypal.com
     RequestURI=/cgi-bin/webscr
-    
+
     [PaypalSettings]
     # max length of description of the order
-    # everything that exceeds will be truncated 
+    # everything that exceeds will be truncated
     MaxDescriptionLength=127
-    
+
     # field: "business"
     # e-mail of receiver
     Business=my_business@coolmail.net
-    
-    # field: "no_note" 
+
+    # field: "no_note"
     # prompt to include a note. 0 - prompt, 1 - dont prompt
     NoNote=0
-    
+
     # field: "cn"
     # label that will appear above the note field
     # maximum 40 characters
     NoteLabel=Some Label
-    
+
     # field: "page_style"
     PageStyle=
-    
-    # field: "cs" 
-    # background color if PageStyle not set. 0 - white, 1 - black.                            
+
+    # field: "cs"
+    # background color if PageStyle not set. 0 - white, 1 - black.
     BackgroundColor=0
-    
+
     #filed: "image_url" (URI to the logo image (150 x 50 pixels))
     LogoURI=/var/shop/images/logo.png
 </code>
@@ -155,9 +155,9 @@ Note that for testing we are using <i>www.sandbox.paypal.com</i> site. In life y
 
 <p>
 When a callback will be called we need to know what order we should process and what workflow
-should continue. For these purposes <i>eZPaymentObject</i> is served. It stores in database 
+should continue. For these purposes <i>eZPaymentObject</i> is served. It stores in database
 information about order and workflow.<br>
-Lets create our payment object. Add these lines to <i>'ezpaypalgateway.php'</i> to 
+Lets create our payment object. Add these lines to <i>'ezpaypalgateway.php'</i> to
 <i>eZPaypalGateway</i> class.
 
 <p>
@@ -180,7 +180,7 @@ include_once( 'kernel/shop/classes/ezpaymentobject.php' );
 </code>
 
 <p>
-To make our gateway visible for eZPublish workflow system add this line somewhere in 
+To make our gateway visible for eZPublish workflow system add this line somewhere in
 <i>'ezpaypalgateway.php'</i>
 
 <p>

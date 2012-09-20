@@ -368,15 +368,15 @@ function ContentStructureMenu()
 
             success: function(o)
             {
-                try 
+                try
                 {
                     result = YAHOO.lang.JSON.parse(o.responseText);
                 }
-                catch (x) 
+                catch (x)
                 {
                     return false;
                 }
-                
+
                 var html = '<ul>';
                 for ( var i = 0; i < result.children.length; i++ )
                 {
@@ -394,7 +394,7 @@ function ContentStructureMenu()
 
                 thisThis.setOpen( nodeID );
                 thisThis.openUnder( nodeID );
-                
+
                 return;
             },
 

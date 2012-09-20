@@ -8,7 +8,7 @@
 <h1>Step 4. Handle callback</h1>
 
 <h2>Prepare for check callback data</h2>
-We have a <i>eZPaymentCallbackChecker</i> class that can perform common checks. But we need to 
+We have a <i>eZPaymentCallbackChecker</i> class that can perform common checks. But we need to
 additional checks which are specific for paypal payment system.
 Lets create our checker class <i>eZPaypalChecker</i>. Add these lines to <i>'ezpaypalchecker.php'</i>:
 
@@ -83,7 +83,7 @@ Now we have to add checks specific to paypal.<br>
             {
                 $response = fgets ( $socket, 1024 );
             }
-      
+
             fclose( $socket );
             return $response;
         }
@@ -113,7 +113,7 @@ Now we have to add checks specific to paypal.<br>
 We are done with <i>eZPaypalChecker</i>.
 
 <h2>Handle callback</h2>
-During creation of <i>eZPaypalGateway</i> class, we specified that our callback handler will be 
+During creation of <i>eZPaypalGateway</i> class, we specified that our callback handler will be
 named <i>notify_url</i> (see field <i>notify_url</i> in <i>createRedirectionURL</i> function).
 Lets make a body for it. Add lines below to <i>notify_url.php</i>:
 
@@ -121,11 +121,11 @@ Lets make a body for it. Add lines below to <i>notify_url.php</i>:
 <pre>
 <code>
     ext_activate( 'ezpaypal', 'classes/ezpaypalchecker.php' );
-    
+
     $checker =& new eZPaypalChecker( 'paypal.ini' );
     if( $checker->createDataFromPOST() )
     {
-      unset ($_POST);                     
+      unset ($_POST);
       if( $checker->requestValidation() && $checker->checkPaymentStatus() )
       {
           $orderID = $checker->getFieldValue( 'custom' );

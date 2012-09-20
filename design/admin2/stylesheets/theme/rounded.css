@@ -57,7 +57,7 @@
 
 /* HEADER */
 #header
-{ 
+{
     border-bottom: 1px solid #666;
     background-color: #246b99;
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#246b99), to(#3b8bb4));
@@ -178,7 +178,7 @@ a.show-hide-tabs:hover
     border-color: #999;
 }
 
-.tab-block .button-left 
+.tab-block .button-left
 {
     margin: 3px 7px 0 0;
 }

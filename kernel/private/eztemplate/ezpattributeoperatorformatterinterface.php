@@ -7,7 +7,7 @@
  * @version //autogentag//
  * @package kernel
  */
- 
+
 interface ezpAttributeOperatorFormatterInterface
 {
     /**

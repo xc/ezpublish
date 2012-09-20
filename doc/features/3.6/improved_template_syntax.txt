@@ -28,9 +28,9 @@ read tpl file and move code within it. Instead, two new functions
 proposed: {def} and {undef}:
 
 - def    creates a new variable in the current namespace and assigns a
-         value to it. 
+         value to it.
 - undef  destroys given variable, in a manner like the corresponding PHP
-         operator does. 
+         operator does.
 
 Syntax:
  {def $var1=<value1> [$var2=<value2> ...]}
@@ -136,13 +136,13 @@ $itemVar is destroyed after the loop ends.
     -----------------
 
 Syntax:
- {foreach <array> as [$keyVar =>] $itemVar  
+ {foreach <array> as [$keyVar =>] $itemVar
           [sequence <array> as $sequenceVar]
           [offset <offset>]
           [max <max>]
           [reverse]}
      [{delimiter}...{/delimiter}]
-     [{break}]   
+     [{break}]
      [{continue}]
      [{skip}]
  {/foreach}
@@ -151,18 +151,18 @@ Examlple:
  {foreach $objects as $object}
  <tr>
      {foreach $object.nodes as $node sequence array(dark,light) as $class}
-         <td class=$class>{$node.name|wash}</td>   
+         <td class=$class>{$node.name|wash}</td>
      {/foreach}
  </tr>
  {/foreach}
 
-Variables $keyVar, $itemVar and $sequenceVar are destroyed after the loop ends. 
+Variables $keyVar, $itemVar and $sequenceVar are destroyed after the loop ends.
 
 {foreach} does not support iterating through strings like
 {section loop=...} does. So, {foreach $string as $character} will not work.
 
 {foreach} also does not support iterating within a numeric range, like
-{section loop=NUMBER} did. You should use {for} instead. 
+{section loop=NUMBER} did. You should use {for} instead.
 
 Also, {foreach} does not use the proxy iterator as {section loop=...}
 does. ie you cannot do: {$node.key}, {$node.index}.
@@ -172,14 +172,14 @@ Prameters 'offset', 'max' and 'reverse' have the same meaning as in {section}.
 2.6 Notes on the loop functions
     ---------------------------
 
-All the new loop functions support the following features: 
+All the new loop functions support the following features:
 
-- 'sequence' optional parameter: array to cycle through continuously. 
+- 'sequence' optional parameter: array to cycle through continuously.
 - {delimiter} function: piece of code/text executed/shown after each
-  iteration, except of the last one. 
-- {break} function: immediately terminate the loop. 
+  iteration, except of the last one.
+- {break} function: immediately terminate the loop.
 - {continue} function: go to the next loop iteration, executing {delimiter}
-  if specified. 
+  if specified.
 - {skip} function: go to the next loop iteration, without executing {delimiter}.
 
 The {delimeter} construct must be placed as a direct child of the loop

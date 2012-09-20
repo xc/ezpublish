@@ -20,7 +20,7 @@ class ezpAutoloadGeneratorTest extends PHPUnit_Framework_TestCase
   public function testBuildPHPUnitConfigurationFile()
   {
     $autoloadArray = @include 'autoload/ezp_kernel.php';
-    
+
     $this->assertEquals( null, $this->autoload_generator->buildPHPUnitConfigurationFile() );
 
     $this->autoload_generator->setMode(eZAutoloadGenerator::MODE_KERNEL);
@@ -42,7 +42,7 @@ class ezpAutoloadGeneratorTest extends PHPUnit_Framework_TestCase
     $this->assertContains('tests', $blacklist->item(0)->getElementsByTagName('directory')->item(0)->nodeValue);
     $this->assertEquals(count($autoloadArray), $whitelist->item(0)->getElementsByTagName('file')->length);
 
-    
+
     //$this->assertTrue($dom->hasChildNodes('filter'));
 
     //echo $dom->saveXML();

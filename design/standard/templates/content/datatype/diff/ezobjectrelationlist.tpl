@@ -20,7 +20,7 @@
             {foreach $attr.content.relation_list as $item
                      sequence array( 'bglight', 'bgdark' ) as $seq}
             {set $item_object=fetch( content, object, hash( object_id, $item.contentobject_id, object_version, $item.contentobject_version ) )}
-                
+
                 <tr class="{$seq}">
                     <td>{$item.priority}</td>
                     <td>{$item.contentobject_id}</td>

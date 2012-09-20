@@ -96,8 +96,8 @@ This script sets ${DIR_MODE} as permissions in var/, design/, settings/ and exte
 
 THIS IS NOT SECURE!
 
-Find the user and group for your web server and make them owner of all files 
-in all of the above directories. You should be able to find this information 
+Find the user and group for your web server and make them owner of all files
+in all of the above directories. You should be able to find this information
 in the configuration file for your web server.
 
 For example:

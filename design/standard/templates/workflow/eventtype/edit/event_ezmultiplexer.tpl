@@ -3,29 +3,29 @@
 {let selectedSections=$event.selected_sections}
 <label>{"Sections"|i18n("design/standard/workflow/eventtype/edit")}</label><div class="labelbreak"></div>
 <select name="WorkflowEvent_event_ezmultiplexer_section_ids_{$event.id}[]" size="5" multiple >
-<option value="-1" 
+<option value="-1"
 {switch match=-1}
 {case in=$selectedSections}
   selected="selected"
 {/case}
 {case}
-{/case} 
+{/case}
 {/switch}
  >{"Any"|i18n("design/standard/workflow/eventtype/edit")}</option>
 {section name=Sections loop=$event.workflow_type.sections}
 
-  <option value="{$Sections:item.value}"  
+  <option value="{$Sections:item.value}"
   {switch match=$Sections:item.value}
   {case in=$selectedSections}
     selected="selected"
   {/case}
   {case}
-  {/case} 
+  {/case}
   {/switch}
 
   >{$Sections:item.value}-{$Sections:item.Name}</option>
-{/section}  
-{/let} 
+{/section}
+{/let}
 </select>
 </div>
 
@@ -44,13 +44,13 @@
 {let selectedClasses=$event.selected_classes}
 <label>{"Classes to run workflow"|i18n("design/standard/workflow/eventtype/edit")}</label><div class="labelbreak"></div>
 <select name="WorkflowEvent_event_ezmultiplexer_class_ids_{$event.id}[]" size="5" multiple >
-<option value="-1" 
+<option value="-1"
 {switch match=-1}
 {case in=$selectedClasses}
   selected="selected"
 {/case}
 {case}
-{/case} 
+{/case}
 {/switch}
 >{"Any"|i18n("design/standard/workflow/eventtype/edit")}</option>
 {section name=Classes loop=$event.workflow_type.contentclass_list}
@@ -60,12 +60,12 @@
     selected="selected"
   {/case}
   {case}
-  {/case} 
+  {/case}
   {/switch}
 
   >{$Classes:item.value}-{$Classes:item.Name}</option>
-{/section}   
-{/let} 
+{/section}
+{/let}
 </select>
 </div>
 
@@ -80,11 +80,11 @@
     selected="selected"
   {/case}
   {case}
-  {/case} 
+  {/case}
   {/switch}
 
   >{$Groups:item.value}-{$Groups:item.Name}</option>
-{/section}   
+{/section}
 
 {/let}
 </select>

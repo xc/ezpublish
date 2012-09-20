@@ -941,7 +941,7 @@ class eZImageManager
                     // url and alias name.
                     ezpEvent::getInstance()->notify( 'image/alias', array( $currentAliasData['url'],
                                                                            $currentAliasData['name'] ) );
-                    
+
                     return true;
                 }
                 // conversion failed, we abort generation

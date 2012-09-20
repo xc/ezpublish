@@ -8,7 +8,7 @@
    {else}
      <h4><a class="showhide" href={'/user/preferences/set/admin_quicksettings_menu/0'|ezurl} title="{'Hide quick settings'|i18n( 'design/admin/pagelayout' )}"><span class="bracket">[</span>-<span class="bracket">]</span></a> {'Quick settings'|i18n( 'design/admin/pagelayout' )}</h4>
    {/if}
-    
+
 </div></div></div></div>{if $first}</div></div>{/if}
 
 {if $last}
@@ -32,7 +32,7 @@
      {else}
       <h4><a class="showhide" href={'/user/preferences/set/admin_quicksettings_menu/1'|ezurl} title="{'Quick settings'|i18n( 'design/admin/pagelayout' )}"><span class="bracket">[</span>+<span class="bracket">]</span></a>{'Quick settings'|i18n( 'design/admin/pagelayout' )}</h4>
      {/if}
-    
+
 </div></div></div></div>{if $first}</div></div>{/if}
 
 {if $last}

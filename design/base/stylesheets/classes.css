@@ -35,13 +35,13 @@ div.content-byline p.date
 /* "READ MORE" TEXT FOR ALL CHILDREN OBJECTS */
 
 div#maincontent div.content-view-line div.attribute-link p
-{ 
+{
     font-weight: normal;
     padding-left: 8px;
 }
 
 div#maincontent div.content-view-line div.attribute-link-disabled p
-{ 
+{
     font-weight: normal;
     padding-left: 8px;
     vertical-align: middle;
@@ -51,13 +51,13 @@ div#maincontent div.content-view-line div.attribute-link-disabled p
 /* CONTENT LINK FOR ALL MAIN OBJECTS, E.G. " AND "THUMBNAIL/SLIDESHOW VIEW" */
 
 div#maincontent div.content-view-full div.attribute-link p, div#maincontent div.view-slideshow div.attribute-link p, div#maincontent div.content-view-full div.attribute-tipafriend p
-{ 
+{
     padding-left: 8px;
     font-weight: normal;
 }
 
 div#maincontent div.content-view-full div.attribute-link-disabled p, div#maincontent div.view-slideshow div.attribute-link-disabled p
-{ 
+{
     font-weight: normal;
     padding-left: 8px;
     vertical-align: middle;
@@ -67,25 +67,25 @@ div#maincontent div.content-view-full div.attribute-link-disabled p, div#maincon
 /* AUTHOR AND DATE FOR ALL FULL OBJECTS */
 
 div.content-view-full div.attribute-byline p.author
-{ 
+{
     margin-right: 0.2em;
     display: inline;
 }
 
 div.content-view-full div.attribute-byline p.date
-{ 
+{
     margin: 0 0.2em 0 0.2em;
     display: inline;
 }
 
 div.content-view-full div.attribute-byline p.placement
-{ 
+{
     margin-left: 0.2em;
     display: inline;
 }
 
 div.content-view-full div.attribute-byline p.count
-{ 
+{
     margin-left: 0.2em;
     display: inline;
 }
@@ -94,7 +94,7 @@ div.content-view-full div.attribute-byline p.count
 /* AUTHOR AND DATE FOR ALL CHILD OBJECTS */
 
 div.content-view-full div.content-view-line div.attribute-byline p
-{ 
+{
     display: inline;
 }
 
@@ -118,24 +118,24 @@ div#maincontent div.content-view-sitemap table.content-view-children td
 }
 
 /*div#maincontent div.content-view-sitemap table.content-view-children td
-{ 
+{
     font-weight: bold;
 }*/
 
 /* FOLDER */
 
 div#maincontent div.class-folder div.attribute-short p
-{ 
+{
     font-weight: bold;
 }
 
 div#maincontent div.class-folder div.content-view-children div.attribute-short p
-{ 
+{
     font-weight: normal;
 }
 
 div.relatedinfo
-{  
+{
     margin-top: 0.3em;
     margin-bottom: 0.1em;
     display: inline;
@@ -149,12 +149,12 @@ div.relatedinfo
 /* ARTICLE */
 
 div#maincontent div.content-view-full div.class-article div.attribute-short p
-{ 
+{
     font-weight: bold;
 }
 
 div#maincontent div.content-view-full div.content-view-children div.class-article div.attribute-short p
-{ 
+{
     font-weight: normal;
 }
 
@@ -170,23 +170,23 @@ div.class-comment h3
 /* PRODUCT */
 
 div#maincontent div.content-view-full div.class-product div.attribute-short p
-{ 
+{
     font-weight: bold;
 }
 
 div#maincontent div.content-view-children div.class-product div.attribute-short p
-{ 
+{
     font-weight: normal;
 }
 
 div#maincontent div.class-product div.attribute-price p
-{ 
+{
     float: right;
     font-weight: normal;
 }
 
 div.content-view-listitem div.class-product div.attribute-link-disabled a
-{ 
+{
     font-weight: normal;
     padding-left: 8px;
     vertical-align: middle;
@@ -209,7 +209,7 @@ span.pricesave
 
 
 div#maincontent div.class-folder div.class-gallery div.attribute-link-disabled p
-{ 
+{
     font-weight: normal;
     padding-left: 8px;
     vertical-align: middle;
@@ -217,17 +217,17 @@ div#maincontent div.class-folder div.class-gallery div.attribute-link-disabled p
 
 
 div#maincontent div.class-gallery div.attribute-short p
-{ 
+{
     font-weight: bold;
 }
 
 div#maincontent div.class-gallery div.content-view-children table
-{ 
+{
     width: 100%;
 }
 
 div#maincontent div.class-gallery div.content-view-children table td
-{ 
+{
     width: 25%;
     padding: 6px;
     border: 1px solid;
@@ -238,45 +238,45 @@ div#maincontent div.class-gallery div.content-view-children table td
 
 /* EMBEDDED TAGS IN XML FIELDS */
 
-div.factbox, div.content-view-embed 
-{ 
+div.factbox, div.content-view-embed
+{
     width: 14em;
 }
 
-div.factbox-design, div.content-view-embed 
-{ 
+div.factbox-design, div.content-view-embed
+{
     padding: 0px;
     border: 1px solid;
 }
 
 div#maincontent div.factbox-design h2, div#maincontent div.content-view-embed h2
-{ 
+{
     font-size: 1.2em;
     margin-top: 0px;
     padding: 2px 0 3px 10px;
 }
 
 div#maincontent div.content-view-embed div.content-view-children, div.factbox-content, div#maincontent div.content-view-embed div.content-body
-{ 
+{
     margin-top: 0;
     padding: 2px 10px 3px 3px;
 }
 
 div#maincontent-design div.content-view-embed h3
-{ 
+{
     font-size: 1em;
     margin: 0;
     text-decoration: underline;
 }
 
 blockquote
-{ 
+{
     width: 14em;
     padding: 0px;
 }
 
 div.quote-begin
-{ 
+{
     margin: 0 0.2em 0.2em 0;
     float: left;
     width: 16px;
@@ -284,7 +284,7 @@ div.quote-begin
 }
 
 div.quote-end
-{ 
+{
     margin: 0.2em 0 0 0.2em;
     float: right;
     width: 16px;
@@ -292,26 +292,26 @@ div.quote-end
 }
 
 div#maincontent-design blockquote p
-{ 
+{
     font-weight: bold;
     width: 14em;
     display: inline;
 }
 
 div.object-right
-{ 
+{
     margin: 3px;
     float: right;
 }
 
 div.object-left
-{ 
+{
     margin: 3px;
     float: left;
 }
 
 div.object-center
-{ 
+{
 /*    float: center;*/
     margin-left: auto;
     margin-right: auto;
@@ -319,20 +319,20 @@ div.object-center
 }
 
 div.factbox h3
-{ 
+{
     font-size: 1em;
     margin: 0px;
 }
 
 div.factbox div.attribute-file p
-{ 
+{
     font-weight: normal;
 }
 
 /* list item styles  */
 /*
 div.content-view-listitem h3
-{ 
+{
     margin-top: 6px;
 }
 */
@@ -341,7 +341,7 @@ div.content-view-listitem h3
 /* LIST ITEM IMAGE */
 
 div.content-view-listitem div.class-image div.attribute-caption p
-{ 
+{
     color: #666666;
 }
 
@@ -468,23 +468,23 @@ div.calendar td a, div.calendar td a:visited, div.calendar td a:hover
 /* POLL RESULT STYLE */
 
 div.poll-result td.poll-resultbar td.poll-percentage, div.poll-result td.poll-resultbar td.poll-votecount
-{  
+{
     font-style: italic;
     font-size: 85%;
 }
 
 div.poll-result td.poll-resultbar td.poll-percentage
-{  
+{
     text-align: left;
 }
 
 div.poll-result td.poll-resultbar td.poll-votecount
-{  
+{
     text-align: right;
 }
 
 div.poll-result p
-{  
+{
     font-weight: bold;
 }
 
@@ -562,7 +562,7 @@ div.shop-basket table td.product-subtotal, div.shop-confirmorder table td.produc
 }
 
 input.shop-basketbin
-{ 
+{
     width: 15px;
     height: 15px;
     background-image: url(../images/bin.gif);
@@ -573,7 +573,7 @@ input.shop-basketbin
 /* RENDERED TABLE */
 
 table.renderedtable td
-{ 
+{
     margin: 0px;
     padding: 3px;
     border-top: 1px solid;
@@ -581,7 +581,7 @@ table.renderedtable td
 }
 
 table.renderedtable
-{ 
+{
     border-right: 1px solid;
     border-bottom: 1px solid;
 }

@@ -139,7 +139,7 @@ Workflow:
 - Added a new datatype called eZMultiOption which works like
   eZOption but handles multiple options in one attribute.
 - Added support for not using strict rule to parse header for datatype ezxmltext.
-  This can be configurable by setting 'UseStrictHeaderRule' to false in block [header] 
+  This can be configurable by setting 'UseStrictHeaderRule' to false in block [header]
   of content.ini.
 
 *eZPHPCreator
@@ -153,7 +153,7 @@ Workflow:
 
 *LDAP
 - Could support LDAP version 2 or 3 by defining 'LDAPVersion' variable in ldap.ini.
-- Changed variable 'LDAPUserGroup' in ldap.ini to an array which means a ldap user 
+- Changed variable 'LDAPUserGroup' in ldap.ini to an array which means a ldap user
   can be saved in multiple groups in eZ publish.
 - An user who is in multiple groups in LDAP server can be assigned to multiple
   groups in eZ publish automatically.
@@ -183,10 +183,10 @@ Workflow:
   (merged from 3.3 rev. 6765, also in 3.4 rev. 6766).
   http://ez.no/community/bug_reports/email_sender
 - Fixed all the places where limitations returned by eZUser::hasAccessTo()
-  were treated as objects to handle limitations as hashes  
+  were treated as objects to handle limitations as hashes
   (since hasAccessTo() now returnes hashes instead of objects).
   Merged from 3.4 rev. 6772.
-  By the way the following bug fixed:                              
+  By the way the following bug fixed:
   http://ez.no/community/bug_reports/not_able_to_fetch_keyword_list
 - Fixed bug with nodes counted instead of objects in
   eZContentClass::objectCount() (merged from 3.4 rev. 6774).
@@ -197,7 +197,7 @@ Workflow:
   o All object attribute versions were fetched instead of the current one;
   o Fetching from non-published objects was posssible.
 - Fixed typo in /kernel/package/install.php which caused package contents
-  not to be shown when importing (merged from 3.4 rev. 6782). 
+  not to be shown when importing (merged from 3.4 rev. 6782).
   http://ez.no/community/bug_reports/typo_in_kernel_package_install_php
 - Fixed typos resulting in inclusion of non-existent file (merged from 3.4 rev. 6785).
   http://ez.no/community/bug_reports/typo_in_kernel_setup_ezsetuptypes_php_included_file_miss_spelled
@@ -212,9 +212,9 @@ Workflow:
   (merged from 3.3 rev. 6808, also in 3.4 rev. 6809).
   http://ez.no/community/bug_reports/typo_in_ezcontentobject_php
 - Workaround for bug in object relation list datatype: when user adds
-  objects using content/browse and then reloads page in browser then        
+  objects using content/browse and then reloads page in browser then
   previously selected objects are added again. We now just prevent objects
-  from being added to the list more than once doing appropriate check.  
+  from being added to the list more than once doing appropriate check.
   Merged from 3.3 rev. 6813, also in 3.4 rev. 6814.
   http://ez.no/community/bug_reports/objectrelationlist_repeats_adding_relatedobjects_when_page_reloads
 - Removed eztime from the list of simple types because its data_int field
@@ -271,7 +271,7 @@ Workflow:
   Merged from stable/3.4 rev. 6883.
   http://ez.no/community/bug_reports/node_notification
 - Fixed (partially) bug: content object(s) export sometimes fails (merged from stable/3.4 rev. 6885).
-- Fixed bug with incorrect object count when view a class.  
+- Fixed bug with incorrect object count when view a class.
   Merged from stable/3.4 rev. 6887.
 - Fixed bug in dbupdate-3.3-5-to-3.3-6.sql for postgresql.
   Merged from stable/3.3 rev. 6890.
@@ -464,12 +464,12 @@ Workflow:
   http://ez.no/community/bug_reports/mysql_4_incompatibility
 - Fixed bug with incorrect fetching of user roles when user is more then in one user group.
   (Merged from stable/3.4 rev. 7829)
-  http://ez.no/community/bug_reports/adding_a_user_to_a_user_group_doesn_t_automatically_apply_all_roles 
+  http://ez.no/community/bug_reports/adding_a_user_to_a_user_group_doesn_t_automatically_apply_all_roles
 - Fixed a warning with conditional overrides. (Merged from stable/3.4, rev. 7831)
   http://ez.no/community/bug_reports/php_warning_eztemplatedesignresource_php
 - Fixed a couple of warnings about the navigationPartIdentifier (Merged from stable/3.4, rev 7833)
   http://ez.no/community/bug_reports/with_debug_enabled_i_am_getting_the_following_error
-- Fixed bug in cache block with subtree expiry. Subtree expiry partly rewritten, 
+- Fixed bug in cache block with subtree expiry. Subtree expiry partly rewritten,
   merged from stable/3.4 rev. 7853.
   http://ez.no/community/bug_reports/cache_block_subtree_expiry_after_deleting
 - Removed unused file kernel/classes/datatypes/ezuser/ezaccounthash.php
@@ -487,7 +487,7 @@ Workflow:
 - Added missing sender and reply to when sending informationcollector mail
   (Merged from stable/3.4 rev. 7883)
   http://www.ez.no/community/bug_reports/information_collection_mail_sender_is_empty
-- Fixed cronjobs/indexcontent.php to be more fault tolerant and scale better, 
+- Fixed cronjobs/indexcontent.php to be more fault tolerant and scale better,
   (Merged from stable/3.4 rev. 7890)
 - Added all RFC 2396 allowed characters to the autolink operator. (Merged from
   stable/3.4 rev. 7900)
@@ -693,7 +693,7 @@ eZ Template:
 - Fixed bug with let not cleaning up its variables in compiled mode.
   (Merged from stable/3.4 rev. 7214)
 - Fixed bug with template processing and input variable to operators,
-  if the input variable was a template proxy object the template value 
+  if the input variable was a template proxy object the template value
   was not dereferenced.
   (Merged from stable/3.4 rev. 7216)
 - Added the possibility to fetch the number of errors and warnings from
@@ -747,7 +747,7 @@ edit_placement.tpl:
   remote ID. This means that when editing an object in admin interface
   without a special override will work.
   Merged from stable/3.4 rev. 7218.
-  
+
 *Tests:
 - Added unit test for image system.
 

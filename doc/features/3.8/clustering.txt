@@ -112,13 +112,13 @@ and create corresponding rewrite rules:
 
   RewriteRule ^/var/intranet/storage/images(-versioned)?/.*  /index_image-intranet.php [L]
   RewriteRule ^/var/shop/storage/images(-versioned)?/.*  /index_image-shop.php [L]
-  
+
 The above rules make Apache call the corresponding script for serving
 images of specific siteaccess. Note that this will only work if the
 siteaccesses have different VarDirs.
 
  7. Restart apache.
- 
+
   /path/to/apache/bin/apachectl stop
   /path/to/apache/bin/apachectl start
 

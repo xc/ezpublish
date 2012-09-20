@@ -76,13 +76,13 @@
      {section name=LimitationValues loop=$Limitations:item.values}
      <option value="{$Limitations:LimitationValues:item.value}" {switch match=$Limitations:LimitationValues:item.value}
      {case in=$current_limitation_list[$Limitations:item.name]}selected="selected"{/case}{case}{/case}{/switch}>{$Limitations:LimitationValues:item.Name}</option>
-     {/section}   
+     {/section}
      </select>
 </td>
-     {/section}  
+     {/section}
 
 {section name=Limitations loop=$function_limitations}
-{switch match=$Limitations:item.name} 
+{switch match=$Limitations:item.name}
   {case match="Node"}
    <td class="element">
     <label>Node</label><div class="labelbreak"></div>
@@ -136,7 +136,7 @@
   {case}
   {/case}
 {/switch}
-{/section} 
+{/section}
 
 </tr>
 </table>

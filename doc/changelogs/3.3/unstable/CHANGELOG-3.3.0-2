@@ -77,7 +77,7 @@ Changes from 3.3.0-1 to 3.3.0-2
   http://ez.no/developer/ez_publish_3/bug_reports/renderxhtmltag_in_ol_or_ul
 - Fixed bug in kernel/role/edit.php. Made sure policy variable is checked before usage (merged from stable 4352 )
   http://ez.no/developer/ez_publish_3/bug_reports/php_error_in_admin_role_edition
-- Fixed ImageGD bug during setup : http://ez.no/developer/ez_publish_3/bug_reports/setup_wizard_fails_to_write_rules_to_imageiniappendphp_when_using_gd 
+- Fixed ImageGD bug during setup : http://ez.no/developer/ez_publish_3/bug_reports/setup_wizard_fails_to_write_rules_to_imageiniappendphp_when_using_gd
   ( merged from stable 4354 )
 - Removed unneeded template user variable instantiation in kernel/notification/runfilter.php
 - Fixed missing argument 1 for ezuser() in kernel\classes\datatypes\ezuser\ezuser.php bug ( merged from stable 4361 )

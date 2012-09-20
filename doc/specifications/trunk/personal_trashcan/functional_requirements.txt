@@ -51,7 +51,7 @@ When the Admin user opens the wastebasket he should see:
     d. Created date
     e. If possible the name of the creator of the object
     f. The size of the object(s) being deleted
-    
+
 9. It should be possible to sort the list by:
     a.	Owner name
     b.	Object name

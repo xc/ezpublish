@@ -114,7 +114,7 @@ VAT Handler to use is defined by the following settings in shop.ini:
 ###############################################################################
 [VATSettings]
 
-# Specifies VAT handler class/file name. For example, if the value is  
+# Specifies VAT handler class/file name. For example, if the value is
 # "ezdefault", then the handler class should be named
 # eZDefaultVATHandler (case does not matter) and placed to file
 # ezdefaultvathandler.php residing in a directory specified by
@@ -226,7 +226,7 @@ class MySectionBasedVATHandler
     function getVatPercent( $object, $country )
     {
         $section = $object->attribute( 'section_id' );
-        
+
         if ( $section == 1 )
             $percentage = 10;
         else
@@ -272,7 +272,7 @@ extension there by marking "myshop" extension and pressing "Apply changes".
 *New settings:
 
 shop.ini:
- 
+
  [VATSettings]
   Handler=
   RepositoryDirectories[]
@@ -323,15 +323,15 @@ management interface and by the shop user registration module
 
 Here are the steps to achieve this:
 
-1. Make sure your datatype's content is either a hash having "value" key 
-or an object capable of getting and setting "value" attribute (a-la 
-eZPersistentObject). It doesn't matter how the content is actually 
-stored to database, but objectAttributeContent() method must return an 
+1. Make sure your datatype's content is either a hash having "value" key
+or an object capable of getting and setting "value" attribute (a-la
+eZPersistentObject). It doesn't matter how the content is actually
+stored to database, but objectAttributeContent() method must return an
 array/object. The value (usually a country code) is then compared to VAT
 rules' countries.
 
-2. Override design/standard/templates/shop/country/{view,edit}.tpl 
-templates in your datatype extension so that countries can be displayed 
+2. Override design/standard/templates/shop/country/{view,edit}.tpl
+templates in your datatype extension so that countries can be displayed
 and edited in the VAT rules management interface and shop/userregister.
 
 *References:

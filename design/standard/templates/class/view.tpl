@@ -136,7 +136,7 @@
         {if $Attributes:item.data_type.is_information_collector}
         <div class="block">
             <p>{if $Attributes:item.is_information_collector}{"Collects information"|i18n("design/standard/class/view")}{else}{"Does not collect information"|i18n("design/standard/class/view")}{/if}</p>
-        </div> 
+        </div>
         {else}
         <div class="block">
             <p>{"Does not collect information"|i18n("design/standard/class/view")}</p>

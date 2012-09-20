@@ -11,9 +11,9 @@ function checkAll()
 {/literal}
         document.draftaction.selectall.value = "{'Deselect all'|i18n('design/standard/content/view')}";
 {literal}
-        with (document.draftaction) 
+        with (document.draftaction)
 	{
-            for (var i=0; i < elements.length; i++) 
+            for (var i=0; i < elements.length; i++)
 	    {
                 if (elements[i].type == 'checkbox' && elements[i].name == 'DeleteIDArray[]')
                      elements[i].checked = true;
@@ -25,9 +25,9 @@ function checkAll()
 {/literal}
          document.draftaction.selectall.value = "{'Select all'|i18n('design/standard/content/view')}";
 {literal}
-         with (document.draftaction) 
+         with (document.draftaction)
 	 {
-            for (var i=0; i < elements.length; i++) 
+            for (var i=0; i < elements.length; i++)
 	    {
                 if (elements[i].type == 'checkbox' && elements[i].name == 'DeleteIDArray[]')
                      elements[i].checked = false;

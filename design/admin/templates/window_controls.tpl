@@ -87,7 +87,7 @@
     </div></div></div></div>
     </li>
     {/if}
-    
+
     {* State assignment. *}
     {if eq( ezpreference( 'admin_navigation_states' ), 1 )}
     <li class="enabled {$li_width}">
@@ -101,8 +101,8 @@
         <a href={'/user/preferences/set/admin_navigation_states/1'|ezurl} title="{'Show state assignment widget.'|i18n( 'design/admin/node/view/full' )}">{'Object states'|i18n( 'design/admin/node/view/full' )}</a>
     </div></div></div></div>
     </li>
-    {/if}    
-    
+    {/if}
+
 </ul>
 
 <div class="break"></div>

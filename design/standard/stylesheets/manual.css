@@ -31,7 +31,7 @@ label.topline, a.topline, a.topline:hover
 td.pathline
 {
     background-color: #4272b4;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 table.path td.bullet
@@ -76,9 +76,9 @@ td.headlogo
 td.headlink
 {
     background-color: #4272b4;
-    
+
     padding-bottom: 0px;
-    vertical-align:bottom; 
+    vertical-align:bottom;
 }
 
 td.menuheadselectedgfx
@@ -179,10 +179,10 @@ p.menuheadselected
 
 input.searchbox
 {
-  font-family: verdana; 
-  width: 100px; 
-  font-size: 9px; 
-  margin: 0px; 
+  font-family: verdana;
+  width: 100px;
+  font-size: 9px;
+  margin: 0px;
 }
 
 input.searchbutton
@@ -237,7 +237,7 @@ th.menuheadlight p.menuhead
 	color: #000000;
 }
 
-td.menu, table.menuboxleft td.bullet, table.menuboxright td.bullet  
+td.menu, table.menuboxleft td.bullet, table.menuboxright td.bullet
 {
 	background-color: #ffffff;
 }

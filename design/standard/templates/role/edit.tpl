@@ -37,11 +37,11 @@
                   {delimiter}, {/delimiter}
               {/section})
               {delimiter}, {/delimiter}
-          {/section}  
+          {/section}
         {section-else}
           *
         {/section}
-    </td> 
+    </td>
     <td align="right" width="1">
         <a href={concat("role/policyedit/",$Policy:item.id)|ezurl}><img class="button" src={"edit.gif"|ezimage} width="16" height="16" alt="{'Edit'|i18n('design/standard/role')}" title="{'Edit policy'|i18n('design/standard/role')}" /></a>
     </td>
@@ -49,7 +49,7 @@
         <input type="checkbox" name="DeleteIDArray[]" value="{$Policy:item.id}" />
     </td>
 </tr>
-{/section}  
+{/section}
 <tr>
     <td colspan="4">
         <input class="button" type="submit" name="CreatePolicy" value="{'New'|i18n('design/standard/role')}" />

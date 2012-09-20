@@ -5,7 +5,7 @@ Changes from 3.6.0 to 3.8.0alpha1
   in-memory caches [for a given object].
   (Merged from stable/3.5 (3.5.3) rev. 12085)
 - Added user groups options to approval workflow.
-- Added support for error_type and error_number override keys for the error 
+- Added support for error_type and error_number override keys for the error
   module.
 - Added SSL zones functionality.
 - Added functionality to ezsoapclient for SSL.
@@ -45,10 +45,10 @@ Attributes:
 - Added new object attribute function "view_count" for eZContentObjectTreeNode.
 
 Shop:
-- Added ability to define custom VAT charging logic  
-  (with custom VAT handlers).                        
+- Added ability to define custom VAT charging logic
+  (with custom VAT handlers).
 - Implemented default VAT handler that uses VAT charging rules
-  (adjustable from the admin. interface).  
+  (adjustable from the admin. interface).
 - Added ability to define custom shipping options (with shipping handlers).
 - Added multi-currency support.
 
@@ -82,13 +82,13 @@ eZXMLText:
 - Fixed bug #6685: Error when American English selected as primary language
   (Merged from stable/3.4 (3.4.7) rev. 12066, also in stable/3.5 (3.5.3) rev.12067,
   in stable/3.6 (3.6.1) rev. 12068)
-- Fixed bug #6556: "403 Forbidden" when trying to access root page of a 
+- Fixed bug #6556: "403 Forbidden" when trying to access root page of a
   site running in non-virtualhost mode.
   (Merged from stable/3.4 (3.4.7) rev. 12070)
 - Fixed bug# 6700: Database transaction failure when adding a new translation.
   (Merged from stable/3.6 (3.6.1) rev. 12083)
 - Fixed inability to effectively clean up object version cache for
-  a single object.  
+  a single object.
   (Merged from stable/3.5 (3.5.3) rev. 12085)
 - Fixed bug: object version cache is incorrectly cleared in
   eZConentObject::store().
@@ -113,7 +113,7 @@ eZXMLText:
 - Fixed bug: si operator ignores decimal count of 0 in uncompiled state
   (Merged from stable/3.6 (3.6.1) rev. 12123)
 - Fixed bug #6732: Content object tree is not updated after deleting a class.
-  (Manually merged from stable/3.4 (3.4.7) rev. 12133, also in 
+  (Manually merged from stable/3.4 (3.4.7) rev. 12133, also in
   stable/3.5 (3.5.3) rev.12134, stable/3.6 (3.6.1) rev.12135)
 - Fixed bug in ezxmltext datatype: <object> tag corrupts design keys.
   (Merged from stable/3.4 (3.4.7) rev. 12141)
@@ -140,7 +140,7 @@ eZXMLText:
 - Fixed bug #6765: Fields are cleared on relating an object with related
   object attribute.
   (Merged from stable/3.5 (3.5.4) rev. 12235, also in stable/3.6 (3.6.1) rev. 12236)
-- Fixed: Baskets and product collections are not cleaned up when the sessions 
+- Fixed: Baskets and product collections are not cleaned up when the sessions
   expire.
 - Fixed bug #6772: Function contentClassAttributeName of
   contentObjectAttribute always returns null
@@ -162,8 +162,8 @@ eZXMLText:
   (Merged from stable/3.5 rev. 12345, stable/3.6 rev. 12346)
 - Fixed bug #6838: Contentobject receives remote_id of nodeobject
   (Merged from stable/3.6 rev. 12349)
-- Fixed bug: Wrong conditional permisssion when you use more then one 
-  "assign with limitation" to one role for the same user (limitations are 
+- Fixed bug: Wrong conditional permisssion when you use more then one
+  "assign with limitation" to one role for the same user (limitations are
   mixed using logical AND instead of logical OR operation).
 - Fixed bug #6852: Default values for template fetch operator does not work
   in compiled mode.
@@ -177,12 +177,12 @@ eZXMLText:
   (Merged from stable/3.6 (3.6.1) rev. 12408)
 - Fixed bug #6847: Added missing lines <?php and ?> at start and end of file.
   (Merged from unstable/3.6 (3.6.1) rev. 12417)
-- Fixed bug #6887: Match[url_alias] override does not work correctly when 
+- Fixed bug #6887: Match[url_alias] override does not work correctly when
   template compile enabled.
   (Merged from stable/3.5 rev. 12442).
 - Fixed bug #5603: RelatedObject Keyword function name misleading.
   (Merged from stable/3.5 rev. 12446).
-- Fixed bug #6900: Creator and modifier display detail in the admin intarface 
+- Fixed bug #6900: Creator and modifier display detail in the admin intarface
   is corrected.
   (Merged from unstable/3.6.1 rev. 12518)
 - Fixed bug #6895: Incorrect test in advanced search.
@@ -192,7 +192,7 @@ eZXMLText:
 - Fixed bug #6757: eZMail does not set the required Date header.
   (Merged from stable/3.5 rev. 12495).
 - Fixed bug #5766: Typo in shop/module.php.
-  (Merged from stable/3.5 (3.5.4) rev. 12499)  
+  (Merged from stable/3.5 (3.5.4) rev. 12499)
 - Fixed bug #6814: The drafts of top level nodes can't be removed.
   (Merged from stable/3.5 rev. 12506 ).
 - Fixed bug #6864: Fixed module_params() operator to work in templates
@@ -200,13 +200,13 @@ eZXMLText:
   (Merged from stable/3.6 (3.6.1rc1) rev. 12529)
 - Fixed bug #6908: Object name pattern problems.
   (Merged from stable/3.7 (3.7.0rc1) rev. 12578 ).
-- Fixed bug #6911, #6913: The calendar tool doesn't work 
+- Fixed bug #6911, #6913: The calendar tool doesn't work
   with class limitation. Wrong links are generated in the Calendar.
   (Merged from stable/3.5 (3.5.4rc1) rev. 12586).
-- Fixed bug #6862: The content-tree will displayed proper subtree while 
+- Fixed bug #6862: The content-tree will displayed proper subtree while
   deleting a user or content object.
   (merged from stable/3.5.5 rev 12617)
-- Fixed bug #6914: The Calendar tool: the class selection 
+- Fixed bug #6914: The Calendar tool: the class selection
   is not saved sometimes.
   (Merged from stable/3.6 rev. 12626)
 - Fixed bug #6862: As it will also work properly whild deleting content object
@@ -218,14 +218,14 @@ eZXMLText:
   publishing if object has an attribute of 'ezobjectrelation' datatype.
   (Merged from release/3.5.4 rev. 12640, also in release/3.6.1 rev. 12642,
   in stable/3.7 (3.7.0rc1) rev. 12645)
-- Fixed bug #6903: FetchVersionList and fetchVersionCount 
+- Fixed bug #6903: FetchVersionList and fetchVersionCount
   can lead to a "Fatal Error".
   (Merged from stable/3.6 (3.6.2) rev.12647)
 - Fixed: Wrong usage of temporary tables that might lead to problems on
   some of the supported DBMSs when several users are concurrently
   searching, viewing products or removing subtrees.
   (Manually merged from stable/3.5 (3.5.5) rev. 12672, 12676)
-- Fixed bug #6923, #6924: The selected object is not displayed. 
+- Fixed bug #6923, #6924: The selected object is not displayed.
   Current settings are not saved when you press Cancel in Subtree.
   (Merged from stable/3.6 (3.6.2) rev. 12685)
 - Fixed bug #6922: Typo in customerorderview.tpl.
@@ -248,7 +248,7 @@ eZXMLText:
 - Fixed bug: sql-error when updating eZURLObjectLink object.
   (Manually merged from release/3.5.4 rev. 12724, release/3.6.1 rev.12725,
   stable/3.7 (3.7.0rc2) rev. 12726)
-- Fixed bug #6736: Price datatype does not show validation error 
+- Fixed bug #6736: Price datatype does not show validation error
   on incorrect input.
   (Merged from stable/3.7 (3.7.0rc2) rev. 12738)
 - Fixed bug #6929: eZ publish 3.7.0 rc1 installation still has the PHP 4.4
@@ -271,7 +271,7 @@ eZXMLText:
   (Merged from stable/3.5 (3.5.5) rev. 12807, also in stable/3.6 (3.6.2)
   rev. 12808, in stable/3.7 (3.7.0rc2) rev. 12809)
 - Fixed bug: Publishing of objects with removed parent node assignments.
-  ( Merged from stable/3.5 ( 3.5.5 ) rev. 12812, stable/3.6 ( 3.6.2 ) rev. 12814, 
+  ( Merged from stable/3.5 ( 3.5.5 ) rev. 12812, stable/3.6 ( 3.6.2 ) rev. 12814,
     stable/3.7 ( rc2 ) rev. 12815 )
 - Fixed bug #6825: Debug toolbar and ini file problems.
   (Merged from stable/3.7 (3.7.0rc2) rev. 12817)
@@ -285,7 +285,7 @@ eZXMLText:
   (Merged from stable/3.5 (3.5.5) rev. 12850)
 - Fixed bug #6141: Node in tree menu is not marked stadning if the current node
   doesn't exists in the node tree.
-  (Merged from stable/3.5 (3.5.5) rev. 12856, also in stable/3.6 (3.6.2) 
+  (Merged from stable/3.5 (3.5.5) rev. 12856, also in stable/3.6 (3.6.2)
   rev. 12857, stable/3.7 (3.7.0rc2) rev. 12858)
 - Minor code correction.
   (Merged from stable/3.6 (3.6.2) rev. 12855)
@@ -315,10 +315,10 @@ eZXMLText:
 - Fixed bug #6749:ezmedia datatype will not create unnecessary row in ezmedia table if media file is not uploaded
   also has_content will get proper boolean true if file is uploaded and false if the file is not uploaded.
   (Merged from stable/3.6 (3.6.2) rev. 12916 )
-- Fixed bug #7007: Upgrade to 3.6 causes: Undefined property: 
+- Fixed bug #7007: Upgrade to 3.6 causes: Undefined property:
   value in .../ezimagealiashandler.php on line 825.
   (Merged from stable/3.6 (3.6.2) rev. 12920)
-- Fixed bug: Warning message 'mb_internal_encoding(): Unknown encoding "koi8-u"' is shown 
+- Fixed bug: Warning message 'mb_internal_encoding(): Unknown encoding "koi8-u"' is shown
   when charset is set to koi8-u in CharacterSettings].Charset setting of i18n.ini.append.
   (Merged from stable/3.6 (3.6.2) rev. 12923)
 - Fixed bug #7004: Text in the content tree doesn't obey when you shut off URL transation.
@@ -327,7 +327,7 @@ eZXMLText:
   (Merged from stable/3.6 (3.6.2) rev. 12930)
 - Fixed bug #7015: ezlupdate fails at register.tpl.
   (Merged from stable/3.5 (3.5.5) rev. 12934)
-- Fixed bug #6150: Updating class in "Wait untill date" 
+- Fixed bug #6150: Updating class in "Wait untill date"
   publishing causes selected class to go to first.
   (Merged from stable/3.6 (3.6.2) rev. 12948)
 - Fixed bug #7025 Problem with Underscore in siteaccess.
@@ -335,7 +335,7 @@ eZXMLText:
   successful matching using 'element' or 'regexp' types of URIMatching.
 - Fixed bug: file access.php, function accessMatchText(): inconsistent types
   comparson - strpos result 0 as false; in relsult no matching for pre- or post- sub-strings.
-- Fixed bug #6263: Datatype: Object relation list - 
+- Fixed bug #6263: Datatype: Object relation list -
   setting objects to the same order number.
   (Merged from stable/3.5 (3.5.5) rev. 12958)
 - Fixed bug copy subtree function does not handle datatype ezobjectrelationlist correctly.
@@ -362,13 +362,13 @@ eZXMLText:
   (Merged from stable/3.7 (3.7.0rc2) rev. 13010)
 - Fixed bug #7052: Wrong default role permissions for forum user.
   (Merged from stable/3.6 (3.6.2) rev. 13012)
-- Fixed bug #6940: Some error appears during the browse Source node 
+- Fixed bug #6940: Some error appears during the browse Source node
   in the PDF export.
   (Merged from stable/3.6 (3.6.2) rev. 13016)
 - Fixed bug: Some errors appear when user stores "PDF exoprt".
   (Merged from stable/3.6 (3.6.2) rev. 13020).
 - Fixed bug #6611: Grammatical error.
-- Fixed bug #7054: Problems attaching an image object to an article.  
+- Fixed bug #7054: Problems attaching an image object to an article.
   (Merged from stable/3.7 (3.7.0rc2) rev. 13026)
 - Fixed bug #6989: WebDAV won't store utf-8 text as unicode when calling to an
   upload handler.
@@ -476,7 +476,7 @@ eZXMLText:
 - Fixed bug: Required option for eZMatrix, eZOption, eZObjectRelationList
   attributes is not working.
   (Merged from stable/3.7 (3.7.0) rev. 13362)
-- Fixed bug: When changing content of an object attribute having translation disabled, 
+- Fixed bug: When changing content of an object attribute having translation disabled,
   content of the attribute is not updated in its translations.
   The bug occurs with the following datatypes: eZAuthor, eZEmail, eZMatrix,
   eZOption, eZMultioption.
@@ -487,7 +487,7 @@ eZXMLText:
   ( Merged from stable/3.7 rev. 13384 )
 - Fixed bug #7107: Webdav doesn't display objects that contains a name with "&"
   (Merged from stable/3.5 (3.5.3) rev. 13379)
-- Fixed bug #7159: Attributes lost when copying a content class. 
+- Fixed bug #7159: Attributes lost when copying a content class.
   (Merged from stable/3.7 (3.7.0) rev. 13386)
 - Fixed bug: cache-blocks doesn't work properly if TemplateCache setting has
   typo, like TemplateCache=enbl.
@@ -497,10 +497,10 @@ eZXMLText:
 - Fixed bug #2044: Strange behaviour of ezurl / using pathprefix.
   (Merged from stable/3.7 (3.7.0) rev. 13390)
 - Fixed bug #7109: Webdav doesn't take PathPrefix into account.
-  (Merged from stable/3.7 (3.7.0) rev. 13390)  
+  (Merged from stable/3.7 (3.7.0) rev. 13390)
 - Fixed bug #7163: Search problems when using subtree limitations (policy).
   ( Merged from stable/3.5 rev. 13394, stable/3.6 rev. 13396, stable/3.7 rev. 13397 )
-- Fixed bug #7161: Missing language flag.  
+- Fixed bug #7161: Missing language flag.
 - Fixed bug #7165: CRLF in templateedit.tpl and others.
   (Merged from stable/3.5 (3.5.6) rev. 13422)
 - Fixed bug 7167: setup kickstart.ini miss some data.
@@ -520,7 +520,7 @@ eZXMLText:
 - Fixed bug #7192: Extension activation in the GUI doesnt work.
   ( Merged from stable/3.7 rev. 13475 )
 - Fixed bug: Wrong defining version of PostgreSQL.
-  (Merged from stable/3.6 (3.6.3) rev. 13467)  
+  (Merged from stable/3.6 (3.6.3) rev. 13467)
 - Fixed bug: Wrong parse default (double precision) value.
   (Merged from stable/3.6 (3.6.3) rev. 13470)
 - Fixed bug #7199: Possible error in eZPersistentObject::updateObjectList -unable to unset fields with defaults
@@ -529,7 +529,7 @@ eZXMLText:
   ( Merged from stable/3.5 rev. 13492, stable/3.6 rev. 13493, stable/3.7 rev. 13494 )
 - Fixed bug #7204: Setting for login handler extensions has wrong name in site.ini
   ( Merged from stable/3.6 rev. 13506 )
-- Fixed bug: Fatal error when try to register new user.  
+- Fixed bug: Fatal error when try to register new user.
 - Fixed bug #7203: Sections: checkboxes to assign multiple nodes
   ( Merged from stable/3.5 rev. 13514 )
 - Fixed bug #7208: ezsoapserver.php: Fix for call to non-object error.
@@ -544,7 +544,7 @@ eZXMLText:
   ( Merged from stable/3.5 ( 3.5.6 ) rev. 13568 )
 - Fixed bug #7215: Translation Error when cleaning the cache.
   ( Merged from stable/3.5 ( 3.5.6 ) rev. 13572 )
-- Fixed bug #7169: crash while publishing an image.  
+- Fixed bug #7169: crash while publishing an image.
   ( Merged from stable/3.7 ( 3.7.0 ) rev. 13591 )
 - Fixed bug #7227: swap node between content and media produces strange
   behaviour.
@@ -565,41 +565,41 @@ eZXMLText:
   ( Merged from stable/3.6 ( 3.6.3 ) rev. 13644 )
 - Fixed bug #7233: Template errors in collaboration/view/summary.
   ( Merged from stable/3.6 ( 3.6.3 ) rev. 13655 )
-- Fixed bugs #7037, #7185: 
+- Fixed bugs #7037, #7185:
   Registered user does not receive registration mail.
   Blank User account when registerung without Cookies
   ( Merged from stable/3.5 ( 3.5.6 ) rev. 13660 )
 - Fixed bug #7260: Bug Shop sends no confirmation mails (sendOrderEmails not called).
   ( Merged from stable/3.7 rev. 13690 )
-- Fixed bug #7257: Problems with user->selfedit permission 
+- Fixed bug #7257: Problems with user->selfedit permission
   ( Edit button is disabled in admin ).
   ( Merged from stable/3.6 ( 3.6.3 ) rev. 13697 )
 - Fixed bug #6191: Image variant returns empty image tag.
   ( Merged from stable/3.6 ( 3.6.3 ) rev. 13703 )
-- Fixed bug #7016: Underscore acts as space in search. 
+- Fixed bug #7016: Underscore acts as space in search.
   Note: Search index update should be done when run on live site.
   To update existing search indexes you should execute update/common/scripts/updatesearchindex.php.
-  Searching will continue to work even if you do not update, then only new 
+  Searching will continue to work even if you do not update, then only new
   content will be indexed to get search results in desired way.
-- Fixed bug: Runcronjob works incorrectly with oracle(objects aren't published 
+- Fixed bug: Runcronjob works incorrectly with oracle(objects aren't published
   after approving).
   (Merged from release/3.7.0 rev. 13678)
 - Fixed bug #7223: wrong customer list in webshop.
   (Merged from release/3.7.0 rev. 13679)
 - Fixed bug #7278: Bug reference notice.
   ( Merged from stable/3.7 rev. 13725 )
-- Fixed bug #7274: Max file size for image objects is ignored 
+- Fixed bug #7274: Max file size for image objects is ignored
   for related objects.
   ( Merged from stable/3.6 ( 3.6.3 ) rev. 13727 )
 - Fixed bug #7282: Bug Cache isn't recreated after changing user status.
   ( Merged from stable/3.5 rev. 13731, stable/3.6 rev. 13732, stable/3.7 rev. 13733 )
 - Fixed bug #7264: Possible missing key in eZTSTranslator.
   ( Merged from stable/3.5 rev. 13735 )
-- Fixed bug #7220: Event/Approve - User who approves content.  
+- Fixed bug #7220: Event/Approve - User who approves content.
   ( Merged from stable/3.6 ( 3.6.3 ) rev. 13743 )
 - Fixed bug #7288: Preview functionality not showing correct flags.
   ( Merged from stable/3.6 ( 3.6.3 ) rev. 13762 )
-- Fixed bug #7289: Wrong URL's created by eZTemplatesStatisticsReporter with 
+- Fixed bug #7289: Wrong URL's created by eZTemplatesStatisticsReporter with
   reverse proxy setup.
 - Fixed bug #6316: Improve email logic & validation in tip-a-friend.
   ( Merged from stable/3.7 ( 3.7.1 ) rev. 13776 )
@@ -613,7 +613,7 @@ eZXMLText:
   (Merged from stable/3.6 ( 3.6.3 ) rev. 13793)
 - Fixed bug: 'postgresql' + 'reverseRelatedCount' cause sql-error.
   (Merged from stable/3.6 ( 3.6.3 ) rev. 13793)
-- Fixed bug: 'ezdebug' + 'xdebug' - special characters are not converted to HTML entities.  
+- Fixed bug: 'ezdebug' + 'xdebug' - special characters are not converted to HTML entities.
   (Merged from stable/3.6 ( 3.6.3 ) rev. 13797)
 - Fixed bug #7306: Typo in ezsearchengine.php prevents it from working correctly.
   ( Merge from stable/3.5 rev. 13812, stable/3.6 rev. 13813, stable/3.7 rev. 13814 )
@@ -632,8 +632,8 @@ eZXMLText:
   ( Merged from stable/3.6 ( 3.6.4 ) rev. 13865 )
 - Fixed bug #7322: Design bugs.
   ( Merged from stable/3.5 ( 3.5.7 ) rev. 13888 )
-- Fixed bug: reverseRelatedObjectList and *Count don't work correctly 
-  If referring object has translations > 1. 
+- Fixed bug: reverseRelatedObjectList and *Count don't work correctly
+  If referring object has translations > 1.
   ( Wrong adding relations to ezcontentobject_link ).
   ( Merged from stable/3.6 ( 3.6.4 ) rev. 13886, 13887 )
 - Fixed bug #7327: CSS issues in admin/templates/content/reverserelatedlist.tpl
@@ -646,7 +646,7 @@ eZXMLText:
   ( Merged from stable/3.5 rev. 13920 )
 - Fixed bug #7346: Quotes in an url in an eZURL attribute cause fatal error.
   (Merged from stable/3.5 rev. 13927)
-- Fixed bug #7311: Missing <?php ?> in output file 
+- Fixed bug #7311: Missing <?php ?> in output file
   from tpl operator wizard.
   ( Merged from stable/3.7 ( 3.7.3 ) rev. 13947 )
 - Fixed bug #7356: eZDateUtils::rfc1123Date() and eZDateUtils::rfc850Date()
@@ -674,20 +674,20 @@ eZXMLText:
   ( Merged from stable/3.5 rev. 14000, stable/3.6 rev. 14001, stable/3.7 rev. 14002 )
 - Fixed bug #6703: Security issue with error templates on admin interface.
   ( Merged from stable/3.5 ( 3.5.7 ) rev. 14006 )
-- Fixed bug #7110: Not all text is translatable in admin.  
+- Fixed bug #7110: Not all text is translatable in admin.
   ( Merged from stable/3.5 ( 3.5.7 ) rev. 14009 )
 - Fixed bug: XML parser crashes when <![CDATA[ section is not properly closed.
   ( Merged from stable/3.7 ( 3.7.3 ) rev. 14029 )
 - Fixed bug #7374: eZHTTPTool::sendHTTPRequest() loops infinitely.
   ( Applyed patch by Brian Gerspacher ).
-  ( Merged from stable/3.7 ( 3.7.3 ) rev. 14040 ) 
-- Fixed bug #7377: eZMultiplexer crashing.  
+  ( Merged from stable/3.7 ( 3.7.3 ) rev. 14040 )
+- Fixed bug #7377: eZMultiplexer crashing.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14048 )
-- Fixed bug #7337: Incorrect nesting of tags (link & custom) in XML fields.  
-  ( Merged from stable/3.6 ( 3.6.5 ) rev. 14069 )  
+- Fixed bug #7337: Incorrect nesting of tags (link & custom) in XML fields.
+  ( Merged from stable/3.6 ( 3.6.5 ) rev. 14069 )
 - Fixed bug #7399: Bug XML Output handler issue.
   ( Merged from stable/3.7 ( 3.7.3 ) rev. 14074 )
-- Fixed bug #7407: Problem with " aganist ' in file ezimagealiashandler.php.  
+- Fixed bug #7407: Problem with " aganist ' in file ezimagealiashandler.php.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14076 )
 - Fixed bug #7382: verifyfiles.sh issue with path.
   ( Merged from stable/3.5 ( 3.5.7 ) rev. 14083 )
@@ -704,13 +704,13 @@ eZXMLText:
   ( Merged from stable/3.7 ( 3.7.3 ) rev. 14123 )
 - Fixed Bug #7423: SOAP interface doesn't initialize internal charset.
   ( Merged from stable/3.5 rev. 14128 )
-- Fixed Bug #7386: Error in advancedsearch.tpl.  
+- Fixed Bug #7386: Error in advancedsearch.tpl.
   ( Merged from stable/3.5 rev. 14132 )
 - Fixed bug #7426: 2x editing when restoring something from the trash.
-  ( Merged from stable/3.7 ( 3.7.3 ) rev. 14139 )  
+  ( Merged from stable/3.7 ( 3.7.3 ) rev. 14139 )
 - Fixed bug #7174: Parsing back and forward with eZXML changes data.
   ( Merged from stable/3.5 rev. 13909 )
-- Fixed bug: Incorrect processing quote, double quote and backslash signs 
+- Fixed bug: Incorrect processing quote, double quote and backslash signs
   inside href in XML input.
   ( Merged from stable/3.6 (3.6.5) rev. 14154 )
 - Fixed SQL error when occuring when running subtree notification cronjob.
@@ -720,12 +720,12 @@ eZXMLText:
 - Fixed bug #7441: Hardcoded item for anonymous access list in
   eZUser::checkUser.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14184 )
-- Fixed bug #7454: SQL error when removing a location 
+- Fixed bug #7454: SQL error when removing a location
   without checking any nodes.
-- Fixed bug #7456: setYear, setMonth, setDay methods in class 
+- Fixed bug #7456: setYear, setMonth, setDay methods in class
   eZdate (lib/classes) not working.
   ( Merged from stable/3.5 ( 3.5.7 ) rev. 14192 )
-- Fixed bug #7459: Passing empty "SearchContentClassID" input 
+- Fixed bug #7459: Passing empty "SearchContentClassID" input
   to search page results in Apache segmentation fault.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14196 )
 - Fixed bug #7451: Approval event and sections.
@@ -741,7 +741,7 @@ eZXMLText:
   ( Merged from stable/3.7 ( 3.7.3 ) rev. 14238 )
 - Fixed bug #7338: Disfunction using "PDF export" utility in admin interface.
   ( Merged from stable/3.7 ( 3.7.3 ) rev. 14240 )
-- Fixed bug #7425: classattributeidentifiers cache file is not deleted 
+- Fixed bug #7425: classattributeidentifiers cache file is not deleted
   when clearing all caches.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14253 )
 - Fixed bug #7429: Rss 2.0 export fail on validation.
@@ -768,20 +768,20 @@ eZXMLText:
   ( Merged from stable/3.5 rev. 14344, stable/3.6 rev. 14345, stable/3.7 rev. 14346 )
 - Fixed bug #7545: Bug CS: unwanted print output.
   ( Merged from stable/3.5 rev. 14348 )
-- Fixed bug #7560: ezuser object is not published after storing the draft. 
+- Fixed bug #7560: ezuser object is not published after storing the draft.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14362 )
 - Fixed bug #7559: It is impossible to remove image from RSS export.
   ( Merged from stable/3.5 rev. 14370 )
 - Fixed bug #7563: Template compiler inconsistency...
   ( tpl operator remove() works incorrectly ).
   ( Merged from stable/3.7 ( 3.7.3  ) rev. 14383 )
-- Fixed bug #7475: Unnecessary log output.  
+- Fixed bug #7475: Unnecessary log output.
   ( Merged from stable/3.5 rev. 14394 )
-- Fixed bug #7585: Transaction error 
+- Fixed bug #7585: Transaction error
   when assigning section to node that is not main node.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14398 )
 - Fixed bug #7574: Added ezi18n in user/edit path.
-  ( Merged from stable/3.6 ( 3.6.5 ) rev. 14402 ) 
+  ( Merged from stable/3.6 ( 3.6.5 ) rev. 14402 )
 - Fixed bug #7549: URLs are never removed from ezurl table?
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14406 )
 - Fixed bug #7568: Using anchor_name on external link in XML fields fails
@@ -796,7 +796,7 @@ eZXMLText:
   ( Merged from stable/3.5 rev. 14292 )
 - Fixed bug #7603: 'Login' tool doesnt work correctly.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14427 )
-- Fixed bug #7612: Crash when empty eznode with anchor 
+- Fixed bug #7612: Crash when empty eznode with anchor
   provided in "href" attribute.
   ( Merged from stable/3.6 ( 3.6.5 ) rev. 14435 )
 - Fixed bug #6330: Calendar dates mixed up.
@@ -837,13 +837,13 @@ eZXMLText:
   ( Merged from stable/3.5 rev. 14561, stable/3.6 rev. 14562, stable/3.7 rev. 14563 )
 - Fixed bug #7690: Webdav NamePattern <original_filename> saves path.
   ( Merged from stable/3.5 rev. 14577 )
-- Fixed bug #7615: Bug Specific override does not work with 
+- Fixed bug #7615: Bug Specific override does not work with
   Match[class_identifier].
   ( Merged from stable/3.7 ( 3.7.4 ) rev. 14592 )
 - Fixed bug #7664: Fatal error when an attribute of type ezbinaryfile is in
   naming pattern but has no content.
   (Merged from release/3.7.3 rev. 14565)
-- Fixed bug #7618: eZ publish can't be migrated from a 32bit to a 64bit 
+- Fixed bug #7618: eZ publish can't be migrated from a 32bit to a 64bit
   architecture.
   (Merged from release/3.7.3 rev. 14568)
 - Fixed bug #7675: Bug /content/action without POST-data renders blank page.
@@ -860,12 +860,12 @@ eZXMLText:
   ( Merged from stable/3.7 ( 3.7.4 ) rev. 14634 )
 - Fixed bug #7736: Nesting level too deep.
   (Merged from stable/3.7 (3.7.4) rev. 14638)
-- Fixed bug #7461: Function loginUser of each login handler 
+- Fixed bug #7461: Function loginUser of each login handler
   gets called with empty login and password.
   ( Merged from stable/3.7 ( 3.7.4 ) rev. 14642 )
 - Fixed bug #6428: Wrong css in debug output.
   (Merged from stable/3.7 (3.7.4) rev.14645)
-- Fixed bug #7747: "literal" tag with wrong end tag 
+- Fixed bug #7747: "literal" tag with wrong end tag
   is a cause of the fatal error.
   ( Merged from stable/3.7 ( 3.7.4 ) rev. 14652 )
 - Fixed bug #7733: Treemenu - wrong values of "is_selected".
@@ -881,15 +881,15 @@ eZXMLText:
 - Fixed bug #7791: Missing method exists check in eZPersistent object.
   ( Merged from stable/3.5 rev. 14702, stable/3.6 rev. 14703, stable/3.7 rev. 14704 )
 - Fixed bug #7782: The setup wizard is broken.
-- Fixed bug #7775: Cannot set 'is_loop' attribute on flash movie (and other 
+- Fixed bug #7775: Cannot set 'is_loop' attribute on flash movie (and other
   issues in ezmedia.tpl).
   ( Merged from stable/3.5 rev. 14708 )
-- Fixed bug #7768: Fatal error copying objects with 
+- Fixed bug #7768: Fatal error copying objects with
   eZObjectRelationList attributes.
   ( Merged from stable/3.7 ( 3.7.4 ) rev. 14714 )
 - Fixed bug #7794: Impossible to add AvailableOperations trigger in extensions.
   ( Merged from stable/3.5 rev. 14718, stable/3.6 rev. 14720, stable/3.7 rev. 14721 )
-- Fixed bug #7761: class.ingroup_list does not return, 
+- Fixed bug #7761: class.ingroup_list does not return,
   or return wrong group_name for user and user group.
   ( Merged from stable/3.7 ( 3.7.4 ) rev. 14717 )
 - Fixed bug #7800: Selection-datatype, translation off works incorrectly.
@@ -930,11 +930,11 @@ eZXMLText:
 *Library:
 
 eZTemplate:
-- Improved 'shorten' operator. Now it also can trim string to specified length 
+- Improved 'shorten' operator. Now it also can trim string to specified length
   in the middle.
   (Merged from stable/3.4 (3.4.7) rev. 12169, also in stable/3.5 (3.5.3) rev. 12170,
   in stable/3.6 (3.6.1) rev. 12171)
-- Added support for having eZ publish installed in a subfolder while using 
+- Added support for having eZ publish installed in a subfolder while using
   virtualhost setup.
   Example : www.example.com/ez_publish/<eZ publish>
   ( Merged from stable/3.5 rev. 13711, stable/3.6 rev. 13712, stable/3.7 rev. 13713 )
@@ -948,17 +948,17 @@ eZTemplate:
 
 *INI settings:
 - Changed: [TipAFriend].FromEmail ini setting is now empty by default.
-  Thus, the email address specified in the tip-a-friend form is used as from 
+  Thus, the email address specified in the tip-a-friend form is used as from
   address when sending the email.
   Assign a non-empty value to FromEmail for it to be used as from address.
 - Added notification.ini:[RuleSettings].LimitDeleteElements setting:
   Maximum number of notification digest elements removed in one query.
-  This is needed to prevent exceeding DBMS limits 
+  This is needed to prevent exceeding DBMS limits
   (maximum query length, maximum number of elements in IN() clause).
-- Added site.ini:[SiteSettings].64bitCompatibilityMode setting: affects some 
+- Added site.ini:[SiteSettings].64bitCompatibilityMode setting: affects some
   php's functions like crc32.
 - Added in ezxml.ini:[ezxhtml].RenderParagraphInTableCells.
-  Option for rendering <p> tag in table cell if 
+  Option for rendering <p> tag in table cell if
   there is only one <paragraph> tag in XML for this cell.
 
 eZDB:
@@ -979,7 +979,7 @@ eZSession:
   cleanup when a session is expired/removed.
 
 eZExtension:
-- Added 2 new functions eZExtension::isExtension( $path ) and 
+- Added 2 new functions eZExtension::isExtension( $path ) and
   eZExtension::nameFromPath( $path )
 
 *SOAP:
@@ -991,7 +991,7 @@ eZExtension:
 - Added: /notification directory with modified templates to /design/base.
 
 *Translations:
-- Added support of Ukrainian language and koi8-u locale. 
+- Added support of Ukrainian language and koi8-u locale.
   (Merged from stable/3.5 (3.5.5) rev. 12829 and translations/stable/3.5 rev. 230)
 - Added locale and translation file for hebrew ( heb-IL ) and spanish ( esl-ES ).
 - Added locale jpn-JP.
