@@ -514,15 +514,20 @@ class eZContentObjectTreeNode extends eZPersistentObject
     /*!
      Fetches a list of nodes and returns it. Offset and limitation can be set if needed.
     */
-    static function fetchList( $asObject = true, $offset = false, $limit = false )
+    static function fetchList( $asObject = true, $offset = false, $limit = false, $nodeIDArray = array() )
     {
+        $db = eZDB::instance();
+        $nodeIDStatement = ' WHERE node_id' . $db->generateSQLINStatement( $nodeIDArray );
         $sql = "SELECT * FROM ezcontentobject_tree";
+        if( !empty( $nodeIDArray ) )
+        {
+            $sql .= $nodeIDStatement;
+        }
         $parameters = array();
         if ( $offset !== false )
             $parameters['offset'] = $offset;
         if ( $limit !== false )
             $parameters['limit'] = $limit;
-        $db = eZDB::instance();
         $rows = $db->arrayQuery( $sql, $parameters );
         $nodes = array();
         if ( $asObject )
@@ -4200,9 +4205,10 @@ class eZContentObjectTreeNode extends eZPersistentObject
     /*!
       Moves the node to the given node.
       \note Transaction unsafe. If you call several transaction unsafe methods you must enclose
+      $refreshRoleCache is for reference use, useful for bat moving.
      the calls within a db transaction; thus within db->begin and db->commit.
     */
-    function move( $newParentNodeID, $nodeID = 0 )
+    function move( $newParentNodeID, $nodeID = 0, $clearCache = true, &$refreshRoleCache = true )
     {
         if ( $nodeID == 0 )
         {
@@ -4298,14 +4304,16 @@ class eZContentObjectTreeNode extends eZPersistentObject
                $expireRoleCache = true;
            }
 
-            if ( $expireRoleCache )
+            if ( $refreshRoleCache && $expireRoleCache )
             {
                 eZRole::expireCache();
             }
+            // set $expireRoleCache to $refreshRoleCache for outside use.
+            $refreshRoleCache = $expireRoleCache;
 
             // Update "is_invisible" node attribute.
             $newNode = eZContentObjectTreeNode::fetch( $nodeID );
-            eZContentObjectTreeNode::updateNodeVisibility( $newNode, $newParentNode );
+            eZContentObjectTreeNode::updateNodeVisibility( $newNode, $newParentNode, $clearCache );
             $db->commit();
         }
     }
@@ -5812,6 +5820,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
 
      \param $node            Root node of the subtree
      \param $modifyRootNode  Whether to modify the root node (true/false)
+     \param $clearViewCache  Whether to clear the view cache
 
      Hide algorithm:
      if ( root node of the subtree is visible )
@@ -5831,7 +5840,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
      \note Transaction unsafe. If you call several transaction unsafe methods you must enclose
      the calls within a db transaction; thus within db->begin and db->commit.
     */
-    static function hideSubTree( eZContentObjectTreeNode $node, $modifyRootNode = true )
+    static function hideSubTree( eZContentObjectTreeNode $node, $modifyRootNode = true, $clearViewCache = true )
     {
         $nodeID = $node->attribute( 'node_id' );
         $time = time();
@@ -5872,7 +5881,10 @@ class eZContentObjectTreeNode extends eZPersistentObject
 
         $db->commit();
 
-        eZContentObjectTreeNode::clearViewCacheForSubtree( $node, $modifyRootNode );
+        if( $clearViewCache )
+        {
+            eZContentObjectTreeNode::clearViewCacheForSubtree( $node, $modifyRootNode );
+        }
     }
 
     /*!
@@ -5880,6 +5892,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
 
      \param $node            Root node of the subtree
      \param $modifyRootNode  Whether to modify the root node (true/false)
+     \param $clearViewCache  Whether to clear the view cache
 
      Unhide algorithm:
      if ( parent node is visible )
@@ -5895,7 +5908,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
      \note Transaction unsafe. If you call several transaction unsafe methods you must enclose
      the calls within a db transaction; thus within db->begin and db->commit.
     */
-    static function unhideSubTree( eZContentObjectTreeNode $node, $modifyRootNode = true )
+    static function unhideSubTree( eZContentObjectTreeNode $node, $modifyRootNode = true, $clearViewCache = true )
     {
         $nodeID = $node->attribute( 'node_id' );
         $nodePath = $node->attribute( 'path_string' );
@@ -5955,7 +5968,10 @@ class eZContentObjectTreeNode extends eZPersistentObject
 
         $db->commit();
 
-        eZContentObjectTreeNode::clearViewCacheForSubtree( $node, $modifyRootNode );
+        if( $clearViewCache )
+        {
+            eZContentObjectTreeNode::clearViewCacheForSubtree( $node, $modifyRootNode );
+        }
     }
 
     /*!
@@ -5963,7 +5979,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
      Depending on the new parent node visibility, recompute "is_invisible" attribute for the given node and its children.
      (used after content/move or content/copy)
     */
-    static function updateNodeVisibility( $node, $parentNode, $recursive = true )
+    static function updateNodeVisibility( $node, $parentNode, $recursive = true, $clearViewCache = true )
     {
         if ( !$node )
         {
@@ -5990,9 +6006,9 @@ class eZContentObjectTreeNode extends eZPersistentObject
             {
                 // update visibility for children of the node
                 if( $parentNodeIsVisible )
-                    eZContentObjectTreeNode::hideSubTree( $node, $modifyRootNode = false );
+                    eZContentObjectTreeNode::hideSubTree( $node, $modifyRootNode = false, $clearViewCache );
                 else
-                    eZContentObjectTreeNode::unhideSubTree( $node, $modifyRootNode = false );
+                    eZContentObjectTreeNode::unhideSubTree( $node, $modifyRootNode = false, $clearViewCache );
             }
             $db->commit();
         }
