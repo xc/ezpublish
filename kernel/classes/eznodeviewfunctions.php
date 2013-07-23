@@ -189,25 +189,41 @@ class eZNodeviewfunctions
                 $matches = $condition['Match'];
                 if( isset( $matches['node'] ) && $matches['node'] == $nodeID )
                 {
-                    $overrideClass = $condition['Class'];
-                    break;
+                    if( isset( $condition['Class'] ) )
+                    {
+                        $overrideClass = $condition['Class'];
+                        break;
+                    }
                 }
 
                 if( isset( $matches['class_identifier'] ) && $matches['class_identifier'] == $classIdentifier  )
                 {
-                    $overrideClass = $condition['Class'];
-                    break;
+                    if( isset( $condition['Class'] ) )
+                    {
+                        $overrideClass = $condition['Class'];
+                        break;
+                    }
                 }
             }
         }
 
+        $overrideObject = null;
         if( !empty( $overrideClass ) )
         {
             $overrideView = new $overrideClass();
-            $overrideView->getView( $node, $object, $tpl );
+            $http = eZHTTPTool::instance();
+            $overrideView->loadView( $http, $node, $object, $tpl, $viewMode );
         }
 
         $Result = array();
+        if( !empty( $overrideObject ) && method_exists( $overrideObject, 'fetchTemplate' ) )
+        {
+            $overrideView->fetchTemplate( $http, $Result, $node, $object, $tpl, $viewMode );
+        }
+        else
+        {
+            $Result['content'] = $tpl->fetch( 'design:node/view/' . $viewMode . '.tpl' );
+        }
         $Result['content']         = $tpl->fetch( 'design:node/view/' . $viewMode . '.tpl' );
         $Result['view_parameters'] = $viewParameters;
         $Result['path']            = $path;
