@@ -176,6 +176,37 @@ class eZNodeviewfunctions
 
         $tpl->setVariable( 'node_path', $path );
 
+        $ini = eZINI::instance( 'override.ini' );
+        $conditions = $ini->groups();
+        $nodeID = $node->attribute( 'node_id' );
+        $classIdentifier = $object->attribute( 'class_identifier' );
+        $overrideClass = null;
+
+        foreach( $conditions as $condition )
+        {
+            if( isset( $condition['Match'] ) )
+            {
+                $matches = $condition['Match'];
+                if( isset( $matches['node'] ) && $matches['node'] == $nodeID )
+                {
+                    $overrideClass = $condition['Class'];
+                    break;
+                }
+
+                if( isset( $matches['class_identifier'] ) && $matches['class_identifier'] == $classIdentifier  )
+                {
+                    $overrideClass = $condition['Class'];
+                    break;
+                }
+            }
+        }
+
+        if( !empty( $overrideClass ) )
+        {
+            $overrideView = new $overrideClass();
+            $overrideView->getView( $node, $object, $tpl );
+        }
+
         $Result = array();
         $Result['content']         = $tpl->fetch( 'design:node/view/' . $viewMode . '.tpl' );
         $Result['view_parameters'] = $viewParameters;
